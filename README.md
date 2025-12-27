@@ -1,218 +1,134 @@
-# Agentic Work System
+# Agentic Work System v6.0
 
 [![Turkish](https://img.shields.io/badge/lang-Turkish-red.svg)](./README.tr.md)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-6.0-green.svg)]()
 
 > **"If it's not written, it doesn't exist."** — *The Anti-Phantom Rule*
 
 This repository contains a complete **Operating System for Agents**, designed to standardize advanced agentic coding workflows. It enables AI models to maintain context, follow strict protocols, and utilize a vast library of specialized skills during pair-programming sessions.
 
+## ✨ What's New in v6.0
+
+- 🚀 **Auto-Trigger System** - No manual initialization needed
+- 🧠 **MCP Memory Integration** - Persistent state across sessions
+- 📦 **Smart Kit Selection** - Automatic skill loading based on keywords
+- ⚡ **Zero-Config Start** - Just prompt, system handles the rest
+
 ---
 
 ## 🏗️ System Architecture
 
-The system operates on a "Context Injection" model, where the AI loads specific rules and skills based on the active task.
+The system operates on a **"Context Injection"** model with **automatic triggering**. The AI loads specific rules and skills based on keywords in your prompt.
 
 ```mermaid
 graph TD
-    A[User Request] -->|Input| B(Router Logic)
-    B -->|Analyze| C{Select Kit}
-    C -->|Web Dev| D[FullStackKit]
-    C -->|Infrastructure| E[DevOpsKit]
-    C -->|Security| F[SecurityKit]
+    A[User Prompt] -->|Auto-Analyze| B{Keyword Detection}
+    B -->|react, api, css| C[FullStackKit]
+    B -->|docker, aws, k8s| D[DevOpsKit]
+    B -->|prompt, ai, llm| E[AIKit]
+    B -->|security, auth| F[SecurityKit]
     
-    subgraph "Context Engine"
-        G["GEMINI.md<br/>(Constitution)"]
-        H["protokol_uygulama.md<br/>(Workflow)"]
+    subgraph "Auto-Trigger Engine"
+        G["GEMINI.md<br/>(Constitution v6.0)"]
+        H["MCP Memory<br/>(Persistent State)"]
         I["skills_manifest.json<br/>(Skill Map)"]
     end
     
-    D -->|Load Skill| J[python_pro]
-    D -->|Load Skill| K[react_expert]
-    E -->|Load Skill| L[aws_architect]
+    C -->|Auto-Load| J[react_expert]
+    C -->|Auto-Load| K[backend_api]
+    D -->|Auto-Load| L[aws_architect]
     
     G -->|Inject| M((Active Session))
-    H -->|Inject| M
+    H -->|Restore| M
     J -->|Inject| M
     
     style G fill:#f9f,stroke:#333
     style H fill:#bbf,stroke:#333
     style I fill:#bfb,stroke:#333
-    style M fill:#f96,stroke:#333,stroke-width:4px
 ```
-
-## 📂 Directory Structure
-
-```mermaid
-graph LR
-    root["User Home (~)"]
-    gemini[".gemini"]
-    skillport[".skillport"]
-    agent[".agent"]
-    
-    rules["GEMINI.md"]
-    brain["brain/"]
-    scratch["scratch/"]
-    
-    skills["skills/"]
-    manifest["skills_manifest.json"]
-    
-    workflows["workflows/"]
-    protocol["protokol_uygulama.md"]
-    
-    root --> gemini
-    root --> skillport
-    root --> agent
-    
-    gemini --> rules
-    gemini --> brain
-    gemini --> scratch
-    
-    skillport --> skills
-    skillport --> manifest
-    
-    agent --> workflows
-    workflows --> protocol
-    
-    style root fill:#eee,stroke:#333
-    style gemini fill:#ffe,stroke:#d4a017
-    style skillport fill:#eef,stroke:#00f
-    style agent fill:#efe,stroke:#0f0
-```
-
----
-
-## 🛠️ Prerequisites
-
-To fully utilize this system, ensure your environment is set up with the following tools:
-
-| Tool | Version | Required For | Link |
-|------|---------|--------------|------|
-| **Python** | 3.11+ | Running scripts & backend skills | [Download](https://www.python.org/downloads/) |
-| **Node.js** | 20+ | Web development skills | [Download](https://nodejs.org/) |
-| **Git** | Latest | Version control | [Download](https://git-scm.com/downloads) |
-| **VS Code** | Latest | Recommended Editor | [Download](https://code.visualstudio.com/) |
-
----
-
-## ⚙️ Installation (Skillpot - The Engine)
-
-This system uses **Skillport** to manage and serve agent skills. You can install it via `uvx` (Zero Install) or `pip`.
-
-### Option A: Zero Install (Recommended)
-Requires [uv](https://docs.astral.sh/uv/getting-started/installation/) installed.
-
-Add this to your MCP settings (VS Code / Claude / Cursor):
-```json
-{
-  "mcpServers": {
-    "skillport": {
-      "command": "uvx",
-      "args": [
-        "--from", "git+https://github.com/xenitV1/skillport",
-        "skillport"
-      ]
-    }
-  }
-}
-```
-
-### Option B: Permanent Install (Pip)
-```bash
-pip install git+https://github.com/xenitV1/skillport.git
-```
-MCP Config:
-```json
-{
-  "mcpServers": {
-    "skillport": {
-      "command": "skillport",
-      "args": []
-    }
-  }
-}
-```
-
-### 🧠 Register Antigravity Skills (The Brain)
-To load the skills provided in this repository, run:
-
-```bash
-# If using uvx
-uvx --from git+https://github.com/xenitV1/skillport skillport add https://github.com/xenitV1/skillport/tree/main/.agent/skills
-
-# If installed via pip
-python -m skillport add https://github.com/xenitV1/skillport/tree/main/.agent/skills
-```
-
----
-
-## 🏗️ System Setup (Local Protocols)
-
-Follow these steps to set up the configuration files (Rules & Workflows) on your local machine.
-
-### 1. Create Data Directories
-The system relies on specific folder paths in your user home directory.
-```bash
-# Windows Powershell
-New-Item -ItemType Directory -Force -Path "$HOME\.gemini"
-New-Item -ItemType Directory -Force -Path "$HOME\.skillport\skills"
-New-Item -ItemType Directory -Force -Path "$HOME\.agent\workflows"
-```
-
-### 2. Copy Configuration Files
-Move the files from this repository to their respective locations:
-
-1.  **Constitution:**
-    *   `rules/GEMINI.md` ➡️ `~/.gemini/GEMINI.md`
-2.  **Skill Manifest:**
-    *   `config/skills_manifest.json` ➡️ `~/.skillport/skills_manifest.json`
-3.  **Workflow Protocol:**
-    *   `workflows/protokol_uygulama.md` ➡️ `~/.agent/workflows/protokol_uygulama.md`
-
-### 3. Install Skills
-Copy the entire contents of the `skills/` folder to your local skillport directory.
-*   `skills/*` ➡️ `~/.skillport/skills/`
-
-> **Note:** The `skills_manifest.json` path in the config might need to be adjusted if you are not using Windows. It is pre-configured for `%USER_PROFILE%`.
-
----
-
-## 📚 Skills Library (Managed via Skillport)
-
-The system comes with **130+ specialized skills** grouped into "Kits". Here are the main categories:
-
-### 🌐 FullStackKit
-*   **Target:** Web & Mobile, Databases, APIs.
-*   **Key Skills:** `react_expert`, `backend_api`, `database_design`, `python_pro`, `typescript_advanced`.
-
-### ☁️ DevOpsKit
-*   **Target:** Infrastructure, Cloud, CI/CD.
-*   **Key Skills:** `aws_architect`, `docker_optimization`, `kubernetes_specialist`, `terraform_engineer`, `deploy_cicd`.
-
-### 🤖 AIKit
-*   **Target:** LLM Integration, RAG, Agents.
-*   **Key Skills:** `prompt_engineering`, `rag_architecture`, `agent_orchestration`, `langchain_patterns`.
-
-### 🛡️ SecurityKit
-*   **Target:** Audits, Penetration Testing.
-*   **Key Skills:** `secops_core`, `auth_patterns`, `better_auth`.
-
-### 📋 ManagementKit
-*   **Target:** Documentation, Agile, Planning.
-*   **Key Skills:** `docs_readme`, `project_management`, `scrum_master`.
 
 ---
 
 ## 🚀 Usage
 
-Once installed, simply instruct your AI assistant (e.g., in Cursor, Windsurf, or a CLI agent) to initialize the system:
+### Quick Start (v6.0 - Auto-Trigger)
 
-> "Initialize the system and execute the protocol_uygulama workflow."
+Simply start prompting. **No initialization command needed!**
 
-The AI will:
-1.  Read `GEMINI.md` to understand its persona and rules.
-2.  Read `skills_manifest.json` to see available tools.
-3.  Load the necessary skills for your specific request.
+```
+You: "Create a React dashboard with user authentication"
+```
+
+The AI will automatically:
+1. ✅ Check MCP Memory for session state
+2. ✅ Detect keywords: `react`, `auth` → Select `FullStackKit` + `SecurityKit`
+3. ✅ Load skills: `react_expert`, `auth_patterns`
+4. ✅ Start working
+
+### Keyword Triggers
+
+| Keywords | Kit Selected | Skills Loaded |
+|----------|--------------|---------------|
+| react, css, database, api, sql | FullStackKit | react_expert, backend_api, database_design |
+| docker, aws, kubernetes, terraform | DevOpsKit | aws_architect, docker_optimization |
+| prompt, ai, llm, rag, agent | AIKit | prompt_engineering, rag_architecture |
+| security, auth, vuln, login | SecurityKit | secops_core, auth_patterns |
+| plan, agile, scrum, docs | ManagementKit | project_management, docs_readme |
+
+---
+
+## 📁 Repository Structure
+
+```
+antigravity-agentic-skills/
+├── config/
+│   └── skills_manifest.json    # Kit definitions & skill mappings
+├── rules/
+│   └── GEMINI.md               # Constitution v6.0 (Auto-Trigger + MCP Memory)
+├── skills/                      # 138+ skill modules
+│   ├── react_expert/
+│   ├── backend_api/
+│   ├── aws_architect/
+│   └── ...
+└── workflows/
+    └── protokol_uygulama.md    # Legacy workflow (optional)
+```
+
+---
+
+## 🛠️ Installation
+
+1. Clone the repository
+2. Copy contents to your local `.skillport` directory:
+   - Windows: `%USERPROFILE%\.skillport\`
+   - macOS/Linux: `~/.skillport/`
+3. Copy `rules/GEMINI.md` to your AI assistant's global rules
+4. Configure MCP Memory server (optional but recommended)
+
+---
+
+## 📚 Skills Library (138+ Skills)
+
+### 🌐 FullStackKit
+* **Target:** Web & Mobile, Databases, APIs
+* **Key Skills:** `react_expert`, `backend_api`, `database_design`, `python_pro`, `typescript_advanced`
+
+### ☁️ DevOpsKit
+* **Target:** Infrastructure, Cloud, CI/CD
+* **Key Skills:** `aws_architect`, `docker_optimization`, `kubernetes_specialist`, `terraform_engineer`
+
+### 🤖 AIKit
+* **Target:** LLM Integration, RAG, Agents
+* **Key Skills:** `prompt_engineering`, `rag_architecture`, `agent_orchestration`, `langchain_patterns`
+
+### 🛡️ SecurityKit
+* **Target:** Audits, Penetration Testing
+* **Key Skills:** `secops_core`, `auth_patterns`, `better_auth`
+
+### 📋 ManagementKit
+* **Target:** Documentation, Agile, Planning
+* **Key Skills:** `docs_readme`, `project_management`, `scrum_master`
 
 ---
 
