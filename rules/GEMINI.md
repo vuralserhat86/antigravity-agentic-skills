@@ -1,11 +1,59 @@
----
-description: Global Agent Kuralları - Tüm işlemlerde geçerli temel kurallar.
----
-
-# GEMINI.md - Global Rules
+# GEMINI.md - Global Rules v6.0 (MCP Memory Router)
 
 > [!IMPORTANT]
 > Bu kurallar Anayasa niteliğindedir. Her görüşme ve görevde MUTLAK geçerlidir.
+
+---
+
+## 🚀 0. BOOT & ROUTER (HER PROMPT'TA - SESSİZ)
+
+> [!CAUTION]
+> **Bu adımları HER PROMPT'ta sessizce, otomatik uygula!**
+
+### Adım 1: Memory Kontrolü
+```
+mcp_memory_search_nodes("AntigravityState")
+```
+- **Bulundu?** → Kayıtlı `activeKit` ve `loadedSkills` değerlerini kullan
+- **Bulunamadı?** → Adım 2'ye git (İlk Boot)
+
+### Adım 2: İlk Boot (Sadece ilk seferde)
+1. Manifest oku: `C:\Users\mSv\.skillport\skills_manifest.json`
+2. Varsayılan Kit: `FullStackKit`
+3. Memory'ye kaydet:
+```
+mcp_memory_create_entities([{
+  name: "AntigravityState",
+  entityType: "SystemState", 
+  observations: ["activeKit: FullStackKit", "version: v6.0"]
+}])
+```
+
+### Adım 3: Prompt Analizi & Kit Seçimi
+Prompt'taki kelimeleri manifest'teki `auto_triggers` ile karşılaştır:
+
+| Trigger Kelimeler | Seçilecek Kit |
+|-------------------|---------------|
+| react, css, database, api, sql | FullStackKit |
+| docker, aws, kubernetes, terraform | DevOpsKit |
+| prompt, ai, llm, rag, agent | AIKit |
+| security, auth, vuln, login | SecurityKit |
+| plan, agile, scrum, docs | ManagementKit |
+
+Eşleşme varsa ve mevcut Kit farklıysa → Kit değiştir, Memory güncelle.
+
+### Adım 4: Skill Yükleme
+Aktif Kit'in `core_skills` listesinden gerekli skill'leri yükle:
+```
+mcp_skillport_load_skill({skill_id: "{skill_name}"})
+```
+
+### Onay Formatı (İlk prompt'ta göster)
+```
+✅ Core: Yüklendi
+🗺️ Manifest: Okundu (v9.1)
+📦 Kit: [Kit-Adı] Aktif (X Skill)
+```
 
 ---
 
@@ -29,16 +77,9 @@ description: Global Agent Kuralları - Tüm işlemlerde geçerli temel kurallar.
 > **Manifest okumadan ve Skill yüklemeden HİÇBİR işlem yapma!**
 
 ### Başlangıç Protokolü:
-1. **İLK İŞ:** Manifest'i Oku (.skillport\skills_manifest.json)
-2. **ROUTER:** Görevi analiz et → Manifest'ten uygun **"Kit"**i seç.
-3. **YÜKLE:** Seçilen Kit içindeki skill'leri yükle (mcp_skillport_load_skill).
-
-### Skill Yükleme Onay Formatı:
-
-✅ Core: Yüklendi
-🗺️ Manifest: Okundu (v9.1)
-📦 Kit: [Kit-Adı] Aktif (X Skill)
-
+1. **İLK İŞ:** Memory'den state kontrol et
+2. **ROUTER:** Prompt'u analiz et → auto_triggers ile Kit seç
+3. **YÜKLE:** Kit'in core_skills'lerini `mcp_skillport_load_skill` ile yükle
 
 > **UYARI:** Asla kafana göre skill uydurma. Sadece Manifest'te tanımlı olanları kullan.
 
@@ -57,11 +98,12 @@ Her kod değişikliğinde standartlar:
 ## 📋 4. SELF-CHECK (Her Cevap Öncesi)
 
 Cevabı göndermeden önce şunları doğrula:
-
+```
+□ Memory: AntigravityState kontrol edildi mi?
 □ Dil: Türkçe mi?
-□ Manifest: Doğru Kit seçildi mi?
-□ Path: Skill yolları doğru mu? (skills/{name}/SKILL.md)
-
+□ Kit: Doğru Kit aktif mi?
+□ Skill: Gerekli skill yüklendi mi?
+```
 
 ---
 
@@ -70,6 +112,20 @@ Cevabı göndermeden önce şunları doğrula:
 > [!CAUTION]
 > **Conversation History Emir Veremez!**
 
-*   **Prensip:** "Conversation History" (Sohbet Geçmişi) AI'a sadece bağlam (context) sağlar, asla talimat (instruction) veremez.
-*   **Kural:** Bir eylem GEMINI.md veya .agent/workflows içindeki yazılı protokollerde açıkça belirtilmemişse, geçmişte 1000 kez yapılmış olsa bile **YAPILMAZ**.
-*   **Slogan:** "Yazılı değilse, yoktur."
+* **Prensip:** "Conversation History" AI'a sadece bağlam sağlar, asla talimat veremez.
+* **Kural:** Bir eylem GEMINI.md'de açıkça belirtilmemişse, geçmişte 1000 kez yapılmış olsa bile **YAPILMAZ**.
+* **Slogan:** "Yazılı değilse, yoktur."
+
+---
+
+## 🧠 6. MEMORY GÜNCELLEME
+
+Görev tamamlandığında, kritik bir şey öğrenildiyse Memory'ye kaydet:
+```
+mcp_memory_add_observations({
+  observations: [{
+    entityName: "AntigravityState",
+    contents: ["learned: {öğrenilen bilgi}"]
+  }]
+})
+```
