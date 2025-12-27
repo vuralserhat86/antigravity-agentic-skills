@@ -22,9 +22,9 @@ graph TD
     C -->|Güvenlik| F[SecurityKit]
     
     subgraph "Bağlam Motoru"
-        G[GEMINI.md<br/>(Anayasa)]
-        H[protokol_uygulama.md<br/>(İş Akışı)]
-        I[skills_manifest.json<br/>(Yetenek Haritası)]
+        G["GEMINI.md<br/>(Anayasa)"]
+        H["protokol_uygulama.md<br/>(İş Akışı)"]
+        I["skills_manifest.json<br/>(Yetenek Haritası)"]
     end
     
     D -->|Skill Yükle| J[python_pro]

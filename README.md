@@ -22,9 +22,9 @@ graph TD
     C -->|Security| F[SecurityKit]
     
     subgraph "Context Engine"
-        G[GEMINI.md<br/>(Constitution)]
-        H[protokol_uygulama.md<br/>(Workflow)]
-        I[skills_manifest.json<br/>(Skill Map)]
+        G["GEMINI.md<br/>(Constitution)"]
+        H["protokol_uygulama.md<br/>(Workflow)"]
+        I["skills_manifest.json<br/>(Skill Map)"]
     end
     
     D -->|Load Skill| J[python_pro]
