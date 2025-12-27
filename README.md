@@ -45,20 +45,20 @@ graph TD
 
 ```mermaid
 graph LR
-    root[User Home (~)]
-    gemini[.gemini]
-    skillport[.skillport]
-    agent[.agent]
+    root["User Home (~)"]
+    gemini[".gemini"]
+    skillport[".skillport"]
+    agent[".agent"]
     
-    rules[GEMINI.md]
-    brain[brain/]
-    scratch[scratch/]
+    rules["GEMINI.md"]
+    brain["brain/"]
+    scratch["scratch/"]
     
-    skills[skills/]
-    manifest[skills_manifest.json]
+    skills["skills/"]
+    manifest["skills_manifest.json"]
     
-    workflows[workflows/]
-    protocol[protokol_uygulama.md]
+    workflows["workflows/"]
+    protocol["protokol_uygulama.md"]
     
     root --> gemini
     root --> skillport
