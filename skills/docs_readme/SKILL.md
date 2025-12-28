@@ -5,12 +5,7 @@ description: README best practices ve proje dokümantasyon şablonları.
 metadata:
   skillport:
     category: operations
-    tags:
-      - documentation
-      - readme
-    related:
-      - docs-api
-      - docs-code
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, docs readme, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - docs-code
 ---
 
 # 📄 Docs README

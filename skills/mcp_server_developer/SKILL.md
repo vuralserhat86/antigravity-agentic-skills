@@ -5,8 +5,7 @@ description: Model Context Protocol (MCP) server implementation specialist for C
 metadata:
   skillport:
     category: auto-healed
-    tags: [protocol, json-rpc, tool-use, server, integration]
-
+    tags: [automation, aws, bash scripting, ci/cd, cloud computing, containerization, deployment strategies, devops, docker, gitops, infrastructure, infrastructure as code, integration, json-rpc, kubernetes, linux, logging, mcp server developer, microservices, monitoring, orchestration, pipelines, protocol, reliability, scalability, security, server, server management, terraform, tool-use]
 ---
 
 # MCP Server Developer

@@ -20,10 +20,7 @@ output-format: code
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - cli_developer
-      - cli_developer
-
+    tags: [architecture, automation, best practices, clean code, cli developer, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - cli_developer
 ---
 
 # CLI Developer

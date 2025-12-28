@@ -5,13 +5,7 @@ description: Code comments, JSDoc/TSDoc ve changelog best practices.
 metadata:
   skillport:
     category: operations
-    tags:
-      - jsdoc
-      - comments
-      - changelog
-    related:
-      - docs-readme
-      - docs-api
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, docs code, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - docs-api
 ---
 
 # 💻 Docs Code

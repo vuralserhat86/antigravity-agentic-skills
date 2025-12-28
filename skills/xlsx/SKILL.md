@@ -6,8 +6,7 @@ license: Proprietary. LICENSE.txt has complete terms
 metadata:
   skillport:
     category: auto-healed
-    tags: [excel, spreadsheet, csv, data export, reporting]
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, csv, data export, debugging, design patterns, development, documentation, efficiency, excel, git, optimization, productivity, programming, project management, quality assurance, refactoring, reporting, software engineering, spreadsheet, standards, testing, utilities, version control, workflow, xlsx]
 ---
 
 # Requirements for Outputs

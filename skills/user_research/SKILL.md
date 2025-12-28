@@ -5,11 +5,7 @@ description: Kullanıcı araştırma metodları, interview teknikleri, persona o
 metadata:
   skillport:
     category: research
-    tags:
-      - ux
-      - research
-      - user-interview
-      - persona
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, user research, utilities, version control, workflow]      - persona
 ---
 
 # 👥 User Research

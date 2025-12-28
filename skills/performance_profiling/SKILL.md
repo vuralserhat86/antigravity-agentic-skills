@@ -5,11 +5,7 @@ description: CPU/Memory profiling, bottleneck analizi, benchmark teknikleri ve p
 metadata:
   skillport:
     category: optimization
-    tags:
-      - performance
-      - profiling
-      - benchmark
-      - optimization
+    tags: [big data, cleaning, csv, data analysis, data engineering, data science, database, etl pipelines, export, import, json, machine learning basics, migration, nosql, numpy, pandas, performance profiling, python data stack, query optimization, reporting, schema design, sql, statistics, transformation, visualization]      - optimization
 ---
 
 # ⚡ Performance Profiling

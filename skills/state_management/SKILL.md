@@ -10,8 +10,7 @@ allowed-tools: [Read]
 metadata:
   skillport:
     category: auto-healed
-    tags: [redux, context api, signals, observables, store]
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, context api, debugging, design patterns, development, documentation, efficiency, git, observables, optimization, productivity, programming, project management, quality assurance, redux, refactoring, signals, software engineering, standards, state management, store, testing, utilities, version control, workflow]
 ---
 
 # State Management Patterns Skill

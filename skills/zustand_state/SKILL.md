@@ -6,8 +6,7 @@ license: MIT
 metadata:
   skillport:
     category: auto-healed
-    tags: [lightweight state, react hooks, store, state management, minimalist]
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, lightweight state, minimalist, optimization, productivity, programming, project management, quality assurance, react hooks, refactoring, software engineering, standards, state management, store, testing, utilities, version control, workflow, zustand state]
 ---
 
 # Zustand State Management

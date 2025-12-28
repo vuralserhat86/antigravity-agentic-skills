@@ -5,13 +5,7 @@ description: OpenAPI/Swagger API documentation ve endpoint belgeleme şablonlar�
 metadata:
   skillport:
     category: operations
-    tags:
-      - api
-      - openapi
-      - swagger
-    related:
-      - docs-readme
-      - docs-code
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, docs api, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - docs-code
 ---
 
 # 🌐 Docs API

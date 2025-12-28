@@ -5,8 +5,7 @@ description: Analyzes competitor SEO and GEO strategies including their ranking 
 metadata:
   skillport:
     category: auto-healed
-    tags: [market analysis, benchmarking, strategy, swot, rivals]
-
+    tags: [agents, algorithms, artificial intelligence, automation, benchmarking, chatbots, cognitive services, competitor intelligence, deep learning, embeddings, frameworks, generative ai, inference, large language models, llm, machine learning, market analysis, model fine-tuning, natural language processing, neural networks, nlp, openai, prompt engineering, rag, retrieval augmented generation, rivals, strategy, swot, tools, vector databases, workflow automation]
 ---
 
 # Competitor Analysis

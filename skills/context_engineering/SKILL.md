@@ -5,22 +5,7 @@ description: Apply optimization techniques to extend effective context capacity.
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - prompt
-      - ai
-      - llm
-      - rag
-      - agent
-      - embedding
-      - model
-      - agent orchestration
-      - expert
-      - guide
-      - context engineering
-      - expert
-      - guide
-      - context_engineering
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, context engineering, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - context_engineering
 ---
 
 # Context Optimization Techniques

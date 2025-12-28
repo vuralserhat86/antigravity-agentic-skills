@@ -7,8 +7,7 @@ version: 1.0.0
 metadata:
   skillport:
     category: auto-healed
-    tags: [charts, d3, victory, recharts, dashboard]
-
+    tags: [big data, charts, cleaning, csv, d3, dashboard, data analysis, data engineering, data science, data visualization, database, etl pipelines, export, import, json, machine learning basics, migration, nosql, numpy, pandas, python data stack, query optimization, recharts, reporting, schema design, sql, statistics, transformation, victory, visualization]
 ---
 
 ## Overview

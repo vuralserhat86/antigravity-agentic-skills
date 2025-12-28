@@ -5,11 +5,7 @@ description: Kapsamlı test stratejileri ve 2025 test araçları. Unit, integrat
 metadata:
   skillport:
     category: quality
-    tags:
-      - testing
-      - jest
-      - playwright
-      - quality-assurance
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - quality-assurance
 ---
 
 # Testing Skill - Kalite Güvence ve Test Stratejileri

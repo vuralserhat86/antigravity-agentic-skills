@@ -5,11 +5,7 @@ description: Tailwind CSS v4, design tokens, responsive patterns ve utility-firs
 metadata:
   skillport:
     category: design
-    tags:
-      - tailwind
-      - css
-      - design
-      - responsive
+    tags: [agents, algorithms, artificial intelligence, automation, chatbots, cognitive services, deep learning, embeddings, frameworks, generative ai, inference, large language models, llm, machine learning, model fine-tuning, natural language processing, neural networks, nlp, openai, prompt engineering, rag, retrieval augmented generation, tailwind mastery, tools, vector databases, workflow automation]      - responsive
 ---
 
 # 🎨 Tailwind Mastery

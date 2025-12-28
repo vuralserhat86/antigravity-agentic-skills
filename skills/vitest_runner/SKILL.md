@@ -5,8 +5,7 @@ description: Modern JavaScript/TypeScript testing with Vitest including mocking 
 metadata:
   skillport:
     category: auto-healed
-    tags: [unit testing, jest compatible, vite, assertions, mocking]
-
+    tags: [architecture, assertions, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, jest compatible, mocking, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, unit testing, utilities, version control, vite, vitest runner, workflow]
 ---
 
 # Vitest

@@ -5,8 +5,7 @@ description: Master error handling patterns across languages including exception
 metadata:
   skillport:
     category: auto-healed
-    tags: [try-catch, sentry, logging, exceptions, debugging]
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, error handling, exceptions, git, logging, optimization, productivity, programming, project management, quality assurance, refactoring, sentry, software engineering, standards, testing, try-catch, utilities, version control, workflow]
 ---
 
 # Error Handling Patterns

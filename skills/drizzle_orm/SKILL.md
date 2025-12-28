@@ -6,8 +6,7 @@ license: MIT
 metadata:
   skillport:
     category: auto-healed
-    tags: [typescript orm, sql builder, database schema, migrations, type-safety]
-
+    tags: [big data, cleaning, csv, data analysis, data engineering, data science, database, database schema, drizzle orm, etl pipelines, export, import, json, machine learning basics, migration, migrations, nosql, numpy, pandas, python data stack, query optimization, reporting, schema design, sql, sql builder, statistics, transformation, type-safety, typescript orm, visualization]
 ---
 
 # Drizzle ORM for Cloudflare D1

@@ -5,8 +5,7 @@ description: This skill should be used when user asks to "query MongoDB", "show 
 metadata:
   skillport:
     category: auto-healed
-    tags: [nosql, mongoose, aggregation, documents, sharding]
-
+    tags: [aggregation, big data, cleaning, csv, data analysis, data engineering, data science, database, documents, etl pipelines, export, import, json, machine learning basics, migration, mongodb usage, mongoose, nosql, numpy, pandas, python data stack, query optimization, reporting, schema design, sharding, sql, statistics, transformation, visualization]
 ---
 
 # MongoDB MCP Usage

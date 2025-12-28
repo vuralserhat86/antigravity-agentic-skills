@@ -5,40 +5,7 @@ description: Docker image optimization patterns including multi-stage builds, la
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - docker
-      - container
-      - aws
-      - cloud
-      - azure
-      - gcp
-      - deploy
-      - deployment
-      - release
-      - ship
-      - production
-      - ci/cd
-      - pipeline
-      - github actions
-      - jenkins
-      - kubernetes
-      - k8s
-      - terraform
-      - infra
-      - infrastructure
-      - scaling
-      - monitoring
-      - aws architect
-      - expert
-      - guide
-      - deploy cicd
-      - expert
-      - guide
-      - docker optimization
-      - expert
-      - guide
-      - docker_optimization
-
+    tags: [automation, aws, bash scripting, ci/cd, cloud computing, containerization, deployment strategies, devops, docker, docker optimization, gitops, infrastructure, infrastructure as code, kubernetes, linux, logging, microservices, monitoring, orchestration, pipelines, reliability, scalability, security, server management, terraform]      - docker_optimization
 ---
 
 # Docker Optimization Patterns

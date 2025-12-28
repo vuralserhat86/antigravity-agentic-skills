@@ -5,8 +5,7 @@ description: Implement Stripe payment processing for robust, PCI-compliant payme
 metadata:
   skillport:
     category: auto-healed
-    tags: [payments, webhooks, billing, subscriptions, checkout]
-
+    tags: [architecture, automation, best practices, billing, checkout, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, payments, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, stripe integration, subscriptions, testing, utilities, version control, webhooks, workflow]
 ---
 
 # Stripe Integration

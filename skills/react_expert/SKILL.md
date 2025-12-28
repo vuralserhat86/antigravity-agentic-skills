@@ -23,51 +23,7 @@ output-format: code
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - react
-      - vue
-      - angular
-      - nextjs
-      - css
-      - tailwind
-      - html
-      - database
-      - db
-      - api
-      - rest
-      - graphql
-      - frontend
-      - ui
-      - ux
-      - backend
-      - server
-      - sql
-      - nosql
-      - mobile
-      - android
-      - ios
-      - flutter
-      - web
-      - backend api
-      - expert
-      - guide
-      - backend core
-      - expert
-      - guide
-      - database design
-      - expert
-      - guide
-      - frontend design
-      - expert
-      - guide
-      - python pro
-      - expert
-      - guide
-      - react expert
-      - expert
-      - guide
-      - react_expert
-
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, react expert, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - react_expert
 ---
 
 # React Expert

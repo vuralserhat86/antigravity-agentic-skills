@@ -5,8 +5,7 @@ description: Execute database migrations across ORMs and platforms with zero-dow
 metadata:
   skillport:
     category: auto-healed
-    tags: [schema change, flyway, liquibase, seed data, version control]
-
+    tags: [big data, cleaning, csv, data analysis, data engineering, data science, database, database migration, etl pipelines, export, flyway, import, json, liquibase, machine learning basics, migration, nosql, numpy, pandas, python data stack, query optimization, reporting, schema change, schema design, seed data, sql, statistics, transformation, version control, visualization]
 ---
 
 # Database Migration

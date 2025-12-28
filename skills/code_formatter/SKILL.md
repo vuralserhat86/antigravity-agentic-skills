@@ -5,11 +5,7 @@ description: Otomatik kod formatlama, Prettier/ESLint entegrasyonu ve kod stil t
 metadata:
   skillport:
     category: development
-    tags:
-      - formatting
-      - prettier
-      - eslint
-      - code-style
+    tags: [big data, cleaning, code formatter, csv, data analysis, data engineering, data science, database, etl pipelines, export, import, json, machine learning basics, migration, nosql, numpy, pandas, python data stack, query optimization, reporting, schema design, sql, statistics, transformation, visualization]      - code-style
 ---
 
 # 🎨 Code Formatter

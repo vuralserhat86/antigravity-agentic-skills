@@ -5,14 +5,7 @@ description: Breakpoints, fluid typography, container queries ve modern CSS feat
 metadata:
   skillport:
     category: design
-    tags:
-      - responsive
-      - breakpoints
-      - fluid
-      - css
-    related:
-      - design-tokens
-      - design-components
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, design responsive, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - design-components
 ---
 
 # 📱 Design Responsive

@@ -5,12 +5,7 @@ description: npm/yarn dependency management, package.json best practices ve vers
 metadata:
   skillport:
     category: development
-    tags:
-      - npm
-      - dependencies
-      - package
-    related:
-      - deps-security
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, deps npm, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - deps-security
 ---
 
 # 📦 Deps NPM

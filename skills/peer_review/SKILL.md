@@ -5,11 +5,7 @@ description: Akademik/teknik doküman review, methodology değerlendirme. ⚠️
 metadata:
   skillport:
     category: research
-    tags:
-      - peer-review
-      - academic
-      - methodology
-      - quality
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, peer review, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - quality
 ---
 
 # 📝 Peer Review

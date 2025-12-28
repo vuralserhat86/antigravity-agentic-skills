@@ -4,7 +4,7 @@ router_kit: FullStackKit
 description: Instruction set for enabling and operating the Spring Cache abstraction in Spring Boot when implementing application-level caching for performance-sensitive workloads.
 allowed-tools: Read, Write, Bash
 category: backend
-tags: [spring-boot, caching, performance, cacheable, cache-managers]
+tags: [architecture, automation, best practices, cache patterns, cache-managers, cacheable, caching, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, performance, productivity, programming, project management, quality assurance, refactoring, software engineering, spring-boot, standards, testing, utilities, version control, workflow]
 version: 1.1.0
 metadata:
   skillport:
@@ -12,7 +12,6 @@ metadata:
     tags:
       - cache_patterns
       - cache_patterns
-
 ---
 
 # Spring Boot Cache Abstraction

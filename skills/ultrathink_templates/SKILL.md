@@ -5,12 +5,7 @@ description: UltraThink analiz şablonları - hipotez, alternatif, karar ve risk
 metadata:
   skillport:
     category: thinking
-    tags:
-      - templates
-      - decision-making
-      - analysis
-    related:
-      - ultrathink-core
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, ultrathink templates, utilities, version control, workflow]      - ultrathink-core
 ---
 
 # 📝 UltraThink Templates

@@ -5,11 +5,7 @@ description: Executive rapor, stakeholder presentation ve comprehensive document
 metadata:
   skillport:
     category: business
-    tags:
-      - report
-      - documentation
-      - executive
-      - presentation
+    tags: [big data, cleaning, csv, data analysis, data engineering, data science, database, etl pipelines, export, import, json, machine learning basics, migration, nosql, numpy, pandas, python data stack, query optimization, report generator, reporting, schema design, sql, statistics, transformation, visualization]      - presentation
 ---
 
 # 📄 Report Generator

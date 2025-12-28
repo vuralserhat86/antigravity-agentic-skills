@@ -17,48 +17,7 @@ output-format: code
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - react
-      - vue
-      - angular
-      - nextjs
-      - css
-      - tailwind
-      - html
-      - database
-      - db
-      - api
-      - rest
-      - graphql
-      - frontend
-      - ui
-      - ux
-      - backend
-      - server
-      - sql
-      - nosql
-      - mobile
-      - android
-      - ios
-      - flutter
-      - web
-      - backend api
-      - expert
-      - guide
-      - backend core
-      - expert
-      - guide
-      - database design
-      - expert
-      - guide
-      - frontend design
-      - expert
-      - guide
-      - python pro
-      - expert
-      - guide
-      - python_pro
-
+    tags: [big data, cleaning, csv, data analysis, data engineering, data science, database, etl pipelines, export, import, json, machine learning basics, migration, nosql, numpy, pandas, python data stack, python pro, query optimization, reporting, schema design, sql, statistics, transformation, visualization]      - python_pro
 ---
 
 # Python Pro

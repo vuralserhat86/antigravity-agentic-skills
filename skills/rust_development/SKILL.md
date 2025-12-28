@@ -5,11 +5,7 @@ description: Rust systems programming, memory safety, Axum/Tokio ve WebAssembly 
 metadata:
   skillport:
     category: development
-    tags:
-      - rust
-      - systems
-      - memory-safety
-      - wasm
+    tags: [automation, aws, bash scripting, ci/cd, cloud computing, containerization, deployment strategies, devops, docker, gitops, infrastructure, infrastructure as code, kubernetes, linux, logging, microservices, monitoring, orchestration, pipelines, reliability, rust development, scalability, security, server management, terraform]      - wasm
 ---
 
 # 🦀 Rust Development

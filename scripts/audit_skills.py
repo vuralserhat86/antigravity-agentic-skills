@@ -89,8 +89,8 @@ def audit_skill(skill_path, skill_name, manifest_data):
         if list_tags:
             tag_count = len(list_tags)
 
-    if not has_tags or tag_count < 3:
-         issues.append(f"WEAK_TAGS (Count: {tag_count})")
+    if not has_tags or tag_count < 20:
+         issues.append(f"WEAK_TAGS (Count: {tag_count}/20)")
 
     # 5. Zombie Check
     if not is_registered:

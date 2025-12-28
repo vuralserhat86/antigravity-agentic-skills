@@ -5,12 +5,7 @@ description: Sistematik debugging döngüsü - reproduce, isolate, hypothesize, 
 metadata:
   skillport:
     category: quality
-    tags:
-      - debugging
-      - troubleshooting
-      - methodology
-    related:
-      - debugging-tools
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, debugging methodology, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - debugging-tools
 ---
 
 # 🔍 Debugging Methodology

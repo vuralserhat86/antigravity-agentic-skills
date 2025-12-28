@@ -5,11 +5,7 @@ description: Implementation roadmap, timeline oluşturma, risk yönetimi ve kayn
 metadata:
   skillport:
     category: planning
-    tags:
-      - roadmap
-      - planning
-      - timeline
-      - risk
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, roadmap planner, software engineering, standards, testing, utilities, version control, workflow]      - risk
 ---
 
 # 🗺️ Roadmap Planner

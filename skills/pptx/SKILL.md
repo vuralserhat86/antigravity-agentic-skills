@@ -6,8 +6,7 @@ license: Proprietary. LICENSE.txt has complete terms
 metadata:
   skillport:
     category: auto-healed
-    tags: [powerpoint, slides, presentation, automation, office]
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, office, optimization, powerpoint, pptx, presentation, productivity, programming, project management, quality assurance, refactoring, slides, software engineering, standards, testing, utilities, version control, workflow]
 ---
 
 # PPTX creation, editing, and analysis

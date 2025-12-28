@@ -5,41 +5,7 @@ description: Comprehensive SecOps skill for application security, vulnerability 
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - security
-      - secure
-      - audit
-      - pentest
-      - encryption
-      - vuln
-      - vulnerability
-      - cve
-      - auth
-      - authentication
-      - authorization
-      - login
-      - signin
-      - signup
-      - register
-      - oauth
-      - jwt
-      - token
-      - rbac
-      - protect
-      - auth patterns
-      - expert
-      - guide
-      - better auth
-      - expert
-      - guide
-      - compliance analyst
-      - expert
-      - guide
-      - secops core
-      - expert
-      - guide
-      - secops_core
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, secops core, software engineering, standards, testing, utilities, version control, workflow]      - secops_core
 ---
 
 # Senior Secops

@@ -5,12 +5,7 @@ description: Common refactoring patterns - Extract, Rename, Move ve code smell Ã
 metadata:
   skillport:
     category: quality
-    tags:
-      - refactoring
-      - patterns
-      - clean-code
-    related:
-      - refactoring-strategies
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, refactoring patterns, software engineering, standards, testing, utilities, version control, workflow]      - refactoring-strategies
 ---
 
 # ðŸ”„ Refactoring Patterns

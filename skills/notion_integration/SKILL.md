@@ -5,11 +5,7 @@ description: Notion workspace entegrasyonu - bilgi yönetimi, toplantı hazırl�
 metadata:
   skillport:
     category: documentation
-    tags:
-      - notion
-      - documentation
-      - workflow
-      - integration
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, notion integration, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - integration
 ---
 
 # 📝 Notion Integration

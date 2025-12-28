@@ -5,8 +5,7 @@ description: Implement comprehensive evaluation strategies for LLM applications 
 metadata:
   skillport:
     category: auto-healed
-    tags: [benchmarking, accuracy, hallucination check, testing, metrics]
-
+    tags: [accuracy, agents, algorithms, artificial intelligence, automation, benchmarking, chatbots, cognitive services, deep learning, embeddings, frameworks, generative ai, hallucination check, inference, large language models, llm, llm evaluation, machine learning, metrics, model fine-tuning, natural language processing, neural networks, nlp, openai, prompt engineering, rag, retrieval augmented generation, testing, tools, vector databases, workflow automation]
 ---
 
 # LLM Evaluation

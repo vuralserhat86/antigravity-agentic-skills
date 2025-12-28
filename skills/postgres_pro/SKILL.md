@@ -19,10 +19,7 @@ output-format: code
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - postgres_pro
-      - postgres_pro
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, postgres pro, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - postgres_pro
 ---
 
 # PostgreSQL Pro

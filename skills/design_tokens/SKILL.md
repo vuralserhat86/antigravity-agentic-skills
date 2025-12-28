@@ -5,15 +5,7 @@ description: 8-point grid spacing, typography scale ve color system. Temel tasar
 metadata:
   skillport:
     category: design
-    tags:
-      - tokens
-      - spacing
-      - typography
-      - colors
-    related:
-      - design-components
-      - design-patterns
-      - design-responsive
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, design tokens, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - design-responsive
 ---
 
 # 🎨 Design Tokens

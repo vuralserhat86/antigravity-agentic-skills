@@ -5,7 +5,7 @@ description: Evaluates agent skills against Anthropic's best practices. Use when
 metadata:
   skillport:
     category: skills
-    tags: [quality check, audit, review, metrics, standards]
+    tags: [architecture, audit, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, metrics, optimization, productivity, programming, project management, quality assurance, quality check, refactoring, review, skill evaluator, software engineering, standards, testing, utilities, version control, workflow]
 ---
 
 # Skill Evaluator (WIP)

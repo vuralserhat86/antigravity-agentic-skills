@@ -16,10 +16,7 @@ output-format: code
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - playwright_testing
-      - playwright_testing
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, playwright testing, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - playwright_testing
 ---
 
 # Playwright Expert

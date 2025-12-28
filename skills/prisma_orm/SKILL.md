@@ -5,8 +5,7 @@ description: Prisma ORM patterns including Prisma Client usage, queries, mutatio
 metadata:
   skillport:
     category: auto-healed
-    tags: [schema, database, typescript, migrations, client]
-
+    tags: [big data, cleaning, client, csv, data analysis, data engineering, data science, database, etl pipelines, export, import, json, machine learning basics, migration, migrations, nosql, numpy, pandas, prisma orm, python data stack, query optimization, reporting, schema, schema design, sql, statistics, transformation, typescript, visualization]
 ---
 
 # Prisma ORM Patterns

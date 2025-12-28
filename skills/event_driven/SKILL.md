@@ -4,7 +4,7 @@ router_kit: FullStackKit
 description: Structure systems around asynchronous, event-based communication to decouple producers and consumers for improved scalability and resilience. Use when building loosely coupled systems with asynchronous message-based communication.
 version: 1.0.0
 category: architectural-pattern
-tags: [architecture, event-driven, asynchronous, decoupling, scalability, resilience]
+tags: [architecture, asynchronous, automation, best practices, clean code, coding, collaboration, compliance, debugging, decoupling, design patterns, development, documentation, efficiency, event driven, event-driven, git, optimization, productivity, programming, project management, quality assurance, refactoring, resilience, scalability, software engineering, standards, testing, utilities, version control, workflow]
 dependencies: []
 tools: [message-broker, event-stream-processor, distributed-tracing]
 usage_patterns:
@@ -19,7 +19,6 @@ metadata:
     tags:
       - event_driven
       - event_driven
-
 ---
 
 # The Event-Driven Architecture Paradigm

@@ -5,11 +5,7 @@ description: TypeScript 5+ advanced patterns, type utilities ve best practices r
 metadata:
   skillport:
     category: development
-    tags:
-      - typescript
-      - types
-      - advanced
-      - patterns
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, typescript advanced, utilities, version control, workflow]      - patterns
 ---
 
 # 📘 TypeScript Advanced

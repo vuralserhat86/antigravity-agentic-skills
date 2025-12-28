@@ -5,11 +5,7 @@ description: Koddan önce planlama, repo araştırması, risk analizi ve impleme
 metadata:
   skillport:
     category: planning
-    tags:
-      - planning
-      - analysis
-      - implementation
-      - design
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, plan work, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - design
 ---
 
 # 📋 Plan Work

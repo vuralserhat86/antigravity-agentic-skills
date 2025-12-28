@@ -20,10 +20,7 @@ output-format: architecture
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - microservices_architect
-      - microservices_architect
-
+    tags: [automation, aws, bash scripting, ci/cd, cloud computing, containerization, deployment strategies, devops, docker, gitops, infrastructure, infrastructure as code, kubernetes, linux, logging, microservices, microservices architect, monitoring, orchestration, pipelines, reliability, scalability, security, server management, terraform]      - microservices_architect
 ---
 
 # Microservices Architect

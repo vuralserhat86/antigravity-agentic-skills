@@ -5,34 +5,7 @@ description: Expert AWS solution architecture for startups focusing on serverles
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - docker
-      - container
-      - aws
-      - cloud
-      - azure
-      - gcp
-      - deploy
-      - deployment
-      - release
-      - ship
-      - production
-      - ci/cd
-      - pipeline
-      - github actions
-      - jenkins
-      - kubernetes
-      - k8s
-      - terraform
-      - infra
-      - infrastructure
-      - scaling
-      - monitoring
-      - aws architect
-      - expert
-      - guide
-      - aws_architect
-
+    tags: [automation, aws, aws architect, bash scripting, ci/cd, cloud computing, containerization, deployment strategies, devops, docker, gitops, infrastructure, infrastructure as code, kubernetes, linux, logging, microservices, monitoring, orchestration, pipelines, reliability, scalability, security, server management, terraform]      - aws_architect
 ---
 
 # AWS Solution Architect for Startups

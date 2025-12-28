@@ -5,11 +5,7 @@ description: Rakip analizi, SEO/strateji karşılaştırma ve pazar pozisyonlama
 metadata:
   skillport:
     category: research
-    tags:
-      - competitor
-      - analysis
-      - seo
-      - strategy
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, competitor analysis, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - strategy
 ---
 
 # 🔍 Competitor Analysis

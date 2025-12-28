@@ -5,11 +5,7 @@ description: AGENTS.md dosyaları oluşturma, monorepo yapılandırma ve agent i
 metadata:
   skillport:
     category: development
-    tags:
-      - agents
-      - documentation
-      - monorepo
-      - conventions
+    tags: [agents, agents md, algorithms, artificial intelligence, automation, chatbots, cognitive services, deep learning, embeddings, frameworks, generative ai, inference, large language models, llm, machine learning, model fine-tuning, natural language processing, neural networks, nlp, openai, prompt engineering, rag, retrieval augmented generation, tools, vector databases, workflow automation]      - conventions
 ---
 
 # 🤖 AGENTS.md

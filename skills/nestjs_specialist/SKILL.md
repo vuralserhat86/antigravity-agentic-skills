@@ -6,8 +6,7 @@ license: Complete terms in LICENSE.txt
 metadata:
   skillport:
     category: auto-healed
-    tags: [typescript, backend framework, modules, dependency injection, decorators]
-
+    tags: [architecture, automation, backend framework, best practices, clean code, coding, collaboration, compliance, debugging, decorators, dependency injection, design patterns, development, documentation, efficiency, git, modules, nestjs specialist, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, typescript, utilities, version control, workflow]
 ---
 
 # NestJS Framework with Drizzle ORM

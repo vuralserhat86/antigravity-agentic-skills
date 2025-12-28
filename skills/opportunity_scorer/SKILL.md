@@ -5,11 +5,7 @@ description: Fırsat puanlama, scoring rubric ve go/no-go karar verme rehberi.
 metadata:
   skillport:
     category: business
-    tags:
-      - scoring
-      - opportunity
-      - decision
-      - prioritization
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, opportunity scorer, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - prioritization
 ---
 
 # 📊 Opportunity Scorer

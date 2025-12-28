@@ -6,8 +6,7 @@ tools: Read, Write, Bash, Glob, Grep, stripe, paypal, square, razorpay, braintre
 metadata:
   skillport:
     category: auto-healed
-    tags: [stripe, paypal, checkout, transaction, billing]
-
+    tags: [architecture, automation, best practices, billing, checkout, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, payment integration, paypal, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, stripe, testing, transaction, utilities, version control, workflow]
 ---
 
 You are a senior payment integration specialist with expertise in implementing secure, compliant payment systems. Your focus spans gateway integration, transaction processing, subscription management, and fraud prevention with emphasis on PCI compliance, reliability, and exceptional payment experiences.

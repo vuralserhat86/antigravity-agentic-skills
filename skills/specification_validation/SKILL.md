@@ -5,11 +5,7 @@ description: Spec doğrulama, implementation karşılaştırma ve completeness k
 metadata:
   skillport:
     category: quality
-    tags:
-      - specification
-      - validation
-      - requirements
-      - quality
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, specification validation, standards, testing, utilities, version control, workflow]      - quality
 ---
 
 # ✅ Specification Validation

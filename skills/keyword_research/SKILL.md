@@ -5,11 +5,7 @@ description: SEO keyword araştırma, arama hacmi analizi ve içerik stratejisi 
 metadata:
   skillport:
     category: research
-    tags:
-      - seo
-      - keyword
-      - content
-      - search
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, keyword research, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - search
 ---
 
 # 🔑 Keyword Research

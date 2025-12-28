@@ -5,8 +5,7 @@ description: Analyzes target audience demographics, psychographics, behaviors, a
 metadata:
   skillport:
     category: auto-healed
-    tags: [analytics, user segments, demographics, behavior, market research]
-
+    tags: [agents, algorithms, analytics, artificial intelligence, audience intelligence, automation, behavior, chatbots, cognitive services, deep learning, demographics, embeddings, frameworks, generative ai, inference, large language models, llm, machine learning, market research, model fine-tuning, natural language processing, neural networks, nlp, openai, prompt engineering, rag, retrieval augmented generation, tools, user segments, vector databases, workflow automation]
 ---
 
 # Audience Analyzer

@@ -5,11 +5,7 @@ description: React, Tailwind, shadcn/ui ile karmaşık web artifacts oluşturma 
 metadata:
   skillport:
     category: development
-    tags:
-      - react
-      - tailwind
-      - shadcn
-      - artifacts
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web artifacts builder, web development]      - artifacts
 ---
 
 # 🎨 Web Artifacts Builder

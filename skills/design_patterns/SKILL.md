@@ -5,14 +5,7 @@ description: Visual hierarchy, z-index, shadows, animations ve white space kural
 metadata:
   skillport:
     category: design
-    tags:
-      - patterns
-      - hierarchy
-      - animations
-      - shadows
-    related:
-      - design-tokens
-      - design-components
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, design patterns, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - design-components
 ---
 
 # 🎭 Design Patterns

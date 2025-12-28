@@ -5,11 +5,7 @@ description: Schema tasarımı, migration stratejileri, indexing, query optimiza
 metadata:
   skillport:
     category: development
-    tags:
-      - database
-      - sql
-      - schema
-      - optimization
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, database design, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - optimization
 ---
 
 # 🗄️ Database Design

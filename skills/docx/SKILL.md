@@ -6,8 +6,7 @@ license: Proprietary. LICENSE.txt has complete terms
 metadata:
   skillport:
     category: auto-healed
-    tags: [word, office, document automation, report generation, xml]
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, document automation, documentation, docx, efficiency, git, office, optimization, productivity, programming, project management, quality assurance, refactoring, report generation, software engineering, standards, testing, utilities, version control, word, workflow, xml]
 ---
 
 # DOCX creation, editing, and analysis

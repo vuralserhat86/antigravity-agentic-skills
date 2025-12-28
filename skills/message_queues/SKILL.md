@@ -5,8 +5,7 @@ description: Async communication patterns using message brokers and task queues.
 metadata:
   skillport:
     category: auto-healed
-    tags: [rabbitmq, kafka, sqs, async, event bus]
-
+    tags: [async, automation, aws, bash scripting, ci/cd, cloud computing, containerization, deployment strategies, devops, docker, event bus, gitops, infrastructure, infrastructure as code, kafka, kubernetes, linux, logging, message queues, microservices, monitoring, orchestration, pipelines, rabbitmq, reliability, scalability, security, server management, sqs, terraform]
 ---
 
 # Message Queues

@@ -5,14 +5,7 @@ description: Button, card, input ve icon sizing kuralları. Component boyutland�
 metadata:
   skillport:
     category: design
-    tags:
-      - components
-      - sizing
-      - buttons
-      - cards
-    related:
-      - design-tokens
-      - design-patterns
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, design components, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - design-patterns
 ---
 
 # 🧩 Design Components

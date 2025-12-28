@@ -5,7 +5,7 @@ description: Migrate prompts and code from Claude Sonnet 4.0, Sonnet 4.5, or Opu
 metadata:
   skillport:
     category: context-engineering
-    tags: [legacy upgrade, refactoring, compatibility, versioning, migration]
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compatibility, compliance, debugging, design patterns, development, documentation, efficiency, git, legacy upgrade, migration, optimization, opus 4 5 migration, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, versioning, workflow]
 ---
 
 # Opus 4.5 Migration Guide

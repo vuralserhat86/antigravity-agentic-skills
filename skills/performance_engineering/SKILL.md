@@ -5,8 +5,7 @@ description: When validating system performance under load, identifying bottlene
 metadata:
   skillport:
     category: auto-healed
-    tags: [optimization, latency, throughput, profiling, scalability]
-
+    tags: [big data, cleaning, csv, data analysis, data engineering, data science, database, etl pipelines, export, import, json, latency, machine learning basics, migration, nosql, numpy, optimization, pandas, performance engineering, profiling, python data stack, query optimization, reporting, scalability, schema design, sql, statistics, throughput, transformation, visualization]
 ---
 
 # Performance Engineering

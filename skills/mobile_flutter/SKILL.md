@@ -5,12 +5,7 @@ description: Flutter/Dart best practices, Riverpod state management ve performan
 metadata:
   skillport:
     category: development
-    tags:
-      - flutter
-      - dart
-      - mobile
-    related:
-      - mobile-react-native
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, mobile flutter, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - mobile-react-native
 ---
 
 # 🐦 Mobile Flutter

@@ -5,11 +5,7 @@ description: Branch stratejisi, commit conventions, merge conflict çözümü ve
 metadata:
   skillport:
     category: development
-    tags:
-      - git
-      - version-control
-      - branching
-      - workflow
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, git workflow, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - workflow
 ---
 
 # 🌿 Git Workflow

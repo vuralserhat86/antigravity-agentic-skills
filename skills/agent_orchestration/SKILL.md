@@ -5,19 +5,7 @@ description: Transform clarified user requests into structured delegation prompt
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - prompt
-      - ai
-      - llm
-      - rag
-      - agent
-      - embedding
-      - model
-      - agent orchestration
-      - expert
-      - guide
-      - agent_orchestration
-
+    tags: [agent orchestration, agents, algorithms, artificial intelligence, automation, chatbots, cognitive services, deep learning, embeddings, frameworks, generative ai, inference, large language models, llm, machine learning, model fine-tuning, natural language processing, neural networks, nlp, openai, prompt engineering, rag, retrieval augmented generation, tools, vector databases, workflow automation]      - agent_orchestration
 ---
 
 # Delegation Prompt Crafter

@@ -7,43 +7,7 @@ version: 1.0.0
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - docker
-      - container
-      - aws
-      - cloud
-      - azure
-      - gcp
-      - deploy
-      - deployment
-      - release
-      - ship
-      - production
-      - ci/cd
-      - pipeline
-      - github actions
-      - jenkins
-      - kubernetes
-      - k8s
-      - terraform
-      - infra
-      - infrastructure
-      - scaling
-      - monitoring
-      - aws architect
-      - expert
-      - guide
-      - deploy cicd
-      - expert
-      - guide
-      - docker optimization
-      - expert
-      - guide
-      - incident response
-      - expert
-      - guide
-      - incident_response
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, incident response, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - incident_response
 ---
 
 ## Overview

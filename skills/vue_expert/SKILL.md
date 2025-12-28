@@ -18,10 +18,7 @@ output-format: code
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - vue_expert
-      - vue_expert
-
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, vue expert, web development]      - vue_expert
 ---
 
 # Vue Expert

@@ -5,8 +5,7 @@ description: Improves the quality of images, especially screenshots, by enhancin
 metadata:
   skillport:
     category: auto-healed
-    tags: [processing, opencv, filters, upscaling, optimization]
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, filters, git, image enhancer, opencv, optimization, processing, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, upscaling, utilities, version control, workflow]
 ---
 
 # Image Enhancer

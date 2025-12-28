@@ -5,8 +5,7 @@ description: Generate personalized cold email sequences (7-14 emails) with A/B t
 metadata:
   skillport:
     category: auto-healed
-    tags: [outreach, sales, copywriting, email marketing, lead gen]
-
+    tags: [agents, algorithms, artificial intelligence, automation, chatbots, cognitive services, cold email, copywriting, deep learning, email marketing, embeddings, frameworks, generative ai, inference, large language models, lead gen, llm, machine learning, model fine-tuning, natural language processing, neural networks, nlp, openai, outreach, prompt engineering, rag, retrieval augmented generation, sales, tools, vector databases, workflow automation]
 ---
 
 # Cold Email Sequence Generator

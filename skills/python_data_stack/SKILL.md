@@ -5,8 +5,7 @@ description: "Statistical modeling toolkit. OLS, GLM, logistic, ARIMA, time seri
 metadata:
   skillport:
     category: auto-healed
-    tags: [pandas, numpy, scipy, jupyter, analysis]
-
+    tags: [analysis, big data, cleaning, csv, data analysis, data engineering, data science, database, etl pipelines, export, import, json, jupyter, machine learning basics, migration, nosql, numpy, pandas, python data stack, query optimization, reporting, schema design, scipy, sql, statistics, transformation, visualization]
 ---
 
 # Statsmodels: Statistical Modeling and Econometrics

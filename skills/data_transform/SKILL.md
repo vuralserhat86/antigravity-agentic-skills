@@ -5,8 +5,7 @@ description: Transform raw data into analytical assets using ETL/ELT patterns, S
 metadata:
   skillport:
     category: auto-healed
-    tags: [etl, pipeline, pandas, json manipulation, normalization]
-
+    tags: [big data, cleaning, csv, data analysis, data engineering, data science, data transform, database, etl, etl pipelines, export, import, json, json manipulation, machine learning basics, migration, normalization, nosql, numpy, pandas, pipeline, python data stack, query optimization, reporting, schema design, sql, statistics, transformation, visualization]
 ---
 
 # Data Transformation

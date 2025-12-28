@@ -18,10 +18,7 @@ output-format: schema
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - graphql_architect
-      - graphql_architect
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, graphql architect, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - graphql_architect
 ---
 
 # GraphQL Architect

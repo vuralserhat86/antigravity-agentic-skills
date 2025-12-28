@@ -5,8 +5,7 @@ description: Hugging Face Transformers best practices including model loading, t
 metadata:
   skillport:
     category: auto-healed
-    tags: [nlp, bert, gpt, models, inference]
-
+    tags: [bert, big data, cleaning, csv, data analysis, data engineering, data science, database, etl pipelines, export, gpt, huggingface transformers, import, inference, json, machine learning basics, migration, models, nlp, nosql, numpy, pandas, python data stack, query optimization, reporting, schema design, sql, statistics, transformation, visualization]
 ---
 
 # Hugging Face Transformers Best Practices

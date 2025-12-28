@@ -5,13 +5,7 @@ description: Node.js/TypeScript temel prensipler, proje yapısı ve TypeScript s
 metadata:
   skillport:
     category: development
-    tags:
-      - nodejs
-      - typescript
-      - structure
-    related:
-      - backend-api
-      - backend-database
+    tags: [accessibility, api integration, backend, backend core, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - backend-database
 ---
 
 # 🔧 Backend Core

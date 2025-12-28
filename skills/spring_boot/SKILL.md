@@ -18,10 +18,7 @@ output-format: code
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - spring_boot
-      - spring_boot
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, spring boot, standards, testing, utilities, version control, workflow]      - spring_boot
 ---
 
 # Spring Boot Engineer

@@ -5,11 +5,7 @@ description: Firebase Firestore NoSQL patterns, real-time sync ve security rules
 metadata:
   skillport:
     category: database
-    tags:
-      - firebase
-      - firestore
-      - nosql
-      - realtime
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, firestore patterns, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - realtime
 ---
 
 # 🔥 Firestore Patterns

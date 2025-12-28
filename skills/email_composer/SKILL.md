@@ -5,11 +5,7 @@ description: Profesyonel e-posta yazma, business communication ve template oluş
 metadata:
   skillport:
     category: business
-    tags:
-      - email
-      - communication
-      - business
-      - writing
+    tags: [agents, algorithms, artificial intelligence, automation, chatbots, cognitive services, deep learning, email composer, embeddings, frameworks, generative ai, inference, large language models, llm, machine learning, model fine-tuning, natural language processing, neural networks, nlp, openai, prompt engineering, rag, retrieval augmented generation, tools, vector databases, workflow automation]      - writing
 ---
 
 # 📧 Email Composer

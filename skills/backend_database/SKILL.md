@@ -5,14 +5,7 @@ description: Repository pattern, transactions, caching ve query optimization.
 metadata:
   skillport:
     category: development
-    tags:
-      - database
-      - prisma
-      - redis
-      - caching
-    related:
-      - backend-core
-      - backend-api
+    tags: [accessibility, api integration, backend, backend database, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - backend-api
 ---
 
 # 🗄️ Backend Database

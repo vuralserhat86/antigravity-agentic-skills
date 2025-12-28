@@ -5,8 +5,7 @@ description: Builds form components and data collection interfaces including con
 metadata:
   skillport:
     category: auto-healed
-    tags: [react-hook-form, zod, validation, inputs, forms]
-
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, form builder, forms, frameworks, frontend, fullstack, html5, inputs, javascript, libraries, node.js, npm, performance optimization, react-hook-form, responsive design, seo, state management, testing, typescript, ui/ux, validation, web development, zod]
 ---
 
 # Form Systems & Input Patterns

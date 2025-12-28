@@ -5,8 +5,7 @@ description: Performs technical SEO audits covering site speed, crawlability, in
 metadata:
   skillport:
     category: auto-healed
-    tags: [crawling, indexing, sitemap, meta tags, schema.org]
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, crawling, debugging, design patterns, development, documentation, efficiency, git, indexing, meta tags, optimization, productivity, programming, project management, quality assurance, refactoring, schema.org, seo technical, sitemap, software engineering, standards, testing, utilities, version control, workflow]
 ---
 
 # Technical SEO Checker

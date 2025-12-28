@@ -5,28 +5,7 @@ description: Engineer effective LLM prompts using zero-shot, few-shot, chain-of-
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - prompt
-      - ai
-      - llm
-      - rag
-      - agent
-      - embedding
-      - model
-      - agent orchestration
-      - expert
-      - guide
-      - context engineering
-      - expert
-      - guide
-      - langchain patterns
-      - expert
-      - guide
-      - prompt engineering
-      - expert
-      - guide
-      - prompt_engineering
-
+    tags: [agents, algorithms, artificial intelligence, automation, chatbots, cognitive services, deep learning, embeddings, frameworks, generative ai, inference, large language models, llm, machine learning, model fine-tuning, natural language processing, neural networks, nlp, openai, prompt engineering, rag, retrieval augmented generation, tools, vector databases, workflow automation]      - prompt_engineering
 ---
 
 # Prompt Engineering

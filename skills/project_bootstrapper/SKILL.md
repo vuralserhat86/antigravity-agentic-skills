@@ -5,8 +5,7 @@ description: Sets up new projects or improves existing projects with development
 metadata:
   skillport:
     category: auto-healed
-    tags: [scaffold, setup, init, boilerplate, generator]
-
+    tags: [architecture, automation, best practices, boilerplate, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, generator, git, init, optimization, productivity, programming, project bootstrapper, project management, quality assurance, refactoring, scaffold, setup, software engineering, standards, testing, utilities, version control, workflow]
 ---
 
 # Project Bootstrapper

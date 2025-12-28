@@ -5,8 +5,7 @@ description: Build responsive, mobile-first layouts using fluid containers, flex
 metadata:
   skillport:
     category: auto-healed
-    tags: [mobile-first, breakpoints, media queries, css grid, flexbox]
-
+    tags: [accessibility, api integration, backend, breakpoints, browser apis, client-side, components, css grid, css3, debugging, deployment, flexbox, frameworks, frontend, fullstack, html5, javascript, libraries, media queries, mobile-first, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]
 ---
 
 # Frontend Responsive Design Standards

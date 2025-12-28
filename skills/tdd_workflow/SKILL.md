@@ -5,20 +5,7 @@ description: Comprehensive Test Driven Development guide. Master testing, debugg
 metadata:
   skillport:
     category: quality
-    tags:
-      - test
-      - testing
-      - tdd
-      - qa
-      - quality
-      - bug
-      - fix
-      - debug
-      - unit-test
-      - integration-test
-      - mock
-      - jest
-      - pytest
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, tdd workflow, testing, utilities, version control, workflow]      - pytest
 ---
 
 # TDD Guide - Test Driven Development for Engineering Teams

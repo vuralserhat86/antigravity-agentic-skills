@@ -4,21 +4,7 @@ router_kit: FullStackKit
 description: SPARC (Specification, Pseudocode, Architecture, Refinement, Completion) comprehensive development methodology with multi-agent orchestration
 version: 2.7.0
 category: development
-tags:
-  - sparc
-  - tdd
-  - architecture
-  - orchestration
-  - methodology
-  - multi-agent
-author: Claude Flow
-metadata:
-  skillport:
-    category: auto-healed
-    tags:
-      - sparc_methodology
-      - sparc_methodology
-
+tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, sparc methodology, standards, testing, utilities, version control, workflow]      - sparc_methodology
 ---
 
 # SPARC Methodology - Comprehensive Development Framework

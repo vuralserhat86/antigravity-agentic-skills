@@ -5,11 +5,7 @@ description: Bilimsel metod, hipotez, kanıt değerlendirme, bias analizi. ⚠�
 metadata:
   skillport:
     category: research
-    tags:
-      - scientific
-      - methodology
-      - critical-thinking
-      - analysis
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, scientific thinking, software engineering, standards, testing, utilities, version control, workflow]      - analysis
 ---
 
 # 🔬 Scientific Thinking

@@ -5,11 +5,7 @@ description: Clerk modern authentication, WebAuthn, passkeys ve social auth ente
 metadata:
   skillport:
     category: authentication
-    tags:
-      - clerk
-      - auth
-      - passkeys
-      - webauthn
+    tags: [accessibility, api integration, backend, browser apis, clerk auth, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - webauthn
 ---
 
 # 🔐 Clerk Auth

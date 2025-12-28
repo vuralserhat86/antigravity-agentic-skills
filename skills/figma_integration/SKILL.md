@@ -5,11 +5,7 @@ description: Figma design-to-code, design system extraction ve component generat
 metadata:
   skillport:
     category: design
-    tags:
-      - figma
-      - design
-      - code-generation
-      - design-system
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, figma integration, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - design-system
 ---
 
 # 🎨 Figma Integration

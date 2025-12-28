@@ -5,12 +5,7 @@ description: React Native best practices, hooks, navigation ve performance optim
 metadata:
   skillport:
     category: development
-    tags:
-      - react-native
-      - mobile
-      - typescript
-    related:
-      - mobile-flutter
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, mobile react native, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - mobile-flutter
 ---
 
 # 📱 Mobile React Native

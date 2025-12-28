@@ -4,7 +4,7 @@ router_kit: ManagementKit
 description: Generate comprehensive REST API documentation using SpringDoc OpenAPI 3.0 and Swagger UI in Spring Boot 3.x applications. Use when setting up API documentation, configuring Swagger UI, adding OpenAPI annotations, implementing security documentation, or enhancing REST endpoints with examples and schemas.
 allowed-tools: Read, Write, Bash, Grep
 category: backend
-tags: [spring-boot, openapi, swagger, api-documentation, springdoc]
+tags: [accessibility, api integration, api-documentation, backend, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, openapi, openapi docs, performance optimization, responsive design, seo, spring-boot, springdoc, state management, swagger, testing, typescript, ui/ux, web development]
 version: 1.1.0
 metadata:
   skillport:
@@ -12,7 +12,6 @@ metadata:
     tags:
       - openapi_docs
       - openapi_docs
-
 ---
 
 # Spring Boot OpenAPI Documentation with SpringDoc

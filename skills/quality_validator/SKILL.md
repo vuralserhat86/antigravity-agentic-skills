@@ -5,11 +5,7 @@ description: Ship öncesi son kontrol, deliverable validation, compliance. ⚠�
 metadata:
   skillport:
     category: quality
-    tags:
-      - quality
-      - validation
-      - compliance
-      - standards
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, quality validator, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - standards
 ---
 
 # ✅ Quality Validator

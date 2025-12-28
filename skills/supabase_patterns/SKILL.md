@@ -5,8 +5,7 @@ description: Guides implementation of Next.js 15 App Router features with Supaba
 metadata:
   skillport:
     category: auto-healed
-    tags: [backend-as-a-service, auth, realtime, postgres, edge functions]
-
+    tags: [architecture, auth, automation, backend-as-a-service, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, edge functions, efficiency, git, optimization, postgres, productivity, programming, project management, quality assurance, realtime, refactoring, software engineering, standards, supabase patterns, testing, utilities, version control, workflow]
 ---
 
 # Implementing Next.js with Supabase

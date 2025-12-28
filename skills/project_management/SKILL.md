@@ -10,21 +10,7 @@ allowed-tools: [Read, Write, Edit, Grep, Glob]
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - plan
-      - agile
-      - scrum
-      - jira
-      - docs
-      - readme
-      - docs readme
-      - expert
-      - guide
-      - project management
-      - expert
-      - guide
-      - project_management
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - project_management
 ---
 
 # Project Management Skill

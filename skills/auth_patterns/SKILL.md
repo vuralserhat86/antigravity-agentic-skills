@@ -5,32 +5,7 @@ description: Master authentication and authorization patterns including JWT, OAu
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - security
-      - secure
-      - audit
-      - pentest
-      - encryption
-      - vuln
-      - vulnerability
-      - cve
-      - auth
-      - authentication
-      - authorization
-      - login
-      - signin
-      - signup
-      - register
-      - oauth
-      - jwt
-      - token
-      - rbac
-      - protect
-      - auth patterns
-      - expert
-      - guide
-      - auth_patterns
-
+    tags: [accessibility, api integration, auth patterns, backend, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - auth_patterns
 ---
 
 # Authentication & Authorization Implementation Patterns

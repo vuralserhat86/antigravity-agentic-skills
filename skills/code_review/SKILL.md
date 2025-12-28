@@ -5,11 +5,7 @@ description: PR review, code smell detection, best practice kontrolü. ⚠️ Ko
 metadata:
   skillport:
     category: quality
-    tags:
-      - review
-      - quality
-      - pr
-      - code-smell
+    tags: [architecture, automation, best practices, clean code, code review, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - code-smell
 ---
 
 # 🔍 Code Review

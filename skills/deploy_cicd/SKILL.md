@@ -5,18 +5,7 @@ description: CI/CD pipeline, GitHub Actions, automated deployment, release manag
 metadata:
   skillport:
     category: operations
-    tags:
-      - cicd
-      - github-actions
-      - automation
-      - release
-      - production
-      - ship
-      - deployment
-      - pipeline
-      - devops
-    related:
-      - deploy-monitoring
+    tags: [automation, aws, bash scripting, ci/cd, cloud computing, containerization, deploy cicd, deployment strategies, devops, docker, gitops, infrastructure, infrastructure as code, kubernetes, linux, logging, microservices, monitoring, orchestration, pipelines, reliability, scalability, security, server management, terraform]      - deploy-monitoring
 ---
 
 # 🚀 Deploy CI/CD

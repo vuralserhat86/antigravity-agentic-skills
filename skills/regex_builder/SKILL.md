@@ -5,11 +5,7 @@ description: Regular expression oluşturma, test etme, debug ve açıklama rehbe
 metadata:
   skillport:
     category: development
-    tags:
-      - regex
-      - pattern
-      - validation
-      - text-processing
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, regex builder, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - text-processing
 ---
 
 # 🔤 Regex Builder

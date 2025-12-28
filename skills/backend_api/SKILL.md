@@ -5,14 +5,7 @@ description: REST uygulama, validation, security headers, auth patterns. ⚠️ 
 metadata:
   skillport:
     category: development
-    tags:
-      - api
-      - rest
-      - security
-      - validation
-    related:
-      - backend-core
-      - backend-database
+    tags: [accessibility, api integration, backend, backend api, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - backend-database
 ---
 
 # 🌐 Backend API

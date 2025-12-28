@@ -5,11 +5,7 @@ description: Sertifikasyon, uyumluluk gereksinimleri ve regulatory pathway araş
 metadata:
   skillport:
     category: research
-    tags:
-      - compliance
-      - certification
-      - regulatory
-      - standards
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, compliance analyst, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - standards
 ---
 
 # 📋 Compliance Analyst

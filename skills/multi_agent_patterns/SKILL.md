@@ -5,11 +5,7 @@ description: Çoklu agent mimarisi tasarımı, orchestration patterns ve agent c
 metadata:
   skillport:
     category: architecture
-    tags:
-      - multi-agent
-      - orchestration
-      - ai
-      - patterns
+    tags: [agents, algorithms, artificial intelligence, automation, chatbots, cognitive services, deep learning, embeddings, frameworks, generative ai, inference, large language models, llm, machine learning, model fine-tuning, multi agent patterns, natural language processing, neural networks, nlp, openai, prompt engineering, rag, retrieval augmented generation, tools, vector databases, workflow automation]      - patterns
 ---
 
 # 🤖 Multi-Agent Patterns

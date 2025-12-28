@@ -6,8 +6,7 @@ license: Complete terms in LICENSE.txt
 metadata:
   skillport:
     category: auto-healed
-    tags: [html5 canvas, webgl, fabricjs, drawing, graphics]
-
+    tags: [accessibility, api integration, backend, browser apis, canvas design, client-side, components, css3, debugging, deployment, drawing, fabricjs, frameworks, frontend, fullstack, graphics, html5, html5 canvas, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development, webgl]
 ---
 
 These are instructions for creating design philosophies - aesthetic movements that are then EXPRESSED VISUALLY. Output only .md files, .pdf files, and .png files.

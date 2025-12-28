@@ -5,12 +5,7 @@ description: Derin analiz protokolü - meta-planlama, hipotez üretimi ve kritik
 metadata:
   skillport:
     category: thinking
-    tags:
-      - analysis
-      - critical-thinking
-      - problem-solving
-    related:
-      - ultrathink-templates
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, ultrathink core, utilities, version control, workflow]      - ultrathink-templates
 ---
 
 # 🧠 UltraThink Core

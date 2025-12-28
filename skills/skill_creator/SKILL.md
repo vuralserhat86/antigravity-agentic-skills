@@ -6,7 +6,7 @@ license: Complete terms in LICENSE.txt
 metadata:
   skillport:
     category: skills
-    tags: [meta-skill, instruction writing, prompt engineering, agent training, definition]
+    tags: [agent training, architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, definition, design patterns, development, documentation, efficiency, git, instruction writing, meta-skill, optimization, productivity, programming, project management, prompt engineering, quality assurance, refactoring, skill creator, software engineering, standards, testing, utilities, version control, workflow]
 ---
 
 # Skill Creator

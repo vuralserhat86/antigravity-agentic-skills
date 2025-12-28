@@ -5,12 +5,7 @@ description: Architecture patterns - monolith vs microservices, layered, event-d
 metadata:
   skillport:
     category: thinking
-    tags:
-      - architecture
-      - patterns
-      - microservices
-    related:
-      - arch-decisions
+    tags: [arch patterns, architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - arch-decisions
 ---
 
 # 🏗️ Architecture Patterns

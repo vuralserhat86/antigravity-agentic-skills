@@ -5,11 +5,7 @@ description: API tasarımı, GraphQL schema, OpenAPI spec, versioning. ⚠️ Ta
 metadata:
   skillport:
     category: development
-    tags:
-      - api
-      - rest
-      - graphql
-      - openapi
+    tags: [accessibility, api design, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - openapi
 ---
 
 # 🔌 API Design

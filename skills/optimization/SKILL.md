@@ -5,12 +5,7 @@ description: Sistem ve akış optimizasyonu rehberi. 2025 AI-driven optimizasyon
 metadata:
   skillport:
     category: operations
-    tags:
-      - optimization
-      - performance
-      - user-experience
-      - telemetry
-      - observability
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - observability
 ---
 
 # Optimization Skill - Sistem & Akış Optimizasyonu

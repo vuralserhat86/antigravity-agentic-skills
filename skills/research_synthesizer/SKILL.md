@@ -5,11 +5,7 @@ description: Araştırma bulgularını özetleme, insight çıkarma ve actionabl
 metadata:
   skillport:
     category: research
-    tags:
-      - synthesis
-      - research
-      - insights
-      - summary
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, research synthesizer, software engineering, standards, testing, utilities, version control, workflow]      - summary
 ---
 
 # 📝 Research Synthesizer

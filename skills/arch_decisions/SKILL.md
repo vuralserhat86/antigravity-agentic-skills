@@ -5,12 +5,7 @@ description: ADR template, database selection, capacity planning ve scalability.
 metadata:
   skillport:
     category: thinking
-    tags:
-      - adr
-      - database
-      - scalability
-    related:
-      - arch-patterns
+    tags: [arch decisions, architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - arch-patterns
 ---
 
 # 📋 Architecture Decisions

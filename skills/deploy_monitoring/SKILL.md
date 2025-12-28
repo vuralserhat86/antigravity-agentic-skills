@@ -5,12 +5,7 @@ description: Health checks, metrics, alerting ve rollback stratejileri.
 metadata:
   skillport:
     category: operations
-    tags:
-      - monitoring
-      - alerting
-      - rollback
-    related:
-      - deploy-cicd
+    tags: [automation, aws, bash scripting, ci/cd, cloud computing, containerization, deploy monitoring, deployment strategies, devops, docker, gitops, infrastructure, infrastructure as code, kubernetes, linux, logging, microservices, monitoring, orchestration, pipelines, reliability, scalability, security, server management, terraform]      - deploy-cicd
 ---
 
 # 📊 Deploy Monitoring

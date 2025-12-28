@@ -7,22 +7,7 @@ version: 2.1.0
 metadata:
   skillport:
     category: cybersecurity
-    tags:
-      - auth
-      - authentication
-      - authorization
-      - login
-      - signin
-      - signup
-      - register
-      - oauth
-      - security
-      - user-management
-      - session
-      - 2fa
-      - mfa
-      - rbac
-      - access-control
+    tags: [accessibility, api integration, backend, better auth, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - access-control
 ---
 
 # Better Auth Skill

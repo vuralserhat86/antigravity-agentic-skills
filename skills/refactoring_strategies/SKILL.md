@@ -5,12 +5,7 @@ description: Safe refactoring süreci - test-first, incremental changes ve güve
 metadata:
   skillport:
     category: quality
-    tags:
-      - refactoring
-      - testing
-      - strategy
-    related:
-      - refactoring-patterns
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, refactoring strategies, software engineering, standards, testing, utilities, version control, workflow]      - refactoring-patterns
 ---
 
 # 🛡️ Refactoring Strategies

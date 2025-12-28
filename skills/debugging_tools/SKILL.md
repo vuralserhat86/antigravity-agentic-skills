@@ -5,12 +5,7 @@ description: Debugging araçları - console, debugger, network, profiling.
 metadata:
   skillport:
     category: quality
-    tags:
-      - debugging
-      - devtools
-      - profiling
-    related:
-      - debugging-methodology
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, debugging tools, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - debugging-methodology
 ---
 
 # 🛠️ Debugging Tools

@@ -5,11 +5,7 @@ description: MCP (Model Context Protocol) server oluşturma, FastMCP/TypeScript 
 metadata:
   skillport:
     category: development
-    tags:
-      - mcp
-      - api
-      - integration
-      - server
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, mcp builder, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - server
 ---
 
 # 🔌 MCP Builder

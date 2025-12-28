@@ -6,8 +6,7 @@ license: Proprietary. LICENSE.txt has complete terms
 metadata:
   skillport:
     category: auto-healed
-    tags: [generation, parsing, layout, report, document]
-
+    tags: [big data, cleaning, csv, data analysis, data engineering, data science, database, document, etl pipelines, export, generation, import, json, layout, machine learning basics, migration, nosql, numpy, pandas, parsing, pdf, python data stack, query optimization, report, reporting, schema design, sql, statistics, transformation, visualization]
 ---
 
 # PDF Processing Guide

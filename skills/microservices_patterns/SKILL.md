@@ -5,8 +5,7 @@ description: Design microservices architectures with service boundaries, event-d
 metadata:
   skillport:
     category: auto-healed
-    tags: [saga, circuit breaker, api gateway, distributed systems, service mesh]
-
+    tags: [api gateway, automation, aws, bash scripting, ci/cd, circuit breaker, cloud computing, containerization, deployment strategies, devops, distributed systems, docker, gitops, infrastructure, infrastructure as code, kubernetes, linux, logging, microservices, microservices patterns, monitoring, orchestration, pipelines, reliability, saga, scalability, security, server management, service mesh, terraform]
 ---
 
 # Microservices Patterns

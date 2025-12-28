@@ -5,8 +5,7 @@ description: Creates high-quality, SEO-optimized content that ranks in search en
 metadata:
   skillport:
     category: auto-healed
-    tags: [copywriting, seo, blogging, editorial calendar, storytelling]
-
+    tags: [architecture, automation, best practices, blogging, clean code, coding, collaboration, compliance, content strategist, copywriting, debugging, design patterns, development, documentation, editorial calendar, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, seo, software engineering, standards, storytelling, testing, utilities, version control, workflow]
 ---
 
 # SEO Content Writer

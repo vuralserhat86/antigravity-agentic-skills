@@ -5,11 +5,7 @@ description: p5.js ile generative art, flow fields ve interactive visuals oluşt
 metadata:
   skillport:
     category: design
-    tags:
-      - art
-      - generative
-      - p5js
-      - creative
+    tags: [algorithmic art, architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - creative
 ---
 
 # 🎨 Algorithmic Art

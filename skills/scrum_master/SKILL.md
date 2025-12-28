@@ -5,27 +5,7 @@ description: Comprehensive Scrum Master assistant for sprint planning, backlog g
 metadata:
   skillport:
     category: auto-healed
-    tags:
-      - plan
-      - agile
-      - scrum
-      - jira
-      - docs
-      - readme
-      - docs readme
-      - expert
-      - guide
-      - project management
-      - expert
-      - guide
-      - roadmap planner
-      - expert
-      - guide
-      - scrum master
-      - expert
-      - guide
-      - scrum_master
-
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, scrum master, software engineering, standards, testing, utilities, version control, workflow]      - scrum_master
 ---
 
 # Scrum Master Agent

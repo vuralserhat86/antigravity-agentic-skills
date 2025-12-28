@@ -6,8 +6,7 @@ license: Complete terms in LICENSE.txt
 metadata:
   skillport:
     category: auto-healed
-    tags: [playwright, cypress, e2e, integration, browser]
-
+    tags: [accessibility, api integration, backend, browser, browser apis, client-side, components, css3, cypress, debugging, deployment, e2e, frameworks, frontend, fullstack, html5, integration, javascript, libraries, node.js, npm, performance optimization, playwright, responsive design, seo, state management, testing, typescript, ui/ux, web development, webapp testing]
 ---
 
 # Web Application Testing

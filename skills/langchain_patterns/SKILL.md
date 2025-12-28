@@ -4,7 +4,7 @@ router_kit: AIKit
 description: Implement Retrieval-Augmented Generation (RAG) systems with LangChain4j. Build document ingestion pipelines, embedding stores, vector search strategies, and knowledge-enhanced AI applications. Use when creating question-answering systems over document collections or AI assistants with external knowledge bases.
 allowed-tools: Read, Write, Bash
 category: ai-development
-tags: [langchain4j, rag, retrieval-augmented-generation, embedding, vector-search, document-ingestion, java]
+tags: [agents, algorithms, artificial intelligence, automation, chatbots, cognitive services, deep learning, document-ingestion, embedding, embeddings, frameworks, generative ai, inference, java, langchain patterns, langchain4j, large language models, llm, machine learning, model fine-tuning, natural language processing, neural networks, nlp, openai, prompt engineering, rag, retrieval augmented generation, retrieval-augmented-generation, tools, vector databases, vector-search, workflow automation]
 version: 1.1.0
 metadata:
   skillport:
@@ -27,7 +27,6 @@ metadata:
       - expert
       - guide
       - langchain_patterns
-
 ---
 
 # LangChain4j RAG Implementation Patterns
