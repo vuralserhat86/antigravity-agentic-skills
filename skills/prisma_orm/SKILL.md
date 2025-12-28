@@ -2,6 +2,13 @@
 name: prisma_orm
 router_kit: FullStackKit
 description: Prisma ORM patterns including Prisma Client usage, queries, mutations, relations, transactions, and schema management. Use when working with Prisma database operations or schema definitions.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - prisma_orm
+      - prisma_orm
+
 ---
 
 # Prisma ORM Patterns

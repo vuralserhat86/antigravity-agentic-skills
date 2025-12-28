@@ -2,6 +2,13 @@
 name: message_queues
 router_kit: FullStackKit
 description: Async communication patterns using message brokers and task queues. Use when building event-driven systems, background job processing, or service decoupling. Covers Kafka (event streaming), RabbitMQ (complex routing), NATS (cloud-native), Redis Streams, Celery (Python), BullMQ (TypeScript), Temporal (workflows), and event sourcing patterns.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - message_queues
+      - message_queues
+
 ---
 
 # Message Queues

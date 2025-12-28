@@ -2,6 +2,22 @@
 name: agent_orchestration
 router_kit: AIKit
 description: Transform clarified user requests into structured delegation prompts optimized for specialist agents (cto-architect, strategic-cto-mentor, cv-ml-architect). Use after clarification is complete, before routing to specialist agents. Ensures agents receive complete context for effective work.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - prompt
+      - ai
+      - llm
+      - rag
+      - agent
+      - embedding
+      - model
+      - agent orchestration
+      - expert
+      - guide
+      - agent_orchestration
+
 ---
 
 # Delegation Prompt Crafter

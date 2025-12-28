@@ -2,6 +2,25 @@
 name: context_engineering
 router_kit: AIKit
 description: Apply optimization techniques to extend effective context capacity. Use when context limits constrain agent performance, when optimizing for cost or latency, or when implementing long-running agent systems.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - prompt
+      - ai
+      - llm
+      - rag
+      - agent
+      - embedding
+      - model
+      - agent orchestration
+      - expert
+      - guide
+      - context engineering
+      - expert
+      - guide
+      - context_engineering
+
 ---
 
 # Context Optimization Techniques

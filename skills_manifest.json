@@ -1,0 +1,176 @@
+{
+    "manifest_version": "v9.3-Distributed",
+    "config": {
+        "library_root": "C:\\Users\\mSv\\.skillport\\skills",
+        "skill_file_pattern": "{skill_name}\\SKILL.md"
+    },
+    "total_skills": 138,
+    "kits": {
+        "FullStackKit": {
+            "description": "Web & Mobile development, UI/UX, Database, Backend APIs",
+            "auto_triggers": [
+                "react",
+                "vue",
+                "angular",
+                "nextjs",
+                "css",
+                "tailwind",
+                "html",
+                "database",
+                "db",
+                "api",
+                "rest",
+                "graphql",
+                "frontend",
+                "ui",
+                "ux",
+                "backend",
+                "server",
+                "sql",
+                "nosql",
+                "mobile",
+                "android",
+                "ios",
+                "flutter",
+                "web"
+            ],
+            "core_skills": [
+                "react_expert",
+                "backend_core",
+                "backend_api",
+                "database_design",
+                "frontend_design",
+                "typescript_advanced",
+                "python_pro"
+            ]
+        },
+        "DevOpsKit": {
+            "description": "Infrastructure, Deployment, Cloud, CI/CD",
+            "auto_triggers": [
+                "docker",
+                "container",
+                "aws",
+                "cloud",
+                "azure",
+                "gcp",
+                "deploy",
+                "deployment",
+                "release",
+                "ship",
+                "production",
+                "ci/cd",
+                "pipeline",
+                "github actions",
+                "jenkins",
+                "kubernetes",
+                "k8s",
+                "terraform",
+                "infra",
+                "infrastructure",
+                "scaling",
+                "monitoring"
+            ],
+            "core_skills": [
+                "deploy_cicd",
+                "aws_architect",
+                "kubernetes_specialist",
+                "docker_optimization",
+                "terraform_engineer",
+                "incident_response"
+            ]
+        },
+        "AIKit": {
+            "description": "LLM integration, Prompt Engineering, RAG, Agents",
+            "auto_triggers": [
+                "prompt",
+                "ai",
+                "llm",
+                "rag",
+                "agent",
+                "embedding",
+                "model"
+            ],
+            "core_skills": [
+                "prompt_engineering",
+                "rag_architecture",
+                "agent_orchestration",
+                "langchain_patterns",
+                "context_engineering"
+            ]
+        },
+        "SecurityKit": {
+            "description": "Security audits, Pentesting, Compliance",
+            "auto_triggers": [
+                "security",
+                "secure",
+                "audit",
+                "pentest",
+                "encryption",
+                "vuln",
+                "vulnerability",
+                "cve",
+                "auth",
+                "authentication",
+                "authorization",
+                "login",
+                "signin",
+                "signup",
+                "register",
+                "oauth",
+                "jwt",
+                "token",
+                "rbac",
+                "protect"
+            ],
+            "core_skills": [
+                "secops_core",
+                "auth_patterns",
+                "compliance_analyst",
+                "better_auth"
+            ]
+        },
+        "ManagementKit": {
+            "description": "Project management, Documentation, Agile processes",
+            "auto_triggers": [
+                "plan",
+                "agile",
+                "scrum",
+                "jira",
+                "docs",
+                "readme"
+            ],
+            "core_skills": [
+                "scrum_master",
+                "project_management",
+                "docs_readme",
+                "roadmap_planner"
+            ]
+        }
+    },
+    "QualityKit": {
+        "description": "Testing, Quality Assurance, TDD, Bug Fixing",
+        "auto_triggers": [
+            "test",
+            "testing",
+            "tdd",
+            "unit test",
+            "integration test",
+            "e2e",
+            "qa",
+            "quality",
+            "bug",
+            "fix",
+            "debug",
+            "jest",
+            "monitor",
+            "validate"
+        ],
+        "core_skills": [
+            "tdd_workflow",
+            "testing",
+            "verification_before_completion",
+            "systematic_debugging",
+            "refactoring_strategies"
+        ]
+    }
+}

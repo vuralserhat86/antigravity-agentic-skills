@@ -2,6 +2,44 @@
 name: secops_core
 router_kit: SecurityKit
 description: Comprehensive SecOps skill for application security, vulnerability management, compliance, and secure development practices. Includes security scanning, vulnerability assessment, compliance checking, and security automation. Use when implementing security controls, conducting security audits, responding to vulnerabilities, or ensuring compliance requirements.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - security
+      - secure
+      - audit
+      - pentest
+      - encryption
+      - vuln
+      - vulnerability
+      - cve
+      - auth
+      - authentication
+      - authorization
+      - login
+      - signin
+      - signup
+      - register
+      - oauth
+      - jwt
+      - token
+      - rbac
+      - protect
+      - auth patterns
+      - expert
+      - guide
+      - better auth
+      - expert
+      - guide
+      - compliance analyst
+      - expert
+      - guide
+      - secops core
+      - expert
+      - guide
+      - secops_core
+
 ---
 
 # Senior Secops

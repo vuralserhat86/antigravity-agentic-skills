@@ -2,6 +2,13 @@
 name: accessibility_testing
 router_kit: FullStackKit
 description: Guide for conducting comprehensive accessibility audits of code to identify WCAG compliance issues and barriers to inclusive design. This skill should be used when reviewing accessibility, ARIA implementation, keyboard navigation, or screen reader compatibility.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - accessibility_testing
+      - accessibility_testing
+
 ---
 
 # Accessibility Audit Skill

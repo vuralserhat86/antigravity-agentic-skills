@@ -16,6 +16,13 @@ triggers:
 role: specialist
 scope: implementation
 output-format: code
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - postgres_pro
+      - postgres_pro
+
 ---
 
 # PostgreSQL Pro

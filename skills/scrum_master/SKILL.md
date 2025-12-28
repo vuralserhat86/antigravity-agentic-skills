@@ -2,6 +2,30 @@
 name: scrum_master
 router_kit: ManagementKit
 description: Comprehensive Scrum Master assistant for sprint planning, backlog grooming, retrospectives, capacity planning, and daily standups with intelligent context-aware reporting
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - plan
+      - agile
+      - scrum
+      - jira
+      - docs
+      - readme
+      - docs readme
+      - expert
+      - guide
+      - project management
+      - expert
+      - guide
+      - roadmap planner
+      - expert
+      - guide
+      - scrum master
+      - expert
+      - guide
+      - scrum_master
+
 ---
 
 # Scrum Master Agent

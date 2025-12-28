@@ -2,6 +2,13 @@
 name: stripe_integration
 router_kit: FullStackKit
 description: Implement Stripe payment processing for robust, PCI-compliant payment flows including checkout, subscriptions, and webhooks. Use when integrating Stripe payments, building subscription systems, or implementing secure checkout flows.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - stripe_integration
+      - stripe_integration
+
 ---
 
 # Stripe Integration

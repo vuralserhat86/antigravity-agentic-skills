@@ -2,6 +2,13 @@
 name: mongodb_usage
 router_kit: FullStackKit
 description: This skill should be used when user asks to "query MongoDB", "show database collections", "get collection schema", "list MongoDB databases", "search records in MongoDB", or "check database indexes".
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - mongodb_usage
+      - mongodb_usage
+
 ---
 
 # MongoDB MCP Usage

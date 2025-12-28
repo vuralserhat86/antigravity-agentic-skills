@@ -2,6 +2,13 @@
 name: rag_implementation
 router_kit: AIKit
 description: Build Retrieval-Augmented Generation (RAG) systems for LLM applications with vector databases and semantic search. Use when implementing knowledge-grounded AI, building document Q&A systems, or integrating LLMs with external knowledge bases.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - rag_implementation
+      - rag_implementation
+
 ---
 
 # RAG Implementation

@@ -2,6 +2,13 @@
 name: llm_evaluation
 router_kit: AIKit
 description: Implement comprehensive evaluation strategies for LLM applications using automated metrics, human feedback, and benchmarking. Use when testing LLM performance, measuring AI application quality, or establishing evaluation frameworks.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - llm_evaluation
+      - llm_evaluation
+
 ---
 
 # LLM Evaluation

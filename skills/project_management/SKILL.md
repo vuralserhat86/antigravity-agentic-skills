@@ -7,6 +7,24 @@ description: This skill should be used when creating or updating PROJECT.md file
 keywords: project.md, milestone, sprint, roadmap, planning, goals, scope, constraints, project management, okr, smart goals
 auto_activate: true
 allowed-tools: [Read, Write, Edit, Grep, Glob]
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - plan
+      - agile
+      - scrum
+      - jira
+      - docs
+      - readme
+      - docs readme
+      - expert
+      - guide
+      - project management
+      - expert
+      - guide
+      - project_management
+
 ---
 
 # Project Management Skill

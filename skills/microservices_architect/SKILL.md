@@ -17,6 +17,13 @@ triggers:
 role: architect
 scope: system-design
 output-format: architecture
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - microservices_architect
+      - microservices_architect
+
 ---
 
 # Microservices Architect

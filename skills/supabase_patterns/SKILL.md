@@ -2,6 +2,13 @@
 name: supabase_patterns
 router_kit: FullStackKit
 description: Guides implementation of Next.js 15 App Router features with Supabase SSR. Helps choose between Server/Client Components, select correct Supabase client, and follow security patterns. Use when building pages, components, or API routes.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - supabase_patterns
+      - supabase_patterns
+
 ---
 
 # Implementing Next.js with Supabase

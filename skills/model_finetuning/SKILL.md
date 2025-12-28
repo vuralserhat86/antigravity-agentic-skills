@@ -7,6 +7,13 @@ author: Orchestra Research
 license: MIT
 tags: [Post-Training, TRL, Reinforcement Learning, Fine-Tuning, SFT, DPO, PPO, GRPO, RLHF, Preference Alignment, HuggingFace]
 dependencies: [trl, transformers, datasets, peft, accelerate, torch]
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - model_finetuning
+      - model_finetuning
+
 ---
 
 # TRL - Transformer Reinforcement Learning

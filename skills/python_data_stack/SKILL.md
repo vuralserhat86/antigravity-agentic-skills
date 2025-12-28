@@ -2,6 +2,13 @@
 name: python_data_stack
 router_kit: FullStackKit
 description: "Statistical modeling toolkit. OLS, GLM, logistic, ARIMA, time series, hypothesis tests, diagnostics, AIC/BIC, for rigorous statistical inference and econometric analysis."
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - python_data_stack
+      - python_data_stack
+
 ---
 
 # Statsmodels: Statistical Modeling and Econometrics

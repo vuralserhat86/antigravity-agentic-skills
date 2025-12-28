@@ -2,6 +2,34 @@
 name: rag_architecture
 router_kit: AIKit
 description: Design LLM applications using the LangChain framework with agents, memory, and tool integration patterns. Use when building LangChain applications, implementing AI agents, or creating complex LLM workflows.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - prompt
+      - ai
+      - llm
+      - rag
+      - agent
+      - embedding
+      - model
+      - agent orchestration
+      - expert
+      - guide
+      - context engineering
+      - expert
+      - guide
+      - langchain patterns
+      - expert
+      - guide
+      - prompt engineering
+      - expert
+      - guide
+      - rag architecture
+      - expert
+      - guide
+      - rag_architecture
+
 ---
 
 # LangChain Architecture

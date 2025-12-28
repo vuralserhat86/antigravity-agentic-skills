@@ -6,6 +6,13 @@ allowed-tools: Read, Write, Bash
 category: backend
 tags: [spring-boot, caching, performance, cacheable, cache-managers]
 version: 1.1.0
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - cache_patterns
+      - cache_patterns
+
 ---
 
 # Spring Boot Cache Abstraction

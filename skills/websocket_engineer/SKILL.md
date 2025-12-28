@@ -15,6 +15,13 @@ triggers:
 role: specialist
 scope: implementation
 output-format: code
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - websocket_engineer
+      - websocket_engineer
+
 ---
 
 # WebSocket Engineer

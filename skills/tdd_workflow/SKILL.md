@@ -1,7 +1,24 @@
 ---
 name: tdd_workflow
-router_kit: FullStackKit
-description: Comprehensive Test Driven Development guide for engineering subagents with multi-framework support, coverage analysis, and intelligent test generation
+router_kit: QualityKit
+description: Comprehensive Test Driven Development guide. Master testing, debugging, fixing bugs, QA workflows, unit tests, integration tests, and coverage analysis.
+metadata:
+  skillport:
+    category: quality
+    tags:
+      - test
+      - testing
+      - tdd
+      - qa
+      - quality
+      - bug
+      - fix
+      - debug
+      - unit-test
+      - integration-test
+      - mock
+      - jest
+      - pytest
 ---
 
 # TDD Guide - Test Driven Development for Engineering Teams

@@ -6,6 +6,13 @@ allowed-tools: Read, Write, Bash, Grep
 category: backend
 tags: [spring-boot, openapi, swagger, api-documentation, springdoc]
 version: 1.1.0
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - openapi_docs
+      - openapi_docs
+
 ---
 
 # Spring Boot OpenAPI Documentation with SpringDoc

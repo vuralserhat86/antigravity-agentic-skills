@@ -2,6 +2,13 @@
 name: seo_technical
 router_kit: ManagementKit
 description: Performs technical SEO audits covering site speed, crawlability, indexability, mobile-friendliness, security, and structured data. Identifies technical issues preventing optimal search performance.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - seo_technical
+      - seo_technical
+
 ---
 
 # Technical SEO Checker

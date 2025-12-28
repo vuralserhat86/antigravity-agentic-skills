@@ -7,6 +7,13 @@ description: State persistence patterns for autonomous-dev including JSON persis
 keywords: state, persistence, JSON, atomic, file locking, crash recovery, state versioning, batch state, user state, checkpoint, session tracking
 auto_activate: true
 allowed-tools: [Read]
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - state_management
+      - state_management
+
 ---
 
 # State Management Patterns Skill

@@ -1,7 +1,7 @@
 ---
 name: deploy_cicd
 router_kit: DevOpsKit
-description: CI/CD pipeline, GitHub Actions ve automated deployment.
+description: CI/CD pipeline, GitHub Actions, automated deployment, release management, production shipping, and software delivery.
 metadata:
   skillport:
     category: operations
@@ -9,6 +9,12 @@ metadata:
       - cicd
       - github-actions
       - automation
+      - release
+      - production
+      - ship
+      - deployment
+      - pipeline
+      - devops
     related:
       - deploy-monitoring
 ---

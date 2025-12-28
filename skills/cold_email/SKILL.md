@@ -2,6 +2,13 @@
 name: cold_email
 router_kit: AIKit
 description: Generate personalized cold email sequences (7-14 emails) with A/B test subject lines, follow-up timing recommendations, and integrated social proof. Creates multi-touch campaigns optimized for response rates. Use when users need outbound email campaigns, sales sequences, or lead generation emails.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - cold_email
+      - cold_email
+
 ---
 
 # Cold Email Sequence Generator

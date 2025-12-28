@@ -2,6 +2,13 @@
 name: competitor_intelligence
 router_kit: FullStackKit
 description: Analyzes competitor SEO and GEO strategies including their ranking keywords, content approaches, backlink profiles, and AI citation patterns. Reveals opportunities to outperform competition.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - competitor_intelligence
+      - competitor_intelligence
+
 ---
 
 # Competitor Analysis

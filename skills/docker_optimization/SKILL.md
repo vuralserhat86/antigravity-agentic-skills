@@ -2,6 +2,43 @@
 name: docker_optimization
 router_kit: ManagementKit
 description: Docker image optimization patterns including multi-stage builds, layer caching, security hardening, and size reduction techniques. Use when building Docker images, optimizing container size, improving build performance, or implementing Docker security best practices. Reduces image sizes by 70-90% and build times by 50-80%.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - docker
+      - container
+      - aws
+      - cloud
+      - azure
+      - gcp
+      - deploy
+      - deployment
+      - release
+      - ship
+      - production
+      - ci/cd
+      - pipeline
+      - github actions
+      - jenkins
+      - kubernetes
+      - k8s
+      - terraform
+      - infra
+      - infrastructure
+      - scaling
+      - monitoring
+      - aws architect
+      - expert
+      - guide
+      - deploy cicd
+      - expert
+      - guide
+      - docker optimization
+      - expert
+      - guide
+      - docker_optimization
+
 ---
 
 # Docker Optimization Patterns

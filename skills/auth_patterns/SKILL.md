@@ -2,6 +2,35 @@
 name: auth_patterns
 router_kit: SecurityKit
 description: Master authentication and authorization patterns including JWT, OAuth2, session management, and RBAC to build secure, scalable access control systems. Use when implementing auth systems, securing APIs, or debugging security issues.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - security
+      - secure
+      - audit
+      - pentest
+      - encryption
+      - vuln
+      - vulnerability
+      - cve
+      - auth
+      - authentication
+      - authorization
+      - login
+      - signin
+      - signup
+      - register
+      - oauth
+      - jwt
+      - token
+      - rbac
+      - protect
+      - auth patterns
+      - expert
+      - guide
+      - auth_patterns
+
 ---
 
 # Authentication & Authorization Implementation Patterns

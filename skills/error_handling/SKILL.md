@@ -2,6 +2,13 @@
 name: error_handling
 router_kit: FullStackKit
 description: Master error handling patterns across languages including exceptions, Result types, error propagation, and graceful degradation to build resilient applications. Use when implementing error handling, designing APIs, or improving application reliability.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - error_handling
+      - error_handling
+
 ---
 
 # Error Handling Patterns

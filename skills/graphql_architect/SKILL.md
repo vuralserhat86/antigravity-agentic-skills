@@ -15,6 +15,13 @@ triggers:
 role: architect
 scope: design
 output-format: schema
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - graphql_architect
+      - graphql_architect
+
 ---
 
 # GraphQL Architect

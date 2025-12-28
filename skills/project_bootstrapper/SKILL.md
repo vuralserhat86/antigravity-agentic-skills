@@ -2,6 +2,13 @@
 name: project_bootstrapper
 router_kit: FullStackKit
 description: Sets up new projects or improves existing projects with development best practices, tooling, documentation, and workflow automation. Use when user wants to start a new project, improve project structure, add development tooling, or establish professional workflows.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - project_bootstrapper
+      - project_bootstrapper
+
 ---
 
 # Project Bootstrapper

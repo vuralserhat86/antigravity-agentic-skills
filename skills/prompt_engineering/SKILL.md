@@ -2,6 +2,31 @@
 name: prompt_engineering
 router_kit: AIKit
 description: Engineer effective LLM prompts using zero-shot, few-shot, chain-of-thought, and structured output techniques. Use when building LLM applications requiring reliable outputs, implementing RAG systems, creating AI agents, or optimizing prompt quality and cost. Covers OpenAI, Anthropic, and open-source models with multi-language examples (Python/TypeScript).
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - prompt
+      - ai
+      - llm
+      - rag
+      - agent
+      - embedding
+      - model
+      - agent orchestration
+      - expert
+      - guide
+      - context engineering
+      - expert
+      - guide
+      - langchain patterns
+      - expert
+      - guide
+      - prompt engineering
+      - expert
+      - guide
+      - prompt_engineering
+
 ---
 
 # Prompt Engineering

@@ -2,6 +2,13 @@
 name: huggingface_transformers
 router_kit: AIKit
 description: Hugging Face Transformers best practices including model loading, tokenization, fine-tuning workflows, and inference optimization. Use when working with transformer models, fine-tuning LLMs, implementing NLP tasks, or optimizing transformer inference.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - huggingface_transformers
+      - huggingface_transformers
+
 ---
 
 # Hugging Face Transformers Best Practices

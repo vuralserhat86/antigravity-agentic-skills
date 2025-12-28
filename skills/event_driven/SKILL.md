@@ -13,6 +13,13 @@ usage_patterns:
   - system-extensibility
 complexity: high
 estimated_tokens: 800
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - event_driven
+      - event_driven
+
 ---
 
 # The Event-Driven Architecture Paradigm

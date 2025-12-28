@@ -2,6 +2,37 @@
 name: aws_architect
 router_kit: DevOpsKit
 description: Expert AWS solution architecture for startups focusing on serverless, scalable, and cost-effective cloud infrastructure with modern DevOps practices and infrastructure-as-code
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - docker
+      - container
+      - aws
+      - cloud
+      - azure
+      - gcp
+      - deploy
+      - deployment
+      - release
+      - ship
+      - production
+      - ci/cd
+      - pipeline
+      - github actions
+      - jenkins
+      - kubernetes
+      - k8s
+      - terraform
+      - infra
+      - infrastructure
+      - scaling
+      - monitoring
+      - aws architect
+      - expert
+      - guide
+      - aws_architect
+
 ---
 
 # AWS Solution Architect for Startups

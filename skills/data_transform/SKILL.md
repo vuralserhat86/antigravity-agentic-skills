@@ -2,6 +2,13 @@
 name: data_transform
 router_kit: FullStackKit
 description: Transform raw data into analytical assets using ETL/ELT patterns, SQL (dbt), Python (pandas/polars/PySpark), and orchestration (Airflow). Use when building data pipelines, implementing incremental models, migrating from pandas to polars, or orchestrating multi-step transformations with testing and quality checks.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - data_transform
+      - data_transform
+
 ---
 
 # Data Transformation

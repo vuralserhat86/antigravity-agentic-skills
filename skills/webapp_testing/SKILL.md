@@ -3,6 +3,13 @@ name: webapp_testing
 router_kit: FullStackKit
 description: Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.
 license: Complete terms in LICENSE.txt
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - webapp_testing
+      - webapp_testing
+
 ---
 
 # Web Application Testing

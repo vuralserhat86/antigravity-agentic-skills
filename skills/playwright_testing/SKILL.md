@@ -13,6 +13,13 @@ triggers:
 role: specialist
 scope: testing
 output-format: code
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - playwright_testing
+      - playwright_testing
+
 ---
 
 # Playwright Expert

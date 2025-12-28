@@ -21,15 +21,15 @@ metadata:
 Core skill yüklendiğinde, AI şu mutlak yolları hafızaya almalıdır:
 
 1.  **🧠 GLOBAL BRAIN (Hafıza):**
-    * `%USER_PROFILE%\.gemini\antigravity\brain` (Ana Hafıza)
+    * `C:\Users\mSv\.gemini\antigravity\brain` (Ana Hafıza)
     * *Not: Bu klasördeki yerel `memory.md` dosyasını GÖRMEZDEN GEL.*
 
 2.  **⚖️ GLOBAL RULES (Anayasa):**
-    * `%USER_PROFILE%\.gemini\GEMINI.md` (Ana Kurallar)
+    * `C:\Users\mSv\.gemini\GEMINI.md` (Ana Kurallar)
     * *Not: Bu klasördeki `technical_standards.md` sadece kodlama standartları içindir.*
 
 3.  **🗺️ SKILL MANIFEST (Harita):**
-    * `%USER_PROFILE%\.skillport\skills_manifest.json`
+    * `C:\Users\mSv\.skillport\skills_manifest.json`
     * *Not: `references.md` artık sadece arşiv amaçlıdır, skill seçimi için JSON kullanılır.*
 
 ---
@@ -39,4 +39,4 @@ Core skill yüklendiğinde, AI şu mutlak yolları hafızaya almalıdır:
 Skill seçerken şu sırayı izle:
 1.  Manifest'teki **"Kits"** bölümüne bak.
 2.  Uygun Kiti seç.
-3.  Yolu oluştur: `%USER_PROFILE%\.skillport\skills\{skill_name}\SKILL.md`
+3.  Yolu oluştur: `C:\Users\mSv\.skillport\skills\{skill_name}\SKILL.md`

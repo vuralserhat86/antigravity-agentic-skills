@@ -31,6 +31,13 @@ related_skills:
   - github-release-management
   - sparc-orchestrator
 estimated_time: 30-45 minutes
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - github_project_automation
+      - github_project_automation
+
 ---
 
 # GitHub Project Management

@@ -3,6 +3,13 @@ name: nestjs_specialist
 router_kit: DevOpsKit
 description: Comprehensive NestJS framework guide with Drizzle ORM integration. Use when building NestJS applications, setting up APIs, implementing authentication, working with databases, or integrating Drizzle ORM. Covers controllers, providers, modules, middleware, guards, interceptors, testing, microservices, GraphQL, and database patterns.
 license: Complete terms in LICENSE.txt
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - nestjs_specialist
+      - nestjs_specialist
+
 ---
 
 # NestJS Framework with Drizzle ORM

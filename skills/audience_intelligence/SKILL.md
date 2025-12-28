@@ -2,6 +2,13 @@
 name: audience_intelligence
 router_kit: FullStackKit
 description: Analyzes target audience demographics, psychographics, behaviors, and platform preferences to inform influencer selection and campaign strategy. Essential foundation for effective influencer marketing.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - audience_intelligence
+      - audience_intelligence
+
 ---
 
 # Audience Analyzer

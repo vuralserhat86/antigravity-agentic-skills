@@ -16,6 +16,49 @@ triggers:
 role: specialist
 scope: infrastructure
 output-format: manifests
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - docker
+      - container
+      - aws
+      - cloud
+      - azure
+      - gcp
+      - deploy
+      - deployment
+      - release
+      - ship
+      - production
+      - ci/cd
+      - pipeline
+      - github actions
+      - jenkins
+      - kubernetes
+      - k8s
+      - terraform
+      - infra
+      - infrastructure
+      - scaling
+      - monitoring
+      - aws architect
+      - expert
+      - guide
+      - deploy cicd
+      - expert
+      - guide
+      - docker optimization
+      - expert
+      - guide
+      - incident response
+      - expert
+      - guide
+      - kubernetes specialist
+      - expert
+      - guide
+      - kubernetes_specialist
+
 ---
 
 # Kubernetes Specialist

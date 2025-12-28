@@ -2,6 +2,13 @@
 name: image_enhancer
 router_kit: FullStackKit
 description: Improves the quality of images, especially screenshots, by enhancing resolution, sharpness, and clarity. Perfect for preparing images for presentations, documentation, or social media posts.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - image_enhancer
+      - image_enhancer
+
 ---
 
 # Image Enhancer

@@ -17,6 +17,13 @@ triggers:
 role: specialist
 scope: implementation
 output-format: code
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - cli_developer
+      - cli_developer
+
 ---
 
 # CLI Developer

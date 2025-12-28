@@ -6,6 +6,28 @@ allowed-tools: Read, Write, Bash
 category: ai-development
 tags: [langchain4j, rag, retrieval-augmented-generation, embedding, vector-search, document-ingestion, java]
 version: 1.1.0
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - prompt
+      - ai
+      - llm
+      - rag
+      - agent
+      - embedding
+      - model
+      - agent orchestration
+      - expert
+      - guide
+      - context engineering
+      - expert
+      - guide
+      - langchain patterns
+      - expert
+      - guide
+      - langchain_patterns
+
 ---
 
 # LangChain4j RAG Implementation Patterns

@@ -15,6 +15,13 @@ triggers:
 role: specialist
 scope: implementation
 output-format: code
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - spring_boot
+      - spring_boot
+
 ---
 
 # Spring Boot Engineer

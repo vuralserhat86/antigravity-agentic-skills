@@ -15,6 +15,13 @@ triggers:
 role: specialist
 scope: implementation
 output-format: code
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - vue_expert
+      - vue_expert
+
 ---
 
 # Vue Expert

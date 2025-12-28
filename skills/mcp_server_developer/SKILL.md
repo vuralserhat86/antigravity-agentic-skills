@@ -2,6 +2,13 @@
 name: mcp_server_developer
 router_kit: FullStackKit
 description: Model Context Protocol (MCP) server implementation specialist for Claude Desktop integration. Handles TypeScript/Node.js server scaffolding, endpoint creation, telemetry setup, npx distribution, and comprehensive documentation. Follows MCP specification and best practices for production-grade server deployment.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - mcp_server_developer
+      - mcp_server_developer
+
 ---
 
 # MCP Server Developer

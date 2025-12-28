@@ -2,6 +2,13 @@
 name: performance_engineering
 router_kit: FullStackKit
 description: When validating system performance under load, identifying bottlenecks through profiling, or optimizing application responsiveness. Covers load testing (k6, Locust), profiling (CPU, memory, I/O), and optimization strategies (caching, query optimization, Core Web Vitals). Use for capacity planning, regression detection, and establishing performance SLOs.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - performance_engineering
+      - performance_engineering
+
 ---
 
 # Performance Engineering

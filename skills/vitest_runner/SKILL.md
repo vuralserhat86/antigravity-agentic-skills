@@ -2,6 +2,13 @@
 name: vitest_runner
 router_kit: FullStackKit
 description: Modern JavaScript/TypeScript testing with Vitest including mocking and coverage.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - vitest_runner
+      - vitest_runner
+
 ---
 
 # Vitest

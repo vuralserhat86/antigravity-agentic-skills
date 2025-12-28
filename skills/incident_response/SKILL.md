@@ -1,10 +1,49 @@
 ---
 name: incident_response
 router_kit: DevOpsKit
-description: |
-  Assists with security incident response, investigation, and remediation. This skill is triggered when the user requests help with incident response, mentions specific incident types (e.g., data breach, ransomware, DDoS), or uses terms like "incident response plan", "containment", "eradication", or "post-incident activity". It guides the user through the incident response lifecycle, from preparation to post-incident analysis. It is useful for classifying incidents, creating response playbooks, collecting evidence, constructing timelines, and generating remediation steps. Use this skill when needing to respond to a "security incident".
+description: Coordinate security incident response efforts. Includes classification, playbook generation, evidence gathering, and remediation planning. Validates response strategies against best practices.
 allowed-tools: Read, Write, Edit, Grep, Glob, Bash
 version: 1.0.0
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - docker
+      - container
+      - aws
+      - cloud
+      - azure
+      - gcp
+      - deploy
+      - deployment
+      - release
+      - ship
+      - production
+      - ci/cd
+      - pipeline
+      - github actions
+      - jenkins
+      - kubernetes
+      - k8s
+      - terraform
+      - infra
+      - infrastructure
+      - scaling
+      - monitoring
+      - aws architect
+      - expert
+      - guide
+      - deploy cicd
+      - expert
+      - guide
+      - docker optimization
+      - expert
+      - guide
+      - incident response
+      - expert
+      - guide
+      - incident_response
+
 ---
 
 ## Overview

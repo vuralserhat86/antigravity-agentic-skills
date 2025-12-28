@@ -1,9 +1,28 @@
 ---
 name: better_auth
 router_kit: SecurityKit
-description: Implement authentication and authorization with Better Auth - a framework-agnostic TypeScript authentication framework. Features include email/password authentication with verification, OAuth providers (Google, GitHub, Discord, etc.), two-factor authentication (TOTP, SMS), passkeys/WebAuthn support, session management, role-based access control (RBAC), rate limiting, and database adapters. Use when adding authentication to applications, implementing OAuth flows, setting up 2FA/MFA, managing user sessions, configuring authorization rules, or building secure authentication systems for web applications.
+description: The ultimate authentication and authorization skill. Implement login, signin, signup, registration, OAuth, 2FA, MFA, passkeys, and user session management. Secure your application with RBAC and access control.
 license: MIT
-version: 2.0.0
+version: 2.1.0
+metadata:
+  skillport:
+    category: cybersecurity
+    tags:
+      - auth
+      - authentication
+      - authorization
+      - login
+      - signin
+      - signup
+      - register
+      - oauth
+      - security
+      - user-management
+      - session
+      - 2fa
+      - mfa
+      - rbac
+      - access-control
 ---
 
 # Better Auth Skill

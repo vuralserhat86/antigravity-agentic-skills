@@ -12,6 +12,13 @@ tags:
   - methodology
   - multi-agent
 author: Claude Flow
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - sparc_methodology
+      - sparc_methodology
+
 ---
 
 # SPARC Methodology - Comprehensive Development Framework

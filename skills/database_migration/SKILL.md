@@ -2,6 +2,13 @@
 name: database_migration
 router_kit: FullStackKit
 description: Execute database migrations across ORMs and platforms with zero-downtime strategies, data transformation, and rollback procedures. Use when migrating databases, changing schemas, performing data transformations, or implementing zero-downtime deployment strategies.
+metadata:
+  skillport:
+    category: auto-healed
+    tags:
+      - database_migration
+      - database_migration
+
 ---
 
 # Database Migration
