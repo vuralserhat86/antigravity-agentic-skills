@@ -1,8 +1,8 @@
 import os
-import re
 
-SKILLS_DIR = r"C:\Users\mSv\.skillport\skills"
-REPORT_FILE = r"C:\Users\mSv\.gemini\antigravity\brain\b1718088-806e-466d-becc-c57425f15bc7\SKILL_HEALTH_REPORT.md"
+SKILLS_DIR = os.path.expanduser("~/.skillport/skills")
+# Save report to current directory or a standard location
+REPORT_FILE = "SKILL_HEALTH_REPORT.md"
 
 def parse_frontmatter(content):
     match = re.search(r'^---\s+(.*?)\s+---', content, re.DOTALL)

@@ -1,7 +1,7 @@
 {
     "manifest_version": "v9.3-Distributed",
     "config": {
-        "library_root": "C:\\Users\\mSv\\.skillport\\skills",
+        "library_root": "%USERPROFILE%\\.skillport\\skills",
         "skill_file_pattern": "{skill_name}\\SKILL.md"
     },
     "total_skills": 138,

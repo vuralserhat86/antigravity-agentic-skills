@@ -2,8 +2,8 @@ import os
 import json
 import re
 
-MANIFEST_FILE = r"C:\Users\mSv\.skillport\skills_manifest.json"
-SKILLS_DIR = r"C:\Users\mSv\.skillport\skills"
+MANIFEST_FILE = os.path.expanduser("~/.skillport/skills_manifest.json")
+SKILLS_DIR = os.path.expanduser("~/.skillport/skills")
 
 def load_manifest():
     with open(MANIFEST_FILE, 'r', encoding='utf-8') as f:

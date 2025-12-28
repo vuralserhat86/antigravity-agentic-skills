@@ -12,7 +12,7 @@
 
 Skill yüklemek için kullanıcının `/super_protokol_v2` komutu yazmasını bekle.
 
-Workflow: `C:\Users\mSv\.gemini\antigravity\global_workflows\super_protokol_v2.md`
+Workflow: `%USERPROFILE%\.gemini\antigravity\global_workflows\super_protokol_v2.md`
 
 ---
 

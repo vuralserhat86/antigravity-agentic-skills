@@ -17,7 +17,7 @@
         ```
 
 2.  **SKILL.md Dosyasını Oluştur (Aşama 2)**
-    *   Şablon kullanarak dosyanı `C:\Users\mSv\.skillport\skills\super_new_skill\SKILL.md` yolunda oluştur.
+    *   Şablon kullanarak dosyanı `%USERPROFILE%\.skillport\skills\super_new_skill\SKILL.md` yolunda oluştur.
     *   **CRITICAL:** Dosya başındaki YAML metadata kısmına, Manifest'te belirlediğin keywords/tags leri MUTLAKA işle.
     *   *Örnek:*
         ```markdown
