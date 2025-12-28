@@ -5,7 +5,7 @@
 ### The Cognitive Engine & Long-Term Memory for Autonomous Agents
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Skills](https://img.shields.io/badge/Skills-138-blue)](./skills)
+[![Skills](https://img.shields.io/badge/Skills-137-blue)](./skills)
 [![Health Pass](https://img.shields.io/badge/Audit-100%25%20Passing-brightgreen)](./scripts)
 [![Protocol](https://img.shields.io/badge/Protocol-Super%20v2-purple)](./workflows/super_protokol_v2.md)
 
@@ -21,7 +21,7 @@
 
 **Antigravity Agentic Skills** is not just a code repository; it is a **dynamic cognitive architecture** designed to give AI agents (like Claude/Gemini) long-term memory, specialized expertise, and rigorous engineering discipline.
 
-Typical AI sessions are ephemeral (amnesic). This system bridges that gap by providing a persistent, audited, and self-healing library of **138+ Expert Skills** that the agent can "download" into its context on demand.
+Typical AI sessions are ephemeral (amnesic). This system bridges that gap by providing a persistent, audited, and self-healing library of **137 Expert Skills** that the agent can "download" into its context on demand.
 
 ## 🧠 System Architecture
 
@@ -36,9 +36,9 @@ graph TD
     Library -->|Loads Context| Agent["AI Agent Context"]
     Agent -->|Executes| Code["Perfect Code Generation"]
     
-    subgraph "Self-Healing Loop"
-    Audit["audit_skills.py"] -->|Checks| Library
-    Heal["heal_skills.py"] -->|Injects Metadata| Library
+    subgraph "Quality Assurance"
+    Audit["master_audit.py"] -->|38-Test Suite| Library
+    Enrich["enrich_massive.py"] -->|Tag Enrichment| Library
     end
 ```
 
@@ -57,13 +57,13 @@ root/
 ├── docs/                       # Governance & Maintenance
 │   └── SKILL_MANAGEMENT.md     # Engineering standards for adding skills
 │
-├── scripts/                    # Automation & Self-Healing
-│   ├── audit_skills.py         # The Doctor: Scans for broken metadata
-│   └── heal_skills.py          # The Healer: Fixes missing tags automatically
+├── scripts/                    # Automation & Quality Assurance
+│   ├── master_audit.py         # 38-Test Comprehensive Audit Suite
+│   └── enrich_massive.py       # Mass Tag Enrichment for Discoverability
 │
 ├── skills_manifest.json        # The Central Nervous System (Router)
 │
-└── skills/                     # The Knowledge Base (138+ Skills)
+└── skills/                     # The Knowledge Base (137 Skills)
     ├── react_expert/           # Specialized React 19 knowledge
     ├── aws_architect/          # Cloud infrastructure patterns
     ├── python_pro/             # Type-safe, async Python mastery
@@ -86,19 +86,28 @@ This is the operating system. It forces the agent to follow a strict loop:
 4.  **Phase 3 (Engineering):** Test-Driven Development (Red -> Green -> Refactor).
 5.  **Phase 4 (Handoff):** Verify and report.
 
-### 3. The Self-Healing Scripts (`scripts/`)
+### 3. The Quality Assurance Scripts (`scripts/`)
 We adhere to the **"100% Initiative"**.
-*   `audit_skills.py`: Verifies every single skill has proper metadata and rich descriptions.
-*   `heal_skills.py`: Synchronizes the centralized manifest with the distributed skill files.
+*   `master_audit.py`: Comprehensive 38-test audit suite covering file structure, metadata, content quality, manifest integrity, and security.
+*   `enrich_massive.py`: Mass tag enrichment to ensure all skills have 20+ searchable tags for maximum discoverability.
 
 ## 🛠️ Installation & Usage
 
-1.  **Clone this repository** to your machine.
-2.  **Configure MCP:** Point your MCP server (Skillport) to this `skills` directory.
+### Prerequisites
+
+**Skillport MCP Server Required:** This skill library requires the Skillport MCP server to function.
+
+👉 **Install Skillport:** [https://github.com/xenitV1/skillport](https://github.com/xenitV1/skillport)
+
+### Setup Steps
+
+1.  **Install Skillport** following the instructions at the link above.
+2.  **Clone this repository** to your local `~/.skillport/skills` directory.
+3.  **Configure MCP:** Ensure your MCP settings point to the skills directory:
    ```json
    "library_root": "%USERPROFILE%/.skillport/skills"
    ```
-3.  **Activate Protocol:**
+4.  **Activate Protocol:**
    Start a conversation with:
    > `/super_protokol_v2`
 
@@ -110,7 +119,7 @@ We adhere to the **"100% Initiative"**.
 
 **Antigravity Agentic Skills**, sıradan bir kod deposu değildir. Bu, AI ajanlarına (Claude/Gemini gibi) uzun süreli hafıza, profesyonel uzmanlık ve sıkı mühendislik disiplini kazandırmak için tasarlanmış **dinamik bir bilişsel mimaridir**.
 
-Standart AI oturumları unutkandır (her sohbet sıfırdan başlar). Bu sistem, ajanın ihtiyaç duyduğunda bağlamına yükleyebileceği, sürekli denetlenen ve kendi kendini onaran **138+ Uzman Yetenek** kütüphanesi ile bu sorunu çözer.
+Standart AI oturumları unutkandır (her sohbet sıfırdan başlar). Bu sistem, ajanın ihtiyaç duyduğunda bağlamına yükleyebileceği, sürekli denetlenen ve kendi kendini onaran **137 Uzman Yetenek** kütüphanesi ile bu sorunu çözer.
 
 ## 🧠 Sistem Mimarisi
 
@@ -131,13 +140,13 @@ root/
 ├── workflows/                  # İşleyiş Mantığı
 │   └── super_protokol_v2.md    # "Motor" (Ajanın nasıl düşüneceğini belirler)
 │
-├── scripts/                    # Otomasyon Araçları
-│   ├── audit_skills.py         # Doktor: Eksik veya hatalı skilleri tarar.
-│   └── heal_skills.py          # Şifacı: Eksik etiketleri otomatik tamir eder.
+├── scripts/                    # Otomasyon & Kalite Güvence
+│   ├── master_audit.py         # 38-Test Kapsamlı Audit Suite
+│   └── enrich_massive.py       # Toplu Etiket Zenginleştirme
 │
 ├── skills_manifest.json        # Merkezi Sinir Sistemi (Yönlendirici)
 │
-└── skills/                     # Bilgi Bankası (138+ Yetenek)
+└── skills/                     # Bilgi Bankası (137 Yetenek)
     ├── react_expert/           # React 19 ve Modern UI uzmanlığı
     ├── secops_core/            # Güvenlik ve Pentest prosedürleri
     └── ... (135 diğer yetenek)
@@ -159,15 +168,23 @@ Bu sistemin işletim sistemidir. Ajanı şu döngüye zorlar:
 4.  **Faz 3 (Mühendislik):** Önce test yaz, sonra kod yaz (Red -> Green).
 5.  **Faz 4 (Teslim):** Kanıtla ve raporla.
 
-### 3. Kendi Kendini İyileştirme (`scripts/`)
+### 3. Kalite Güvence Scriptleri (`scripts/`)
 **"%100 İnisiyatifi"** gereği sistem asla hata kabul etmez.
-*   `audit_skills.py`: Tek bir tıklamayla tüm sistemi tarar ve "Weak" (zayıf) tanımı olan yetenekleri raporlar.
-*   `heal_skills.py`: Manifest dosyasındaki tanımları yüzlerce dosyaya saniyeler içinde işler.
+*   `master_audit.py`: Dosya yapısı, metadata, içerik kalitesi, manifest bütünlüğü ve güvenliği kapsayan 38-test audit suite.
+*   `enrich_massive.py`: Maksimum keşfedilebilirlik için tüm skill'lerin 20+ aranabilir etikete sahip olmasını sağlar.
 
 ## 🛠️ Kurulum ve Kullanım
 
-1.  **Repoyu Klonlayın:** Bu klasörü bilgisayarınıza indirin.
-2.  **MCP Ayarı:** Skillport sunucunuzu bu `skills` klasörüne yönlendirin.
+### Ön Koşullar
+
+**Skillport MCP Sunucusu Gerekli:** Bu yetenek kütüphanesi, Skillport MCP sunucusunun kurulu olmasını gerektirir.
+
+👉 **Skillport'u Kurun:** [https://github.com/xenitV1/skillport](https://github.com/xenitV1/skillport)
+
+### Kurulum Adımları
+
+1.  **Skillport'u** yukarıdaki linkteki talimatlara göre kurun.
+2.  **Bu repoyu** lokal `~/.skillport/skills` dizinine klonlayın.
 3.  **Protokolü Başlatın:**
    AI ile konuşurken sihirli sözcüğü söyleyin:
    > `/super_protokol_v2`
