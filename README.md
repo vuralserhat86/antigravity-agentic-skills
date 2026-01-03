@@ -1,5 +1,5 @@
 # 🌌 Antigravity Agentic Skills
-### The Operating System for Autonomous Agents (2025 Edition)
+### The Operating System for Autonomous Agents (2026 Edition)
 
 [![Agentic Discipline](https://img.shields.io/badge/Discipline-Zero--Tolerance-red.svg)]()
 [![Skills](https://img.shields.io/badge/Skills-137--Evidence--Based-blue.svg)]()
