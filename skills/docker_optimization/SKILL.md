@@ -1,59 +1,16 @@
 ---
 name: docker_optimization
 router_kit: DevOpsKit
-description: Docker image size reduction, multi-stage builds ve caching stratejileri.
+description: Docker imaj boyutu optimizasyonu, multi-stage builds ve güvenli container yapılandırması.
 metadata:
   skillport:
-    category: operations
-    tags: [architecture, automation, best practices, cleanup, containerization, deployment, devops, docker, docker optimization, infrastructure, lifecycle, microservices, optimization, orchestration, performance, scalability, software engineering, virtualization, workflow]      - kubernetes
+    category: devops
+    tags: [automation, aws, bash scripting, ci/cd, cloud computing, containerization, deployment strategies, devops, docker, docker optimization, gitops, infrastructure, infrastructure as code, kubernetes, linux, logging, microservices, monitoring, orchestration, pipelines, reliability, scalability, security, server management, terraform]      - images
 ---
 
 # 🐳 Docker Optimization
 
-> Docker imaj optimizasyonu ve best practices.
-
----
-
-## 🏗️ Multi-Stage Build
-
-```dockerfile
-# Stage 1: Build
-FROM node:20-alpine AS builder
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci
-COPY . .
-RUN npm run build
-
-# Stage 2: Runtime
-FROM node:20-alpine
-WORKDIR /app
-COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/node_modules ./node_modules
-COPY package*.json ./
-EXPOSE 3000
-CMD ["npm", "start"]
-```
-
----
-
-## 📏 Image Size Reduction
-
-| Teknik | Fayda |
-|--------|-------|
-| **Alpine Linux** | ~100MB tasarruf |
-| **.dockerignore** | Build context küçülür |
-| **Layer concatenation** | Daha az katman |
-| **Multi-stage** | Build araçları atılır |
-
----
-
-## 🔒 Security Best Practices
-
-- **Non-root user**: `USER node`
-- **Minimal base images**: `distroless` or `alpine`
-- **Scan images**: `docker scan`
-- **Avoid secrets**: Don't use `ENV` for secrets.
+> Yüksek performanslı ve güvenli Docker yapılandırmaları.
 
 ---
 
@@ -84,6 +41,3 @@ CMD ["npm", "start"]
 | 1 | İmaj boyutu builder stage'den %50+ daha küçük mü? |
 | 2 | `dive <image>` ile bakıldığında gizli dosya/key kalmış mı? |
 | 3 | Container root olmadan çalışabiliyor mu? |
-
----
-*Docker Optimization v1.2 - Verified*
