@@ -1,42 +1,114 @@
 ---
 name: vitest_runner
-router_kit: QualityKit
-description: Vitest ile hızlı unit ve component testleri, mocking ve coverage.
+router_kit: FullStackKit
+description: Modern JavaScript/TypeScript testing with Vitest including mocking and coverage.
 metadata:
   skillport:
-    category: quality
-    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, vitest runner, workflow]      - test-speed
+    category: auto-healed
+    tags: [architecture, assertions, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, jest compatible, mocking, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, unit testing, utilities, version control, vite, vitest runner, workflow]
 ---
 
-# ⚡ Vitest Runner
+# Vitest
 
-> Vite ekosistemi için optimize edilmiş, ultra hızlı test koşucu.
+## Description
+
+Modern JavaScript/TypeScript testing with Vitest including mocking and coverage.
+
+## When to Use
+
+- Testing JavaScript/TypeScript
+- React component testing
+- Unit and integration tests
 
 ---
 
-*Vitest Runner v1.1 - Enhanced*
+## Core Patterns
+
+### Basic Tests
+
+```typescript
+import { describe, it, expect } from 'vitest';
+
+describe('math', () => {
+  it('should add numbers', () => {
+    expect(1 + 1).toBe(2);
+  });
+
+  it('should throw on invalid input', () => {
+    expect(() => divide(1, 0)).toThrow('Division by zero');
+  });
+});
+```
+
+### Mocking
+
+```typescript
+import { vi, describe, it, expect } from 'vitest';
+
+// Mock module
+vi.mock('./api', () => ({
+  fetchUser: vi.fn().mockResolvedValue({ id: 1 })
+}));
+
+// Mock function
+const callback = vi.fn();
+callback('arg');
+expect(callback).toHaveBeenCalledWith('arg');
+```
+
+### Async Tests
+
+```typescript
+it('should fetch data', async () => {
+  const data = await fetchData();
+  expect(data).toEqual({ id: 1 });
+});
+
+it('should reject on error', async () => {
+  await expect(fetchData()).rejects.toThrow('Error');
+});
+```
+
+### React Testing
+
+```typescript
+import { render, screen } from '@testing-library/react';
+import { userEvent } from '@testing-library/user-event';
+
+it('should handle click', async () => {
+  const onClick = vi.fn();
+  render(<Button onClick={onClick}>Click</Button>);
+
+  await userEvent.click(screen.getByRole('button'));
+  expect(onClick).toHaveBeenCalled();
+});
+```
 
 ## 🔄 Workflow
 
-> **Kaynak:** [Vitest Documentation](https://vitest.dev/guide/) & [Testing Library - React with Vitest](https://testing-library.com/docs/react-testing-library/setup#vitest)
+> **Kaynak:** [Vitest Official Documentation](https://vitest.dev/guide/) & [Vite + Testing Best Practices](https://github.com/vitest-dev/vitest)
 
 ### Aşama 1: Environment & Setup
-- [ ] **Config**: `vitest.config.ts` (veya `vite.config.ts`) içinde test ortamını (jsdom/node) ve coverage ayarlarını yapılandır.
-- [ ] **Globals**: Dashboardsız kullanım için `globals: true` ayarını kontrol et (Örn: `describe`, `it`, `expect` otomatik gelsin).
+- [ ] **Vite Integration**: `vitest.config.ts` dosyasının Vite ayarlarıyla senkronize olduğunu doğrula.
+- [ ] **Environment Choice**: Web projeleri için `jsdom` veya `happy-dom`, backend için `node` environment'ı seç.
+- [ ] **Global Mocks**: Sık kullanılan harici servisler (API, LocalStorage) için `setup.ts` içinde global mock'ları tanımla.
 
-### Aşama 2: Writing & Mocking
-- [ ] **TestSuite**: `describe` ve `it/test` bloklarıyla senaryoları yapılandır.
-- [ ] **Mocking**: `vi.mock()` ile dış bağımlılıkları ve `vi.fn()` ile fonksiyon casuslarını (Spies) oluştur.
-- [ ] **Async Testing**: `await` ve `waitFor` kullanarak asenkron durumları test et.
+### Aşama 2: Unit & Component Testing
+- [ ] **Isolation Layer**: Bağımlılıkları `vi.mock()` ile izole ederek sadece hedef üniteyi test et.
+- [ ] **Assertion Strategy**: `expect` metodlarını kullanarak beklenen sonuçları (be.truthy, toEqual, toBeCalled) doğrula.
+- [ ] **Snapshot Testing**: UI bileşenlerindeki (Component) beklenmedik arayüz değişikliklerini `toMatchSnapshot()` ile yakala.
 
-### Aşama 3: Analysis & Optimization
-- [ ] **Coverage**: `vitest run --coverage` ile kod kapsamını (v8 veya istanbul) raporla.
-- [ ] **UI Mode**: Testleri görsel olarak takip etmek için `vitest --ui` kullan.
-- [ ] **Performance**: `parallel` ve `threads` ayarlarıyla test çalıştırma süresini optimize et.
+### Aşama 3: Performance & Coverage
+- [ ] **Watch Mode**: Geliştirme sürecinde testleri `watch` modunda tutarak anlık geri bildirim al.
+- [ ] **Coverage Analysis**: `v8` veya `istanbul` provider kullanarak test kapsamını raporla.
+- [ ] **Dependency Cleanup**: `vi.clearAllMocks()` ile testler arası veri kirliliğini (Pollution) önle.
 
 ### Kontrol Noktaları
 | Aşama | Doğrulama |
 |-------|-----------|
-| 1 | Testler "Clean Up" (Örn: `afterEach(cleanup)`) yapıyor mu? |
-| 2 | "Snapshots"lar güncel ve anlamlı mı? |
-| 3 | Hangi modda (jsdom vs node) çalışıldığı doğru mu? |
+| 1 | Test dosyaları `*.test.ts` veya `*.spec.ts` formatında mı? |
+| 2 | Asenkron kodlar (`async/await`) doğru handle ediliyor mu? |
+| 3 | Karmaşık nesne karşılaştırmalarında `toBe` (referans) yerine `toEqual` (değer) mi kullanıldı? |
+
+---
+*Vitest Runner v1.5 - With Workflow*

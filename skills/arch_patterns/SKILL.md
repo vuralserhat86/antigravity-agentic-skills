@@ -14,6 +14,69 @@ metadata:
 
 ---
 
+## ⚠️ Bu Skill vs `design-patterns`
+
+| Bu Skill | `design-patterns` |
+|----------|-------------------|
+| **Sistem** mimarisi | **UI/UX** tasarım |
+| Microservices, CQRS | Z-index, shadows |
+| Database, scaling | Animation, spacing |
+
+> **Kural:** Backend/sistem → bu skill, Frontend/UI → `design-patterns`
+
+---
+
+## ⚖️ Monolith vs Microservices
+
+| Aspect | Monolith | Microservices |
+|--------|----------|---------------|
+| Complexity | Düşük | Yüksek |
+| Scaling | Tüm uygulama | Service bazlı |
+| Team Size | Küçük | Büyük |
+
+**Seç:**
+- Monolith: Küçük takım, MVP, hızlı iteration
+- Microservices: Büyük takım, bağımsız deploy
+
+---
+
+## 📚 Layered Architecture
+
+```
+Presentation → Application → Domain → Infrastructure
+```
+
+---
+
+## ⚡ Event-Driven
+
+```
+Producer → Event Broker → Consumer
+           (Kafka/SQS)
+```
+
+---
+
+## 📊 CQRS
+
+```
+Command Service → Write DB
+                    ↓ Events
+Query Service ← Read DB
+```
+
+---
+
+## 🧩 Modular Monolith
+
+```
+Modules separated by boundaries within a single deployable unit.
+Good for: Teams growing from startup to scale-up phase.
+Prevents "Distributed Monolith" chaos.
+```
+
+---
+
 *Architecture Patterns v1.1 - Enhanced*
 
 ## 🔄 Workflow

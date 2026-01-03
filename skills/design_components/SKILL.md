@@ -1,40 +1,128 @@
 ---
 name: design_components
 router_kit: FullStackKit
-description: Reusable UI bileşen tasarımı, Radix UI, Headless UI ve Shadcn/ui kullanımı. ⚠️ UI kodlarken kullan. Stil sistemleri için → tailwind-mastery veya vanilla-css.
+description: Button, card, input ve icon sizing kuralları. Component boyutlandırma standartları.
 metadata:
   skillport:
     category: design
-    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, design components, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - ui-kit
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, design components, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - design-patterns
 ---
 
 # 🧩 Design Components
 
-> Yeniden kullanılabilir ve erişilebilir UI bileşenleri geliştirme.
+> Component boyutlandırma standartları.
 
 ---
 
-*Design Components v1.1 - Enhanced*
+## 🔘 1. Button Sizes
+
+```
+Small:   H:32px, P:8px/16px,  Font:14px
+Medium:  H:40px, P:12px/24px, Font:16px (Default)
+Large:   H:48px, P:14px/32px, Font:18px
+XLarge:  H:56px, P:16px/40px, Font:20px
+```
+
+### Button States
+| State | Stil |
+|-------|------|
+| Default | Base |
+| Hover | Lighten/Darken 10%, Scale 1.02 |
+| Active | Scale 0.98 |
+| Focus | Ring outline |
+| Disabled | Opacity 50% |
+
+---
+
+## 📦 2. Card Sizing
+
+### Padding
+| Tip | Padding |
+|-----|---------|
+| Compact | 16px |
+| Default | 24px |
+| Spacious | 32px |
+
+### Shadow (Elevation)
+```
+shadow-sm:  0 1px 3px rgba(0,0,0,0.1)
+shadow-md:  0 4px 6px rgba(0,0,0,0.1)
+shadow-lg:  0 10px 15px rgba(0,0,0,0.1)
+shadow-xl:  0 20px 25px rgba(0,0,0,0.1)
+```
+
+---
+
+## 📝 3. Input Fields
+
+```
+Height:  40px (default), 48px (large)
+Padding: 12px / 16px (V/H)
+Border:  1px solid
+Radius:  4px veya 8px
+```
+
+### Input States
+| State | Stil |
+|-------|------|
+| Default | Border: neutral-300 |
+| Focus | Border: primary-500, Ring |
+| Error | Border: error-500 |
+| Disabled | Background: neutral-100 |
+
+---
+
+## 🎯 4. Icon Sizes
+
+```
+16px - Inline with text
+20px - Buttons
+24px - Standalone
+32px - Feature highlights
+48px - Hero sections
+```
+
+### Icon + Text Spacing
+- Icon ve text arası: 8px
+
+---
+
+## 📋 5. Form Layout
+
+```
+Label-Input gap:     8px
+Input-Input gap:     16px veya 24px
+Form section gap:    32px
+Submit button margin: 24px top
+```
+
+---
 
 ## 🔄 Workflow
 
-> **Kaynak:** [Component-Driven Development](https://www.componentdriven.org/)
+> **Kaynak:** [Atomic Design Methodology](https://atomicdesign.bradfrost.com/) & [Shadcn UI Component Standards](https://ui.shadcn.com/docs/components/button)
 
-### Aşama 1: Decomposition (Parçalarına Ayır)
-- [ ] **Atoms**: En küçük yapıları (Button, Input, Text) belirle.
-- [ ] **Molecules**: Atomlardan oluşan grupları (SearchBox, Card) oluştur.
+### Aşama 1: Component Definition & Atomic Audit
+- [ ] **Inventory**: Mevcut arayüzdeki tekrarlayan elementleri (Button, Input) tespit et ve Atom'lara ayır.
+- [ ] **State Mapping**: Her komponentin tüm state'lerini (Default, Hover, Active, Disabled, Loading) tanımla.
+- [ ] **Accessibility (A11y)**: Aria-label ve role tanımlarının doğruluğunu denetle.
 
-### Aşama 2: Headless & Accessibility
-- [ ] **Primitives**: `Radix UI` veya `Headless UI` gibi erişilebilir temel kütüphaneleri seç.
-- [ ] **Shadcn/UI**: Modern ve özelleştirilebilir bileşen şablonlarını entegre et.
+### Aşama 2: Sizing & Variants Setup
+- [ ] **Base Unit Alignment**: Tüm boyutların 8-point grid (Design Tokens) sistemine uygunluğunu doğrula.
+- [ ] **Variant Creation**: `Tailwind` veya `CVA` (Class Variance Authority) kullanarak variant yapılarını kur.
+- [ ] **Visual Consistency**: Padding ve gap değerlerinin hiyerarşiye uygunluğunu kontrol et.
 
-### Aşama 3: Prop Design & Composition
-- [ ] **Props**: Bileşenin esnekliği için doğru interface/type tanımlarını yap.
-- [ ] **Composition**: "Compound Component" pattern'ı ile karmaşık UI'ları yönet.
+### Aşama 3: Testing & Documentation
+- [ ] **Visual Testing**: Komponentin farklı tarayıcılarda ve viewports'larda görsel bütünlüğünü test et (Storybook).
+- [ ] **Unit Testing**: Etkileşimli komponentler (Dropdown, Modal) için logic testleri yaz.
+- [ ] **Handoff**: Tasarımın geliştiriciye aktarımı için dokümantasyonu (Design-to-Code) güncelle.
 
 ### Kontrol Noktaları
 | Aşama | Doğrulama |
 |-------|-----------|
-| 1 | Bileşen bağımsız olarak çalışabiliyor mu (Isolated)? |
-| 2 | Klavye navigasyonu ve Ekran Okuyucu uyumlu mu? |
-| 3 | Stil yönetimi (Tailwind vb.) tutarlı mı? |
+| 1 | Komponent tek bir sorumluluğa (Single Responsibility) sahip mi? |
+| 2 | Tüm variant'lar merkezi bir `tokens` dosyasından mı besleniyor? |
+| 3 | Screen reader testleri başarılı mı? |
+
+---
+*Design Components v1.5 - With Workflow*

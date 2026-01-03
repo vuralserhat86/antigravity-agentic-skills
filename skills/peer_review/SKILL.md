@@ -1,16 +1,107 @@
 ---
 name: peer_review
-router_kit: ManagementKit
-description: Etkili ekip içi code review ve dokümantasyon inceleme süreçleri.
+router_kit: FullStackKit
+description: Akademik/teknik doküman review, methodology değerlendirme. ⚠️ Doküman/araştırma için kullan. Kod review için → code-review.
 metadata:
   skillport:
-    category: quality
-    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, peer review, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - collaboration
+    category: research
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, peer review, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - quality
 ---
 
-# 👥 Peer Review
+# 📝 Peer Review
 
-> Yapıcı geribildirim ve yüksek kod kalitesi için inceleme süreci.
+> Akademik ve teknik peer review metodolojisi rehberi.
+
+---
+
+## 📋 Review Framework
+
+### Değerlendirme Alanları
+| Alan | Sorular |
+|------|---------|
+| **Clarity** | Açık ve anlaşılır mı? |
+| **Methodology** | Yöntem uygun mu? |
+| **Validity** | Sonuçlar geçerli mi? |
+| **Originality** | Özgün katkı var mı? |
+| **Completeness** | Eksik var mı? |
+
+---
+
+## 🔍 Code Review Checklist
+
+```checklist
+## Functionality
+- [ ] Kod beklendiği gibi çalışıyor mu?
+- [ ] Edge case'ler handle ediliyor mu?
+- [ ] Error handling yeterli mi?
+
+## Code Quality
+- [ ] DRY prensibi uygulanmış mı?
+- [ ] Naming convention tutarlı mı?
+- [ ] Comments yeterli mi?
+
+## Security
+- [ ] Input validation var mı?
+- [ ] SQL injection riski var mı?
+- [ ] Sensitive data korumalı mı?
+
+## Performance
+- [ ] Gereksiz işlem var mı?
+- [ ] Memory leak riski var mı?
+```
+
+---
+
+## 📄 Document Review Template
+
+```markdown
+## Review Summary
+**Document:** [Doküman adı]
+**Reviewer:** [İsim]
+**Date:** [Tarih]
+
+## Overall Assessment
+[Genel değerlendirme - 1-2 paragraf]
+
+## Strengths
+1. ...
+2. ...
+
+## Areas for Improvement
+1. ...
+2. ...
+
+## Specific Comments
+| Section | Comment | Severity |
+|---------|---------|----------|
+| ... | ... | Major/Minor |
+
+## Recommendation
+[ ] Accept
+[ ] Minor Revisions
+[ ] Major Revisions
+[ ] Reject
+```
+
+---
+
+## 💬 Constructive Feedback
+
+### İyi Feedback
+```
+✅ "Bu fonksiyon X durumunda hata verebilir. 
+    Try-catch eklemeyi düşünebilir misin?"
+
+✅ "Güzel implementasyon! Bir öneri: 
+    Bu method extract edilse daha okunabilir olur."
+```
+
+### Kaçınılması Gereken
+```
+❌ "Bu yanlış"
+❌ "Neden böyle yaptın?"
+❌ "Ben olsam böyle yapmazdım"
+```
 
 ---
 
@@ -18,25 +109,27 @@ metadata:
 
 ## 🔄 Workflow
 
-> **Kaynak:** [Google Engineeer's Guide to Code Reviews](https://google.github.io/eng-practices/review/) & [The Art of Peer Review](https://stackoverflow.blog/2019/09/30/how-to-make-good-code-reviews-better/)
+> **Kaynak:** [Conventional Comments](https://conventionalcomments.org/) & [Google Engineering Practices](https://google.github.io/eng-practices/review/)
 
-### Aşama 1: Preparation (Author Side)
-- [ ] **Self-Review**: Kodu başkasına göndermeden önce kendin incele (typo, debug logs).
-- [ ] **Context**: PR açıklamasında "Neden" bu değişikliği yaptığını ve test sonuçlarını belirt.
-- [ ] **Size**: Büyük değişiklikleri küçük, incelenebilir PR'lara böl (<400 satır).
+### Aşama 1: Preparation (Reviewee)
+- [ ] **Self-Review**: Kodu pushlamadan önce kendin oku, gereksiz logları temizle.
+- [ ] **Context**: PR açıklamasında "Ne?", "Neden?" ve "Nasıl Test Edilir?" sorularını yanıtla.
+- [ ] **Scope**: Değişikliği yönetilebilir boyutta tut (<400 satır tercihen).
 
-### Aşama 2: Reviewing (Reviewer Side)
-- [ ] **Objectivity**: Kişisel tercihler (style) yerine standartlara (Style guide) sadık kal.
-- [ ] **Constructiveness**: Sorunları soru sorarak veya öneri vererek belirt ("Bunu X yerine Y ile yazabilir miyiz?").
-- [ ] **Priority**: Kritik hataları (Security, Logic) stil hatalarından (Typo) ayır.
+### Aşama 2: Review Process (Reviewer)
+- [ ] **Clarity**: Kod ne yaptığını anlatıyor mu? Değişken isimleri açıklayıcı mı?
+- [ ] **Security**: Kullanıcı girdisi sanitize ediliyor mu? Auth kontrolü var mı?
+- [ ] **Performance**: Gereksiz döngüler veya N+1 sorguları var mı?
+- [ ] **Tone**: Yorumlarda `nit:`, `suggestion:`, `blocking:` gibi etiketler kullan (Conventional Comments). "Sen" dili yerine "Kod" dili kullan.
 
-### Aşama 3: Resolution & Approval
-- [ ] **Address**: Tüm yorumlara cevap ver veya kodu güncelle.
-- [ ] **Approval**: Şüphe kalmadığında "Approve" et veya "Request Changes" ile gerekçeni açıkla.
+### Aşama 3: Approval & Merge
+- [ ] **CI Checks**: Tüm testler ve lint kontrolleri yeşil mi?
+- [ ] **Resolution**: Tüm kritik yorumlar (blocking) çözüldü mü?
+- [ ] **Squash & Merge**: History temizliği için commitleri birleştir.
 
 ### Kontrol Noktaları
 | Aşama | Doğrulama |
 |-------|-----------|
-| 1 | İnceleme 24 saatten fazla bekledi mi (Cycle time)? |
-| 2 | Yorumlar "Hangi kurala" dayandırılarak yapıldı? |
-| 3 | Kodun bakımı (Maintainability) bu PR ile arttı mı? |
+| 1 | PR açıklaması ekran görüntüsü veya video içeriyor mu (Frontend ise)? |
+| 2 | Reviewer kodu local'e çekip çalıştırdı mı (Complex changes)? |
+| 3 | Feedback yapıcı mı yoksa sadece eleştirel mi? |

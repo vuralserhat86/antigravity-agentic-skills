@@ -94,4 +94,30 @@ Python 3.11+, typing module, mypy, pytest, black, ruff, dataclasses, async/await
 
 - **FastAPI Expert** - Async Python APIs
 - **Data Science Pro** - NumPy, Pandas, ML
-- **DevOps Engineer** - Python automation and tooling
+*Python Pro v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html) & [Hypermodern Python](https://cjolowicz.com/posts/hypermodern-python-01-setup/)
+
+### Aşama 1: Modern Tooling (2025 Standard)
+- [ ] **Manager**: Paket yönetimi ve venv için `uv` kullan (Hızlı, Rust-based).
+- [ ] **Linting**: Kod kalitesi için `Ruff` kullan (Flake8, Isort, Black yerine tek araç).
+- [ ] **Config**: Tüm konfigürasyonu `pyproject.toml` içinde topla.
+
+### Aşama 2: High-Quality Implementation
+- [ ] **Type Hints**: Tüm fonksiyonlarda `type hints` kullan. `mypy --strict` modunda çalıştır.
+- [ ] **Modern Syntax**: Python 3.10+ özelliklerini kullan (`match/case`, `X | Y` union type, `dataclasses`).
+- [ ] **Async**: I/O işlemlerinde `async/await` ve `asyncio` (veya `anyio`) kullanarak bloklamayı önle.
+
+### Aşama 3: Testing & Resilience
+- [ ] **Testing**: `pytest` ve güçlü fixture'lar kullan. Mocking için `pytest-mock`.
+- [ ] **Error Handling**: Exception handling yerine (veya yanında) Result pattern veya Railway Oriented Programming düşün (Opsiyonel, Library code için).
+- [ ] **Logging**: `structlog` ile yapılandırılmış (JSON) loglar üret.
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Kod `ruff check .` ve `ruff format .` komutlarından geçiyor mu? |
+| 2 | `mypy` hatasız tamamlanıyor mu? |
+| 3 | Fonksiyonlar "Pure function" olmaya yakın mı? (Yan etkiler izole edildi mi?) |

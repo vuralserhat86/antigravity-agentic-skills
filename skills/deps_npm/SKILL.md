@@ -1,41 +1,87 @@
 ---
 name: deps_npm
 router_kit: FullStackKit
-description: NPM/Yarn bağımlılık yönetimi, package.json best practices ve security audit.
+description: npm/yarn dependency management, package.json best practices ve version control.
 metadata:
   skillport:
     category: development
-    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, deps npm, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - package-json
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, deps npm, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - deps-security
 ---
 
-# 📦 Dependencies (NPM/Yarn)
+# 📦 Deps NPM
 
-> Güvenli ve verimli bağımlılık yönetimi.
+> npm dependency management ve best practices.
 
 ---
 
-*Dependencies (NPM) v1.1 - Enhanced*
+## 📋 package.json Best Practices
+
+```json
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "engines": { "node": ">=20.0.0" },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint .",
+    "test": "vitest"
+  }
+}
+```
+
+---
+
+## 🔒 Version Control
+
+| Prefix | Anlamı | Örnek |
+|--------|--------|-------|
+| `^1.2.3` | Minor updates OK | 1.x.x |
+| `~1.2.3` | Patch only | 1.2.x |
+| `1.2.3` | Exact version | 1.2.3 |
+
+```bash
+# Lock file ZORUNLU
+npm ci  # package-lock.json kullan
+```
+
+---
+
+## 📊 Dependency Types
+
+```json
+{
+  "dependencies": {},      // Production
+  "devDependencies": {},   // Development only
+  "peerDependencies": {}   // Consumer provides
+}
+```
+
+---
+
+*Deps NPM v1.1 - Enhanced*
 
 ## 🔄 Workflow
 
-> **Kaynak:** [NPM Security Best Practices](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file)
+> **Kaynak:** [NPM Security Best Practices](https://docs.npmjs.com/creating-and-publishing-scoped-public-packages)
 
-### Aşama 1: Selection & Installation
-- [ ] **Select**: Paket popülerliğini ve bakım durumunu (npmtrends.com) kontrol et.
-- [ ] **Install**: DevDependencies vs. Dependencies ayrımını doğru yap.
-- [ ] **Lockfile**: `package-lock.json` veya `yarn.lock` dosyasını mutlaka commit et.
+### Aşama 1: Audit & Analysis
+- [ ] **Lockfile**: `package-lock.json` var ve güncel mi?
+- [ ] **Security**: `npm audit` çalıştır ve kritik açıkları gider.
+- [ ] **Licenses**: Production bağımlılıklarının lisanslarını kontrol et.
 
-### Aşama 2: Maintenance & Audit
-- [ ] **Update**: `npm outdated` ile güncel olmayan paketleri bul.
-- [ ] **Security**: `npm audit` komutu ile güvenlik açıklarını tara.
-- [ ] **Pruning**: Kullanılmayan (`depcheck`) paketleri kaldır.
+### Aşama 2: Update Strategy
+- [ ] **Minor/Patch**: `npm outdated` ile güvenli güncellemeleri yap.
+- [ ] **Major**: Breaking change'leri release note'lardan oku ve tek tek güncelle.
+- [ ] **Clean**: Kullanılmayan paketleri `depcheck` ile bul ve sil.
 
-### Aşama 3: Versioning Strategy
-- [ ] **Semantic**: `^` veya `~` kullanımına karar ver (Strict vs. Range).
+### Aşama 3: CI/CD Protection
+- [ ] **Immutable**: CI'da mutlaka `npm ci` kullan (asla `npm install` değil).
+- [ ] **Vulnerability**: Pipeline'a audit step ekle (`npm audit --audit-level=high`).
 
 ### Kontrol Noktaları
 | Aşama | Doğrulama |
 |-------|-----------|
-| 1 | Gereksiz (Overhead) paketler var mı? |
-| 2 | Güvenlik açığı olan paketler ignore edildi mi? |
-| 3 | Lockfile ve package.json senkronize mi? |
+| 1 | `node_modules` silinip `npm ci` yapılınca proje çalışıyor mu? |
+| 2 | Production build, `devDependencies` olmadan çalışıyor mu? |
+| 3 | Tüm versiyonlar 'Exact' veya 'Tilde/Caret' stratejisine uygun mu? |

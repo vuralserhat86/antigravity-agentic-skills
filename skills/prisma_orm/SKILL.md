@@ -487,4 +487,30 @@ const user: UserWithProfile = await PrismaService.main.user.findUnique({
 **Related Skills:**
 - **backend-dev-guidelines** - Complete backend architecture guide
 - **nodejs** - Core Node.js patterns and async handling
-- **express** - Express.js routing and middleware
+*Prisma ORM v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [Prisma Best Practices](https://www.prisma.io/docs/guides/best-practices) & [The Guild - ORM Patterns](https://the-guild.dev/)
+
+### Aşama 1: Schema First Design
+- [ ] **Modeling**: `schema.prisma` dosyasını "Source of Truth" olarak kullan. İlişkileri (1-1, 1-n, m-n) ve indeksleri (`@index`) burada tanımla.
+- [ ] **Migration**: DB değişikliklerini her zaman `prisma migrate dev` ile yap, asla manuel SQL çalıştırma (Drift oluşur).
+- [ ] **Generators**: `prisma-client-js` dışında `zod-prisma` veya `prisma-nestjs-graphql` gibi generatorlar kullanarak kod tekrarını önle.
+
+### Aşama 2: Query Implementation
+- [ ] **Selection**: Asla `findMany()` (aka `SELECT *`) yapma. Her zaman `select:` ile sadece ihtiyaç duyulan alanları çek.
+- [ ] **Filtering**: Kullanıcı girdilerini doğrudan `where` içine koyma, validasyondan geçir. Index kullanımı için filtreleri optimize et.
+- [ ] **Relations**: `include:` kullanırken dikkatli ol (Nested query performansı). Gerekirse `fluent api` veya `raw query` kullan.
+
+### Aşama 3: Optimization & Safety
+- [ ] **N+1 Problem**: Döngü içinde `findUnique` çağırma. ids array'i toplayıp `where: { id: { in: ids } }` ile tek sorguda çek.
+- [ ] **Transactions**: Tutarlılık gerektiren çoklu yazma işlemlerini `$transaction([])` veya `$transaction(async tx => ...)` ile sar.
+- [ ] **Connection Pooling**: Serverless ortamda (Lambda/Vercel) bağlantı sınırını aşmamak için `Prisma Accelerate` veya `PgBouncer` kullan.
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | `schema.prisma`'da `@updatedAt`, `@default(now())` gibi kolaylıklar kullanılıyor mu? |
+| 2 | Soft delete gerekiyor mu? (Gerekiyorsa Middleware veya Extension ile implement edildi mi?) |
+| 3 | Büyük veri setlerinde `skip/take` (Offset pagination) yerine `cursor` pagination tercih edildi mi? |

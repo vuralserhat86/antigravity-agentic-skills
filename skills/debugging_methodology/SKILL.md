@@ -1,16 +1,68 @@
 ---
 name: debugging_methodology
 router_kit: FullStackKit
-description: Sistematik hata ayıklama süreci, root cause analizi ve hata raporlama.
+description: Sistematik debugging döngüsü - reproduce, isolate, hypothesize, fix.
 metadata:
   skillport:
     category: quality
-    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging methodology, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - root-cause
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, debugging methodology, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - debugging-tools
 ---
 
 # 🔍 Debugging Methodology
 
-> Sistematik hata ayıklama ve problem çözme.
+> Sistematik hata ayıklama döngüsü.
+
+---
+
+## 🔄 Debugging Döngüsü
+
+```
+REPRODUCE → UNDERSTAND → ISOLATE → HYPOTHESIZE → TEST → FIX → REFLECT
+```
+
+---
+
+## 1️⃣ Reproduce
+```markdown
+### Tekrarlama Raporu
+- Hata: [Açıklama]
+- Adımlar: 1. ... 2. ... 3. → Hata
+- Ortam: [OS, Node, Browser]
+- Tekrarlanabilirlik: [%100 / %50 / Nadiren]
+```
+
+---
+
+## 2️⃣ 5 Whys
+
+```markdown
+Problem: Login çalışmıyor
+1. Neden? → API 401 dönüyor
+2. Neden? → Token geçersiz
+3. Neden? → Token expire
+4. Neden? → Refresh çalışmıyor
+5. Neden? → Endpoint değişmiş
+```
+
+---
+
+## 3️⃣ Binary Search (git bisect)
+
+```bash
+git bisect start
+git bisect bad HEAD
+git bisect good v1.0.0
+git bisect run npm test
+```
+
+---
+
+## 4️⃣ Hipotez Listesi
+
+| # | Hipotez | Olasılık | Test |
+|---|---------|----------|------|
+| 1 | Null pointer | %40 | console.log |
+| 2 | Race condition | %30 | timeout ekle |
 
 ---
 
@@ -18,27 +70,26 @@ metadata:
 
 ## 🔄 Workflow
 
-> **Kaynak:** [The Scientific Method of Debugging](https://en.wikipedia.org/wiki/Debugging#Scientific_method)
+> **Kaynak:** [Scientific Method in Debugging](https://queue.acm.org/detail.cfm?id=1839676)
 
-### Aşama 1: Observation & Reproduction
-- [ ] **Reproduce**: Hatayı "her zaman" tetikleyecek en basit adımları belirle.
-- [ ] **Collect Data**: Loglar, ekran görüntüleri ve kullanıcı verilerini topla.
+### Aşama 1: Incident Response (Triage)
+- [ ] **Log**: Hata mesajını ve call stack'i kaydet.
+- [ ] **Reproduce**: Hatayı lokalde veya test ortamında en az 1 kez tekrar et.
+- [ ] **Environment**: Versiyon farklarını (Prod vs Dev) kontrol et.
 
-### Aşama 2: Hypothesis Generation
-- [ ] **Brainstorm**: Hataya neden olabilecek 2-3 potansiyel sebebi listele.
-- [ ] **Prioritize**: En olası sebebi en üste al.
+### Aşama 2: Root Cause Analysis (RCA)
+- [ ] **Bisection**: Sorunun başladığı commit'i bul (`git bisect`).
+- [ ] **Isolation**: Sistemi parçalara ayırarak hatayı izole et (Unit Test yaz).
+- [ ] **Hypothesis**: En olası nedenleri listele ve Binary Search ile ele.
 
-### Aşama 3: Testing & Fix
-- [ ] **Experiment**: Hipotezini test etmek için küçük kod değişiklikleri yap.
-- [ ] **Verify**: Düzeltmenin hatayı gerçekten giderdiğini ve yan etki yaratmadığını doğrula.
-
-### Aşama 4: Prevention
-- [ ] **Test Case**: Hatayı önleyecek bir unit/integration test ekle.
-- [ ] **Doc**: Root cause'u ve çözümü not et.
+### Aşama 3: Resolution & Prevention
+- [ ] **Fix**: En az müdahale ile sorunu çözen kodu yaz.
+- [ ] **Verify**: Hem fix'i hem de regression (yan etki) olmadığını test et.
+- [ ] **Post-Mortem**: "Neden oldu?" ve "Nasıl önlenir?" sorularını yanıtla.
 
 ### Kontrol Noktaları
 | Aşama | Doğrulama |
 |-------|-----------|
-| 1     | Hata güvenilir şekilde tekrar edilebiliyor mu? |
-| 2     | Hipotez veriye mi yoksa tahmine mi dayanıyor? |
-| 3     | Çözüm başka bir yeri bozdu mu (Regression)? |
+| 1 | "Bende çalışıyor" tuzağına düşüldü mü? (Ortam farkı kontrolü) |
+| 2 | Fix yaparken test yazıldı mı? (TDD) |
+| 3 | Benzer hatalar başka yerde var mı tarandı mı? |

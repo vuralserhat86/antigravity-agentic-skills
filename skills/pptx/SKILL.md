@@ -486,4 +486,30 @@ Required dependencies (should already be installed):
 - **sharp**: `npm install -g sharp` (for SVG rasterization and image processing)
 - **LibreOffice**: `sudo apt-get install libreoffice` (for PDF conversion)
 - **Poppler**: `sudo apt-get install poppler-utils` (for pdftoppm to convert PDF to images)
-- **defusedxml**: `pip install defusedxml` (for secure XML parsing)
+*PPTX Automation v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [python-pptx Documentation](https://python-pptx.readthedocs.io/) & [Presentation Zen](https://presentationzen.com/)
+
+### Aşama 1: Content Structure & Template
+- [ ] **Outline First**: Sunumu kodlamadan önce Markdown olarak (Başlık, Bulletlar, Notlar) tasarla.
+- [ ] **Master Slide**: "Master Slide" özelliklerini (Logo, Footer, Fontlar) kullanarak tutarlılık sağla, her slayda manuel ekleme.
+- [ ] **Layout Selection**: İçeriğe (Text, Image+Text, Chart) uygun doğru layout indeksini (`slide_layouts[i]`) bul.
+
+### Aşama 2: Generation (Automated)
+- [ ] **Data Integration**: Excel/Pandas verilerini doğrudan tablolara veya grafiklere (ChartData) bağla.
+- [ ] **Media Handling**: Görselleri optimize et (Resolution/Size) ve en-boy oranını koruyarak yerleştir.
+- [ ] **Dynamic Content**: Şablon (Jinja2 benzeri) yaklaşımıyla placeholder'ları dinamik verilerle doldur.
+
+### Aşama 3: Review & Refinement
+- [ ] **Visual Check**: Yazıların taştığı (Overflow) veya görsellerin bozuk olduğu yerleri kontrol et.
+- [ ] **Accessibility**: Görsellere Alt-Text ekle ve okuma sırasının (Reading Order) mantıklı olduğunu doğrula.
+- [ ] **Speaker Notes**: Sunum notlarını (`notes_slide`) ekleyerek konuşmacıya yardımcı ol.
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Oluşturulan dosya boyutu makul mü? (Gömülü büyük görseller şişirebilir). |
+| 2 | Fontlar hedef bilgisayarda yüklü mü veya embed edildi mi? |
+| 3 | Sunum açıldığında "Onarılması gerekiyor" hatası veriyor mu? (XML yapısı bozuk). |

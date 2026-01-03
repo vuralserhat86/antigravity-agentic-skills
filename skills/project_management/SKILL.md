@@ -87,5 +87,31 @@ This skill uses progressive disclosure to prevent context bloat:
 1. Research existing patterns before implementing
 2. Follow established best practices
 3. Refer to detailed documentation for implementation specifics
-4. Cross-reference related skills for comprehensive understanding
+*Project Management v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [Linear Method](https://linear.app/method) & [Shape Up (Basecamp)](https://basecamp.com/shapeup)
+
+### Aşama 1: Planning (Cycle & Scope)
+- [ ] **PROJECT.md**: Projenin "Single Source of Truth" dosyası. Hedefler, kapsam ve "Non-Goals" (Yapılmayacaklar) burada netleşir.
+- [ ] **Cycle Planning**: 2 haftalık Sprint'ler yerine, teslim odaklı "Cycle"lar (Cool-down süresi ile) planla.
+- [ ] **Appetite**: "Bu iş ne kadar sürer?" yerine "Bu işe ne kadar zaman ayırmak istiyoruz?" (Betting) yaklaşımını kullan.
+
+### Aşama 2: Executive (Async-First)
+- [ ] **Daily Updates**: Toplantı yerine, asenkron daily check-in (Standup botu veya metin) kullan.
+- [ ] **Issue Triage**: Gelen bug/feature isteklerini hemen "Inbox"tan (Triage) uygun duruma (Backlog/Icebox/Next Cycle) taşı.
+- [ ] **Decision Log**: Kritik kararları (ADR - Architecture Decision Records) yazılı olarak kaydet, sözlü bırakma.
+
+### Aşama 3: Review & Retrospective
+- [ ] **Demo**: Cycle sonunda çalışan yazılımı demo yap (Deploy edilmiş link üzerinden).
+- [ ] **Retro**: "Ne iyi gitti?", "Ne kötü gitti?" yerine "Süreci nasıl iyileştiririz?" odaklı aksiyonlar al.
+- [ ] **Cleanup**: Tamamlanan işleri arşivle, kalanları bir sonraki Cycle'a taşıma (re-evaluate et).
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | PROJECT.md güncel mi? (Kod ile senkronize mi?) |
+| 2 | "Blocked" olan işler 24 saatten uzun süre bekledi mi? |
+| 3 | Cycle Time (İşe başlama -> Bitiş) hedeflenen sürede mi? |
 

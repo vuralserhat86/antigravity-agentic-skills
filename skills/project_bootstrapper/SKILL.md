@@ -152,4 +152,30 @@ Adapts to:
 - **Full bootstrap**: Everything from scratch
 - **Partial setup**: Specific areas only (e.g., "just add testing")
 - **Improvement pass**: Enhance existing project
-- **Audit + fix**: Check what's missing and add it
+*Project Bootstrapper v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [Cookiecutter Documentation](https://cookiecutter.readthedocs.io/) & [UV Package Manager](https://github.com/astral-sh/uv)
+
+### Aşama 1: Stack & Tool Selection
+- [ ] **Python**: 2025 standardı olarak `uv` kullan (pip/poetry yerine). `pyproject.toml` tek konfigürasyon dosyası olsun.
+- [ ] **Node.js**: `pnpm` (disk efficiency) veya `bun` (speed) tercih et.
+- [ ] **Monorepo**: Birden fazla paket varsa `Turborepo` veya `Nx` kur.
+
+### Aşama 2: Scaffolding (Opinionated Defaults)
+- [ ] **Linter/Formatter**: Python için `Ruff` (tek tool, hepsi içinde), JS için `Biome` veya `ESLint` + `Prettier`.
+- [ ] **Git Hooks**: `pre-commit` (Python) veya `husky` (JS) ile commit öncesi kalite kontrolü zorunlu kıl.
+- [ ] **Editor config**: `.editorconfig` ve `.vscode/extensions.json` ile takımın aynı ortamda çalışmasını sağla.
+
+### Aşama 3: CI/CD & Documentation
+- [ ] **GitHub Actions**: `ci.yml` (Test & Lint) ve `release.yml` (NPM/PyPI publish) workflowlarını baştan ekle.
+- [ ] **README**: "Nasıl Kurulur", "Nasıl Test Edilir", "Nasıl Katkı Verilir" başlıklarını şablon olarak ekle.
+- [ ] **License**: Proje türüne uygun (MIT, Apache 2.0) lisans dosyasını oluştur.
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | `git clone` ve `npm install` (veya `uv sync`) sonrası proje hemen çalışıyor mu? |
+| 2 | CI pipeline'ı ilk commit ile yeşil yanıyor mu? |
+| 3 | Gizli anahtarlar (`.env`) gitignore'a ekli mi? |

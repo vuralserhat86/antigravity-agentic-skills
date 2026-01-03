@@ -14,6 +14,95 @@ metadata:
 
 ---
 
+## 📋 1. Kapsam
+
+| Alan | Teknoloji |
+|------|-----------|
+| Runtime | Node.js 20+ (LTS) |
+| Dil | TypeScript (Strict) |
+| Framework | NestJS, Fastify, Express |
+
+---
+
+## ⚙️ 2. TypeScript Strict Mode
+
+```json
+{
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true
+  }
+}
+```
+
+### `any` Yasak
+```typescript
+// ❌ YANLIŞ
+function process(data: any) { }
+
+// ✅ DOĞRU
+function process(data: DataPayload) { }
+
+// Bilinmeyen için unknown kullan
+function parse(input: unknown) { }
+```
+
+---
+
+## 📁 3. Proje Yapısı (Feature-First)
+
+```
+src/
+├── modules/
+│   ├── auth/
+│   │   ├── auth.controller.ts
+│   │   ├── auth.service.ts
+│   │   ├── auth.repository.ts
+│   │   └── auth.dto.ts
+│   └── users/
+├── shared/
+│   ├── middleware/
+│   ├── guards/
+│   └── utils/
+├── infrastructure/
+│   ├── database/
+│   ├── cache/
+│   └── logger/
+├── config/
+└── main.ts
+```
+
+---
+
+## 🔐 4. Environment Variables
+
+```typescript
+import { z } from 'zod';
+
+const envSchema = z.object({
+  NODE_ENV: z.enum(['development', 'production', 'test']),
+  PORT: z.string().transform(Number),
+  DATABASE_URL: z.string().url(),
+  JWT_SECRET: z.string().min(32),
+});
+
+export const env = envSchema.parse(process.env);
+```
+
+---
+
+## 🔗 İlgili Skill'ler
+- `backend-api` - REST/GraphQL tasarımı
+- `backend-database` - DB patterns, caching
+
+---
+
+- `backend-database` - DB patterns, caching
+
+---
+
 *Backend Core v1.2 - Verified*
 
 ## 🔄 Workflow

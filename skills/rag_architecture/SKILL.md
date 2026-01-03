@@ -340,4 +340,30 @@ llm = OpenAI(streaming=True, callbacks=[StreamingStdOutCallbackHandler()])
 - [ ] Test with edge cases
 - [ ] Set up observability (callbacks)
 - [ ] Implement fallback strategies
-- [ ] Version control prompts and configurations
+*RAG Architecture v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [Azure AI Search - RAG](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview) & [LangChain RAG Concepts](https://python.langchain.com/docs/concepts/#rag)
+
+### Aşama 1: Retrieval Strategy Design
+- [ ] **Chunking**: Statik boyut (Split by character) yerine "Semantic Chunking" veya "Parent-Child Indexing" kullan (Bağlamı korumak için).
+- [ ] **Hybrid Search**: Sadece Vektör araması yetmez. Anahtar kelime (BM25) + Vektör (Cosine Sim) kombinasyonu kullan (Reciprocal Rank Fusion - RRF ile birleştir).
+- [ ] **Query Transformation**: Kullanıcı sorusunu doğrudan arama. "Hypothetical Document Embeddings" (HyDE) veya "Multi-query" ile zenginleştir.
+
+### Aşama 2: Generation Architecture
+- [ ] **Context Window**: Alınan dokümanların LLM'e sığıp sığmadığını ve "Lost in the Middle" problemini yönet (En önemli bilgiyi başa/sona koy).
+- [ ] **System Prompt**: Modelin sadece verilen context'i kullanmasını, dış bilgi katmamasını (Grounding) kesin talimatla belirt.
+- [ ] **Citation**: Cevapların hangi dokümana dayandığını satır içi referanslarla (`source_id`) göstermesini sağla.
+
+### Aşama 3: Evaluation & Feedback
+- [ ] **RAG Triad**: Context Relevance, Groundedness ve Answer Relevance metriklerini ölç (Ragas veya TruLens kullan).
+- [ ] **Feedback Loop**: Kullanıcı "Beğenmedi" dediğinde, o soruyu ve alınan chunkları negatif örnek olarak kaydet.
+- [ ] **Fine-tuning (Optional)**: Embedding modelini domain verisiyle fine-tune et (Generic modeller teknik terimlerde zayıf kalabilir).
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Retrieval süresi 200ms'in altında mı? (Vektör DB indeksi optimize edildi mi?). |
+| 2 | Model "Bilmiyorum" demeyi biliyor mu? (Yoksa uyduruyor mu?). |
+| 3 | Chunklar mantıklı bölünmüş mü? (Cümle ortasında kesilme var mı?). |

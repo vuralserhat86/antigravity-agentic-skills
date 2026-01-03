@@ -88,4 +88,30 @@ metadata:
 
 ---
 
-*Quality Validator v1.0*
+*Quality Validator v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [SonarQube Clean Code](https://www.sonarsource.com/clean-code/) & [Google Engineering Practices](https://github.com/google/eng-practices)
+
+### Aşama 1: Static Analysis & Automation
+- [ ] **Linter/Formatter**: Sadece "hata var mı" diye değil, konfigürasyonun (`eslintrc`, `tsconfig`) sıkılığını (strictness) kontrol et.
+- [ ] **Dependency Audit**: `npm audit` veya `pip audit` ile güvenlik açığı olan paketleri engelle (Pipeline blocking).
+- [ ] **Complexity**: Cyclomatic Complexity değeri yüksek (Örn: >15) fonksiyonları reddet.
+
+### Aşama 2: Runtime Quality
+- [ ] **Test Coverage**: Sadece satır sayısı değil, "Branch Coverage"ın %80 üzerinde olduğunu doğrula.
+- [ ] **Performance**: Kritik path'lerde gereksiz re-render (React) veya N+1 sorgu (Backend) kontrolü yap.
+- [ ] **Error Handling**: Happy path dışında, hata durumlarının (Error Boundary, Try-Catch) test edildiğini onayla.
+
+### Aşama 3: Deliverable & Compliance
+- [ ] **Docs**: README güncel mi? API değişiklikleri Swagger/OpenAPI ile uyumlu mu?
+- [ ] **License**: 3. parti kütüphanelerin lisans uyumluluğunu (Proprietary projede GPL kullanımı var mı?) kontrol et.
+- [ ] **Release Notes**: Kullanıcıya dönük değişikliklerin (Changelog) anlaşılır olduğunu doğrula.
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | CI pipeline'ı "warning" durumunda bile fail edecek şekilde (treat warnings as errors) ayarlandı mı? |
+| 2 | "Works on my machine" sorunu ekarte edildi mi? (Dockerized test run). |
+| 3 | Güvenlik taraması (SAST) temiz mi? |

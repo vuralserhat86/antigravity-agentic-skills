@@ -610,4 +610,30 @@ For detailed documentation and examples:
 - Official docs: https://www.statsmodels.org/stable/
 - User guide: https://www.statsmodels.org/stable/user-guide.html
 - Examples: https://www.statsmodels.org/stable/examples/index.html
-- API reference: https://www.statsmodels.org/stable/api.html
+*Python Data Stack v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [Modern Data Stack](https://moderndatastack.xyz/) & [Polars Documentation](https://pola.rs/)
+
+### Aşama 1: Local Data Processing (Modern OLAP)
+- [ ] **Polars**: Pandas yerine, büyük veriler (GB+) için Rust tabanlı `Polars` kullan (Lazy Evaluation ve Parallelism için).
+- [ ] **DuckDB**: Lokal SQL analitikleri ve Parquet dosyalarını sorgulamak için `DuckDB` kullan (In-process OLAP).
+- [ ] **Format**: Verileri CSV yerine `Parquet` veya `Arrow` formatında sakla (Hız ve sıkıştırma).
+
+### Aşama 2: Analysis & Visualization
+- [ ] **Notebooks**: Jupyter Notebook (veya VS Code Notebooks) ile interaktif analiz yap, ancak üretim kodu `.py` dosyalarında olsun.
+- [ ] **Viz**: Matplotlib yerine deklaratif görselleştirme için `Altair` veya `Plotnine` (Grammar of Graphics) kullan.
+- [ ] **Profiling**: Veri kalitesini anlamak için `ydata-profiling` raporları oluştur.
+
+### Aşama 3: Production Pipeline
+- [ ] **Orchestration**: ETL işleri için `Prefect` veya `Dagster` kullan (Airflow yerine daha modern ve lightweight).
+- [ ] **Validation**: Veri şemalarını ve kalitesini doğrulamak için `Pydantic` veya `Great Expectations` kullan.
+- [ ] **Environment**: Bağımlılıkları izole etmek için `uv` veya `conda` environment kullan.
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Veri işleme hafızaya (RAM) sığıyor mu? (Sığmıyorsa Polars Streaming veya DuckDB kullan). |
+| 2 | Tekrarlanan analizler modüler fonksiyonlara dönüştürüldü mü? |
+| 3 | Veri gizliliği (PII) kontrol edildi mi? |
