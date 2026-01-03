@@ -1,99 +1,42 @@
 ---
 name: vitest_runner
-router_kit: FullStackKit
-description: Modern JavaScript/TypeScript testing with Vitest including mocking and coverage.
+router_kit: QualityKit
+description: Vitest ile hızlı unit ve component testleri, mocking ve coverage.
 metadata:
   skillport:
-    category: auto-healed
-    tags: [architecture, assertions, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, jest compatible, mocking, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, unit testing, utilities, version control, vite, vitest runner, workflow]
+    category: quality
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, vitest runner, workflow]      - test-speed
 ---
 
-# Vitest
+# ⚡ Vitest Runner
 
-## Description
-
-Modern JavaScript/TypeScript testing with Vitest including mocking and coverage.
-
-## When to Use
-
-- Testing JavaScript/TypeScript
-- React component testing
-- Unit and integration tests
+> Vite ekosistemi için optimize edilmiş, ultra hızlı test koşucu.
 
 ---
 
-## Core Patterns
+*Vitest Runner v1.1 - Enhanced*
 
-### Basic Tests
+## 🔄 Workflow
 
-```typescript
-import { describe, it, expect } from 'vitest';
+> **Kaynak:** [Vitest Documentation](https://vitest.dev/guide/) & [Testing Library - React with Vitest](https://testing-library.com/docs/react-testing-library/setup#vitest)
 
-describe('math', () => {
-  it('should add numbers', () => {
-    expect(1 + 1).toBe(2);
-  });
+### Aşama 1: Environment & Setup
+- [ ] **Config**: `vitest.config.ts` (veya `vite.config.ts`) içinde test ortamını (jsdom/node) ve coverage ayarlarını yapılandır.
+- [ ] **Globals**: Dashboardsız kullanım için `globals: true` ayarını kontrol et (Örn: `describe`, `it`, `expect` otomatik gelsin).
 
-  it('should throw on invalid input', () => {
-    expect(() => divide(1, 0)).toThrow('Division by zero');
-  });
-});
-```
+### Aşama 2: Writing & Mocking
+- [ ] **TestSuite**: `describe` ve `it/test` bloklarıyla senaryoları yapılandır.
+- [ ] **Mocking**: `vi.mock()` ile dış bağımlılıkları ve `vi.fn()` ile fonksiyon casuslarını (Spies) oluştur.
+- [ ] **Async Testing**: `await` ve `waitFor` kullanarak asenkron durumları test et.
 
-### Mocking
+### Aşama 3: Analysis & Optimization
+- [ ] **Coverage**: `vitest run --coverage` ile kod kapsamını (v8 veya istanbul) raporla.
+- [ ] **UI Mode**: Testleri görsel olarak takip etmek için `vitest --ui` kullan.
+- [ ] **Performance**: `parallel` ve `threads` ayarlarıyla test çalıştırma süresini optimize et.
 
-```typescript
-import { vi, describe, it, expect } from 'vitest';
-
-// Mock module
-vi.mock('./api', () => ({
-  fetchUser: vi.fn().mockResolvedValue({ id: 1 })
-}));
-
-// Mock function
-const callback = vi.fn();
-callback('arg');
-expect(callback).toHaveBeenCalledWith('arg');
-```
-
-### Async Tests
-
-```typescript
-it('should fetch data', async () => {
-  const data = await fetchData();
-  expect(data).toEqual({ id: 1 });
-});
-
-it('should reject on error', async () => {
-  await expect(fetchData()).rejects.toThrow('Error');
-});
-```
-
-### React Testing
-
-```typescript
-import { render, screen } from '@testing-library/react';
-import { userEvent } from '@testing-library/user-event';
-
-it('should handle click', async () => {
-  const onClick = vi.fn();
-  render(<Button onClick={onClick}>Click</Button>);
-
-  await userEvent.click(screen.getByRole('button'));
-  expect(onClick).toHaveBeenCalled();
-});
-```
-
-## Best Practices
-
-1. Use describe blocks for grouping
-2. Prefer async/await for async tests
-3. Use userEvent over fireEvent
-4. Mock at module boundaries
-5. Clean up after tests
-
-## Common Pitfalls
-
-- **Not awaiting async**: Always await promises
-- **Stale mocks**: Clear mocks between tests
-- **Testing implementation**: Test behavior
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Testler "Clean Up" (Örn: `afterEach(cleanup)`) yapıyor mu? |
+| 2 | "Snapshots"lar güncel ve anlamlı mı? |
+| 3 | Hangi modda (jsdom vs node) çalışıldığı doğru mu? |
