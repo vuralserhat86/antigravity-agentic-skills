@@ -105,10 +105,31 @@ xl:  1280px
 
 ---
 
-## 🔗 İlgili Skill'ler
-- `design-tokens` - Base values
-- `design-patterns` - Hierarchy, animations
+## 🔄 Workflow
+
+> **Kaynak:** [MDN - Container Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Containment/Container_Queries) & [Utopia - Fluid Responsive Design](https://utopia.fyi/)
+
+### Aşama 1: Viewport & Layout Strategy
+- [ ] **Mobile First**: Tasarımı en küçük ekran boyutundan başlayarak kurgula.
+- [ ] **Breakpoints Selection**: Cihaz bazlı değil, içerik bazlı (Content-driven) kırılma noktaları belirle.
+- [ ] **Fluid Scaling**: Typography ve spacing için `clamp()` fonksiyonlarını hesapla ve entegre et.
+
+### Aşama 2: Modern CSS Implementation
+- [ ] **Container Queries**: Komponentlerin içindeki bulundukları alana göre (Viewport değil) şekil almasını sağla.
+- [ ] **Grid/Flex Optimization**: Kompleks layout'lar için `CSS Grid` (Area naming) ve `Flexbox` (Gap) kullan.
+- [ ] **Image Optimization**: `srcset` ve `aspect-ratio` kullanarak görsel yüklemelerini ve düzenini optimize et.
+
+### Aşama 3: Performance & Accessibility Audit
+- [ ] **Lighthouse Check**: Core Web Vitals (LCP/CLS) metriklerini mobil için optimize et.
+- [ ] **Interaction Check**: Dokunmatik (Touch) alanların yeterli boyutta (min 44x44px) olduğunu doğrula.
+- [ ] **User Preferences**: `prefers-color-scheme` ve `prefers-reduced-motion` desteğini test et.
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Tasarım 320px (iPhone SE) ve 2560px (Ultra-wide) arasında sorunsuz mu? |
+| 2 | Horizontal scroll oluşuyor mu? (Overflow kontrolü) |
+| 3 | Font boyutları her viewport'ta okunabilir mi? |
 
 ---
-
-*Design Responsive v1.0*
+*Design Responsive v1.5 - With Workflow*

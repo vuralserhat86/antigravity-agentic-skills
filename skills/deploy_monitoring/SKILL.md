@@ -65,4 +65,31 @@ vercel rollback
 
 ---
 
-*Deploy Monitoring v1.0*
+## 🔄 Workflow
+
+> **Kaynak:** [Google SRE Book - Monitoring](https://sre.google/sre-book/monitoring-distributed-systems/) & [Prometheus Best Practices](https://prometheus.io/docs/practices/instrumentation/)
+
+### Aşama 1: Observability Instrumentation
+- [ ] **Health Checks**: `/health` (Liveness) ve `/ready` (Readiness) uç noktalarını tanımla.
+- [ ] **Custom Metrics**: Uygulamaya özel kritik metrikleri (Örn: Sipariş sayısı, Hata oranı) Prometheus/Grafana için dışa aktar.
+- [ ] **Log Centralization**: Dağınık logları ELK (Elasticsearch/Logstash/Kibana) veya Datadog gibi bir merkezde topla.
+
+### Aşama 2: SLI/SLO & Alerting Setup
+- [ ] **Defining SLIs**: Başarı göstergelerini (Latency < 200ms, Error rate < %1) belirle.
+- [ ] **Alert Groups**: Kritik hataları (P0) telefon/PagerDuty üzerinden, bilgilendirme amaçlı olanları Slack üzerinden bildir.
+- [ ] **Error Budget**: SLO'nuzun ne kadar dışına çıkabileceğinizi (Hata Bütçesi) hesapla ve aşım yaklaştığında deployları durdur.
+
+### Aşama 3: Analysis & Incident Response
+- [ ] **Dashboarding**: Grafana üzerinde sistem sağlığını gösteren gerçek zamanlı panolar oluştur.
+- [ ] **Post-Mortem**: Her büyük olaydan (Incident) sonra kök neden analizi (Root Cause Analysis) yap ve dökümante et.
+- [ ] **Automated Rollback**: Kritik alert tetiklendiğinde sistemin otomatik bir önceki stabil versiyona dönmesini sağla.
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Yeni bir servis eklendiğinde monitoring otomatik devreye giriyor mu? |
+| 2 | Alertler "aksiyon alınabilir" (Actionable) bilgi içeriyor mu? |
+| 3 | Loglarda PII (Kişisel veri) maskeleniyor mu? |
+
+---
+*Deploy Monitoring v1.5 - With Workflow*

@@ -59,4 +59,29 @@ npm ci  # package-lock.json kullan
 
 ---
 
-*Deps NPM v1.0*
+*Deps NPM v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [NPM Security Best Practices](https://docs.npmjs.com/creating-and-publishing-scoped-public-packages)
+
+### Aşama 1: Audit & Analysis
+- [ ] **Lockfile**: `package-lock.json` var ve güncel mi?
+- [ ] **Security**: `npm audit` çalıştır ve kritik açıkları gider.
+- [ ] **Licenses**: Production bağımlılıklarının lisanslarını kontrol et.
+
+### Aşama 2: Update Strategy
+- [ ] **Minor/Patch**: `npm outdated` ile güvenli güncellemeleri yap.
+- [ ] **Major**: Breaking change'leri release note'lardan oku ve tek tek güncelle.
+- [ ] **Clean**: Kullanılmayan paketleri `depcheck` ile bul ve sil.
+
+### Aşama 3: CI/CD Protection
+- [ ] **Immutable**: CI'da mutlaka `npm ci` kullan (asla `npm install` değil).
+- [ ] **Vulnerability**: Pipeline'a audit step ekle (`npm audit --audit-level=high`).
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | `node_modules` silinip `npm ci` yapılınca proje çalışıyor mu? |
+| 2 | Production build, `devDependencies` olmadan çalışıyor mu? |
+| 3 | Tüm versiyonlar 'Exact' veya 'Tilde/Caret' stratejisine uygun mu? |

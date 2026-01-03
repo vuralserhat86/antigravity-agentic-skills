@@ -105,4 +105,33 @@ shadow-xl:  0 20px 25px rgba(0,0,0,0.15)
 
 ---
 
-*Design Patterns v1.0*
+*Design Patterns v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [Refactoring UI](https://www.refactoringui.com/) (Visual Hierarchy)
+
+### Aşama 1: Foundation (Hierarchy)
+- [ ] **Spacing**: Elemanları `8px` grid sistemine göre yerleştir.
+- [ ] **Typography**: Başlık/Gövde oranını (Scale) belirle.
+- [ ] **Contrast**: En önemli öğeyi (Primary Button) en yüksek kontrasta koy.
+
+### Aşama 2: Interaction (Feedback)
+- [ ] **States**: Hover, Focus, Active, Disabled durumlarını tasarla.
+- [ ] **Motion**: 200ms default transition ile mikro-animasyon ekle.
+- [ ] **Elevation**: Katmanları `shadow` ve `z-index` ile ayır.
+
+### Aşama 3: Validation
+- [ ] **A11y**: Renk kontrast oranları AA standardında mı?
+- [ ] **Responsiveness**: Mobilde touch target'lar >44px mi?
+- [ ] **Consistency**: Tüm butonlar aynı radius/padding değerine sahip mi?
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Sayfada nereye bakılacağı (Focal Point) net mi? |
+| 2 | Focus ring klavye ile gezinirken görünüyor mu? |
+| 3 | Animasyonlar performansı (FPS) düşürüyor mu? |
+
+---
+*Design Patterns v1.1 - Enhanced*

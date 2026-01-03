@@ -1,107 +1,79 @@
 ---
 name: design_components
 router_kit: FullStackKit
-description: Button, card, input ve icon sizing kuralları. Component boyutlandırma standartları.
+description: Tasarımın koda aktarılması, atomik tasarım, variant yapıları ve accessibility (A11y) standartları.
 metadata:
   skillport:
     category: design
-    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, design components, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - design-patterns
+    tags: [accessibility, api integration, backend, browser apis, client-side, components, css3, debugging, deployment, design components, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - design-tokens
 ---
 
-# 🧩 Design Components
+# 🏗️ Design Components
 
-> Component boyutlandırma standartları.
-
----
-
-## 🔘 1. Button Sizes
-
-```
-Small:   H:32px, P:8px/16px,  Font:14px
-Medium:  H:40px, P:12px/24px, Font:16px (Default)
-Large:   H:48px, P:14px/32px, Font:18px
-XLarge:  H:56px, P:16px/40px, Font:20px
-```
-
-### Button States
-| State | Stil |
-|-------|------|
-| Default | Base |
-| Hover | Lighten/Darken 10%, Scale 1.02 |
-| Active | Scale 0.98 |
-| Focus | Ring outline |
-| Disabled | Opacity 50% |
+> Komponent bazlı tasarım ve geliştirme rehberi.
 
 ---
 
-## 📦 2. Card Sizing
+## 📐 Atomic Design Hierarchy
 
-### Padding
-| Tip | Padding |
-|-----|---------|
-| Compact | 16px |
-| Default | 24px |
-| Spacious | 32px |
+1. **Atoms**: Labels, inputs, buttons (en küçük birimler).
+2. **Molecules**: Form fields, card headers (atomların birleşimi).
+3. **Organisms**: Navigation bars, product grids (kompleks yapılar).
+4. **Templates**: Page layouts (iskelet).
+5. **Pages**: Final screens (içerik dolu).
 
-### Shadow (Elevation)
-```
-shadow-sm:  0 1px 3px rgba(0,0,0,0.1)
-shadow-md:  0 4px 6px rgba(0,0,0,0.1)
-shadow-lg:  0 10px 15px rgba(0,0,0,0.1)
-shadow-xl:  0 20px 25px rgba(0,0,0,0.1)
+---
+
+## 🎨 Component Anatomy
+
+```typescript
+interface ButtonProps {
+  variant: 'primary' | 'secondary' | 'ghost';
+  size: 'sm' | 'md' | 'lg';
+  isDisabled?: boolean;
+  isLoading?: boolean;
+  leftIcon?: React.ReactNode;
+}
 ```
 
 ---
 
-## 📝 3. Input Fields
+## ♿ Accessibility (A11y) Basics
 
-```
-Height:  40px (default), 48px (large)
-Padding: 12px / 16px (V/H)
-Border:  1px solid
-Radius:  4px veya 8px
-```
-
-### Input States
-| State | Stil |
-|-------|------|
-| Default | Border: neutral-300 |
-| Focus | Border: primary-500, Ring |
-| Error | Border: error-500 |
-| Disabled | Background: neutral-100 |
+- **Aria Labels**: `aria-label="Kapat"`
+- **Roles**: `role="button"`, `role="tabpanel"`
+- **keyboard Navigation**: `tabIndex={0}`, `onKeyDown` handlers.
+- **Contrast**: Metin ve arka plan kontrastı (min 4.5:1).
 
 ---
 
-## 🎯 4. Icon Sizes
+*Design Components v1.1 - Enhanced*
 
-```
-16px - Inline with text
-20px - Buttons
-24px - Standalone
-32px - Feature highlights
-48px - Hero sections
-```
+## 🔄 Workflow
 
-### Icon + Text Spacing
-- Icon ve text arası: 8px
+> **Kaynak:** [Brad Frost - Atomic Design](https://atomicdesign.bradfrost.com/) & [Radix UI Design System](https://www.radix-ui.com/)
 
----
+### Aşama 1: Component Specs & Tokens
+- [ ] **Audit**: Figma dosyasındaki spacing, typography ve color token'larını belirle.
+- [ ] **Hierarchy**: Tasarımı Atom, Molecule ve Organism seviyelerine böl.
+- [ ] **States**: Hover, Focus, Disabled ve Loading durumlarını tanımla.
 
-## 📋 5. Form Layout
+### Aşama 2: Implementation & Variants
+- [ ] **Base Logic**: Komponentin temel HTML yapısını ve `Props` arayüzünü (TypeScript) oluştur.
+- [ ] **Variant Creation**: `Tailwind` veya `CVA` (Class Variance Authority) kullanarak variant yapılarını kur.
+- [ ] **Visual Consistency**: Padding ve gap değerlerinin hiyerarşiye uygunluğunu kontrol et.
 
-```
-Label-Input gap:     8px
-Input-Input gap:     16px veya 24px
-Form section gap:    32px
-Submit button margin: 24px top
-```
+### Aşama 3: Testing & Documentation
+- [ ] **Visual Testing**: Komponentin farklı tarayıcılarda ve viewports'larda görsel bütünlüğünü test et (Storybook).
+- [ ] **Unit Testing**: Etkileşimli komponentler (Dropdown, Modal) için logic testleri yaz.
+- [ ] **Handoff**: Tasarımın geliştiriciye aktarımı için dokümantasyonu (Design-to-Code) güncelle.
 
----
-
-## 🔗 İlgili Skill'ler
-- `design-tokens` - Spacing, typography, colors
-- `design-patterns` - Layout, hierarchy
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Komponent tek bir sorumluluğa (Single Responsibility) sahip mi? |
+| 2 | Tüm variant'lar merkezi bir `tokens` dosyasından mı besleniyor? |
+| 3 | Screen reader testleri başarılı mı? |
 
 ---
-
-*Design Components v1.0*
+*Design Components v1.5 - With Workflow*
