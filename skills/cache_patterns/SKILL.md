@@ -1,44 +1,46 @@
 ---
 name: cache_patterns
 router_kit: FullStackKit
-description: Redis, Memcached ve browser cache ile sistem performansını artırma stratejileri.
+description: Instruction set for enabling and operating the Spring Cache abstraction in Spring Boot when implementing application-level caching for performance-sensitive workloads.
+allowed-tools: Read, Write, Bash
+category: backend
+tags: [architecture, automation, best practices, cache patterns, cache-managers, cacheable, caching, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, performance, productivity, programming, project management, quality assurance, refactoring, software engineering, spring-boot, standards, testing, utilities, version control, workflow]
+version: 1.1.0
 metadata:
   skillport:
-    category: backend
-    tags: [caching, redis, performance, optimization, scalability]
+    category: auto-healed
+    tags:
+      - cache_patterns
 ---
 
-# ⚡ Cache Patterns
-
-Veri erişim hızını artıran ve yükü azaltan önbellekleme stratejileri.
+# Spring Boot Cache Abstraction
 
 ---
+
+*Cache Patterns v2.0 - With Workflow*
 
 ## 🔄 Workflow
 
-> **Kaynak:** [Redis Design Patterns](https://redis.com/solutions/use-cases/caching/) & [MDN Web Caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching)
+> **Kaynak:** [Spring Boot Caching Guide](https://spring.io/guides/gs/caching/) & [Caffeine Cache Best Practices](https://github.com/ben-manes/caffeine/wiki/Best-Practices)
 
-### Aşama 1: İhtiyaç ve Katman Belirleme (Needs & Layers)
-- [ ] **Don't Cache Everything:** Hangi verinin cache'lenmeye değer olduğunu (Sık erişilen/Nadir değişen) belirle.
-- [ ] **Layer Choice:** Client-side (Browser), CDN, API Gateway veya Database (Redis) katmanlarından uygun olanı seç.
-- [ ] **Store Choice:** In-memory (Redis) mi yoksa LocalStorage/IndexDB mi kullanılacak?
+### Aşama 1: Strategy & Provider Selection
+- [ ] **Identifying Hot Paths**: En çok beklenen ve nadir değişen veri okuma (I/O) noktalarını belirle.
+- [ ] **Provider Selection**: Bellek içi (Caffeine) veya dağıtık (Redis) cache seçimine karar ver.
+- [ ] **Key Design**: SpEL kullanarak benzersiz ve tahmin edilebilir cache key strategy'si oluştur.
 
-### Aşama 2: Strateji ve TTL (Strategy & TTL)
-- [ ] **Caching Patterns:** Cache Aside (En yaygın), Read-Through, Write-Through veya Write-Behind desenini seç.
-- [ ] **TTL (Time to Live):** Verinin bayatlama süresini (Expiration) mantıklı bir dengeyle saptama.
-- [ ] **Eviction Policy:** Cache dolduğunda hangi verinin silineceğini (LRU, LFU, FIFO) belirle.
+### Aşama 2: Annotation Implementation
+- [ ] **@Cacheable**: Veriyi cache'e yaz we sonraki çağrılarda oradan oku.
+- [ ] **@CachePut**: Veri güncellendiğinde cache'i de yenile.
+- [ ] **@CacheEvict**: Silme işlemlerinde veya belirli periyotlarda cache'i temizle (`allEntries=true` opsiyonunu değerlendir).
 
-### Aşama 3: Invalidation ve Tutarlılık (Consistency)
-- [ ] **Cache Busting:** Veri güncellendiğinde eski cache'i nasıl temizleyeceğini (Invalidation) planla.
-- [ ] **Stale-While-Revalidate:** Arka planda güncelleme yaparken eski veriyi sunma (SWR) yapısını kur.
-- [ ] **Observability:** Cache Hit/Miss oranlarını takip ederek stratejiyi optimize et.
+### Aşama 3: LifeCycle & Monitoring
+- [ ] **TTL/Eviction**: Veri tazeliği (TTL) ve temizleme (Eviction) politikalarını (LRU/LFU) konfigüre et.
+- [ ] **Actuator Audit**: `cache` endpoint'i üzerinden hit/miss oranlarını izle.
+- [ ] **Integration Testing**: `@SpringBootTest` ile cache izolasyonunu ve tutarlılığını test et.
 
 ### Kontrol Noktaları
 | Aşama | Doğrulama |
 |-------|-----------|
-| 1     | Veri güncellendiğinde kullanıcılar hala eski "bayat" veriyi mi görüyor? |
-| 2     | Redis sunucusu çökerse uygulama "Graceful Degradation" (DB'ye düşme) yapabiliyor mu? |
-| 3     | Cache anahtarları (Keys) çakışmayı önleyecek şekilde prefix'lendi mi? |
-
----
-*Cache Patterns v1.2 - Evidence-Based Update*
+| 1 | Transactional işlemler sırasında cache tutarlılığı (Data drift) bozuluyor mu? |
+| 2 | "Cache-aside" veya "ReadOnly" stratejisi doğru uygulandı mı? |
+| 3 | Çoklu instance yapısında "Cache Stampede" riski önlendi mi? |

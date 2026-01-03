@@ -1,44 +1,42 @@
 ---
 name: better_auth
 router_kit: SecurityKit
-description: Better-Auth kütüphanesi ile hızlı, güvenli ve modern kimlik doğrulama çözümleri.
+description: Clerk modern authentication, WebAuthn, passkeys ve social auth entegrasyonu rehberi.
 metadata:
   skillport:
-    category: security
-    tags: [auth, better-auth, typescript, nextjs, security]
+    category: cybersecurity
+    tags: [accessibility, api integration, backend, better auth, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - access-control
 ---
 
-# 🛡️ Better-Auth
+# Better Auth Skill
 
-TypeScript tabanlı, esnek ve "Developer Friendly" kimlik doğrulama kütüphanesi kullanımı.
+Better Auth is comprehensive, framework-agnostic authentication/authorization framework for TypeScript with built-in email/password, social OAuth, and powerful plugin ecosystem for advanced features.
 
 ---
+
+*Better Auth v2.1.1 - Enhanced*
 
 ## 🔄 Workflow
 
-> **Kaynak:** [Better-Auth Documentation](https://better-auth.com/) & [Next.js Auth Best Practices](https://nextjs.org/docs/app/building-your-application/authentication)
+> **Kaynak:** [Better Auth Docs](https://www.better-auth.com/docs)
 
-### Aşama 1: Kurulum ve Adaptör (Setup & Adapter)
-- [ ] **Initialization:** `better-auth` paketini kur ve Prisma/Drizzle adaptörünü bağla.
-- [ ] **Schema Sync:** Veritabanı tablolarını (`User`, `Session`, `Account`) Better-Auth standartlarına göre güncelle.
-- [ ] **Base Config:** `baseUrl` ve `secret` değerlerini environment variables üzerinden tanımla.
+### Aşama 1: Setup & Config
+- [ ] **Install**: Paketi kur ve `.env` (Source of Truth) ayarla.
+- [ ] **Client/Server**: `auth.ts` (Server) ve `auth-client.ts` (Client) dosyalarını oluştur.
+- [ ] **Database**: Şemayı oluştur ve migrate et.
 
-### Aşama 2: Sağlayıcılar ve Client (Providers & Client)
-- [ ] **Provider Selection:** Google, GitHub, Email-Password veya Passkey sağlayıcılarını aktif et.
-- [ ] **Client Setup:** Frontend tarafında `createAuthClient` ile hooks yapısını kur.
-- [ ] **Middleware:** Sayfa koruma (Route protection) için Next.js middleware entegrasyonunu yap.
+### Aşama 2: Method Implementation
+- [ ] **Strategy**: Email/Pass, OAuth veya Magic Link seçimi.
+- [ ] **UI Integration**: Frontend formlarını `authClient` metodlarına bağla.
+- [ ] **Protection**: Middleware veya Hook ile sayfaları koru.
 
-### Aşama 3: Özelleştirme ve Eklentiler (Plugins & customization)
-- [ ] **Plugins:** Admin yetkileri (RBAC), Organizasyonlar veya MFA eklentilerini ihtiyaca göre ekle.
-- [ ] **Custom Fields:** Kullanıcı modeline özel alanlar (Bio, Avatar vb.) ekleyerek şemayı genişlet.
-- [ ] **Testing:** Giriş yapma, çıkış yapma ve yetkisiz erişim senaryolarını doğrula.
+### Aşama 3: Verification
+- [ ] **Flow Test**: Sign-up -> Sign-in -> Session Check -> Sign-out.
+- [ ] **Error Handling**: Yanlış şifre/email durumlarını test et.
 
 ### Kontrol Noktaları
 | Aşama | Doğrulama |
 |-------|-----------|
-| 1     | Secret key'ler `BETTER_AUTH_SECRET` olarak güvenli saklanıyor mu? |
-| 2     | `Better-Auth` tarafından sağlanan hazır UI komponentleri doğru şekilde stilize edildi mi? |
-| 3     | Session'lar sunucu tarafında (Server Components) doğru şekilde okunuyor mu? |
-
----
-*Better-Auth v1.0 - Evidence-Based Update*
+| 1 | `BETTER_AUTH_SECRET` ve `BETTER_AUTH_URL` tanımlı |
+| 2 | Veritabanında `user` ve `session` tabloları oluştu |
+| 3 | Middleware korumalı sayfalara limitsiz erişimi engelliyor |

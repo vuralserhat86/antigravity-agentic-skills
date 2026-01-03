@@ -1,44 +1,43 @@
 ---
 name: clerk_auth
-router_kit: FullStackKit
-description: Clerk Authentication ile kullanıcı yönetimi, oturumlar ve korumalı rotalar.
+router_kit: SecurityKit
+description: Clerk modern authentication, WebAuthn, passkeys ve social auth entegrasyonu rehberi.
 metadata:
   skillport:
-    category: security
-    tags: [auth, clerk, nextjs, react, security]
+    category: authentication
+    tags: [accessibility, api integration, backend, browser apis, clerk auth, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - webauthn
 ---
 
-# 👤 Clerk Auth
+# 🔐 Clerk Auth
 
-Modern, hazır UI bileşenli ve güvenli kimlik doğrulama servisi kullanımı.
+> Clerk modern authentication rehberi.
 
 ---
+
+*Clerk Auth v1.1 - Enhanced*
 
 ## 🔄 Workflow
 
-> **Kaynak:** [Clerk Documentation](https://clerk.com/docs) & [Clerk Next.js Guide](https://clerk.com/docs/references/nextjs/overview)
+> **Kaynak:** [Clerk Documentation](https://clerk.com/docs)
 
-### Aşama 1: Entegrasyon ve Middleware (Integration)
-- [ ] **Project Setup:** Clerk Dashboard'dan API anahtarlarını al ve `.env.local` dosyasına ekle.
-- [ ] **Provider Setup:** Uygulamayı `<ClerkProvider>` ile sar.
-- [ ] **Middleware Guard:** `clerkMiddleware()` kullanarak public ve private rotaları tanımla.
+### Aşama 1: Integration
+- [ ] **Install**: `@clerk/nextjs` paketi ve API Key'ler.
+- [ ] **Middleware**: Public/Private rotaları `clerkMiddleware` ile ayır.
+- [ ] **Provider**: Root layout'u `ClerkProvider` ile sarmala.
 
-### Aşama 2: UI ve Kullanıcı Akışları (UI Components)
-- [ ] **Auth Pages:** `<SignIn />`, `<SignUp />` ve `<UserButton />` bileşenlerini yerleştir.
-- [ ] **Customization:** Clerk Appearance API kullanarak markanızın renklerini ve tipografisini uyarla.
-- [ ] **User Metadata:** Kullanıcı profiline özel roller veya metadata ekle.
+### Aşama 2: UX & Components
+- [ ] **Header**: `SignedIn` / `SignedOut` şartlı render yapısı kur.
+- [ ] **Profile**: `UserButton` veya `UserProfile` bileşenini ekle.
+- [ ] **Custom Flow**: Gerekirse Custom Sign-in sayfası yap.
 
-### Aşama 3: Server Side ve Webhooks (Server & Webhooks)
-- [ ] **Server Session:** `auth()` fonksiyonu ile Server Componentlarda oturum durumunu kontrol et.
-- [ ] **Webhooks:** Veritabanını Clerk ile senkronize tutmak için Svix ile webhook dinleyicileri (user.created, user.updated) kur.
-- [ ] **Organization Management:** İhtiyaç varsa Clerk Organizations özelliğini aktif ederek ekip yönetimini sağla.
+### Aşama 3: Server Logic
+- [ ] **Protect**: API rotalarında `auth().userId` kontrolü yap.
+- [ ] **Data**: `currentUser()` ile kullanıcı verisine eriş.
+- [ ] **Sync**: Webhook kullanarak kullanıcıyı kendi veritabanınla eşle (Opsiyonel).
 
 ### Kontrol Noktaları
 | Aşama | Doğrulama |
 |-------|-----------|
-| 1     | Korumalı sayfalara giriş yapmadan erişilebiliyor mu? (Middleware testi) |
-| 2     | Webhook'lar güvenli (Signature verification) şekilde doğrulanıyor mu? |
-| 3     | Kullanıcı çıkış yaptığında tokenlar ve sessionlar tamamen temizleniyor mu? |
-
----
-*Clerk Auth v1.3 - Evidence-Based Update*
+| 1 | Middleware statik dosyaları (image, css) engellemiyor |
+| 2 | Sign-out sonrası login sayfasına yönlendiriyor |
+| 3 | API request'leri tokensiz atılınca 401 dönüyor |

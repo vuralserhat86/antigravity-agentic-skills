@@ -1,44 +1,43 @@
 ---
 name: cli_developer
-router_kit: UniversalKit
-description: Node.js, Go veya Python ile profesyonel komut satırı araçları (CLI) geliştirme.
+router_kit: FullStackKit
+description: Node.js/Python CLI araçları, commander.js, yargs, interactive prompts (inquirer/enquirer). ⚠️ CLI logic yazarken kullan. Git otomasyonu için → git-workflow.
 metadata:
   skillport:
     category: development
-    tags: [cli, devtools, automation, terminal, shell]
+    tags: [accessibility, api integration, backend, browser apis, cli developer, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - interactive-prompts
 ---
 
 # 💻 CLI Developer
 
-Terminal üzerinde çalışan, hızlı ve etkili geliştirici araçları tasarımı.
+> Modern ve kullanıcı dostu CLI araçları geliştirme.
 
 ---
 
+*CLI Developer v1.2 - Verified*
+
 ## 🔄 Workflow
 
-> **Kaynak:** [Command Line Interface Guidelines (CLIG)](https://clig.dev/) & [Heroku CLI Style Guide](https://devcenter.heroku.com/articles/cli-style-guide)
+> **Kaynak:** [Command Line Interface Guidelines](https://clig.dev/)
 
-### Aşama 1: Arayüz ve Argüman Tasarımı (UX & Parsing)
-- [ ] **Command Structure:** Komutları hiyerarşik (örn: `git commit -m`) veya tekil olarak planla.
-- [ ] **Argument Parsing:** `commander`, `yargs` (Node) veya `click` (Python) ile flag/argüman yönetimini kur.
-- [ ] **Interactive Prompts:** Kullanıcıdan seçim almak için `inquirer` veya `enquirer` entegre et.
+### Aşama 1: Project Setup (Architecture)
+- [ ] **Binary**: `package.json` içine `"bin": { "my-cli": "./dist/index.js" }` ekle.
+- [ ] **Paradigm**: "Subcommand" (git push gibi) veya "Interactive" (y/n soruları) yapısını seç.
+- [ ] **Colors**: `chalk` veya `picocolors` ile terminal çıktılarını renklendir.
 
-### Aşama 2: Görsel Geribildirim (Visual Feedback)
-- [ ] **Colors & Icons:** Önemli uyarılar için `chalk`, ikonlar için emoji desteği ekle.
-- [ ] **Progress Indicators:** Uzun işlemler için `ora` (Spinner) veya `cli-progress` bar ekle.
-- [ ] **Error Messaging:** Hataları kullanıcıya açık ve çözüm odaklı şekilde sun.
+### Aşama 2: Parameter Handling
+- [ ] **Arguments**: `commander` veya `yargs` ile argümanları ve flagleri (`--force`, `-v`) yönet.
+- [ ] **Environment**: Gerekirse `.env` desteği veya config dosyası (`~/.my-cli-rc`) ekle.
+- [ ] **Progress**: Uzun işlemler için `ora` (spinner) veya `cli-progress` kullan.
 
-### Aşama 3: Dağıtım ve Entegrasyon (Distribution)
-- [ ] **Global Install:** Paketi `npm install -g` veya brew/pip ile yüklenebilir hale getir.
-- [ ] **Auto-Update:** Yeni sürümler için kullanıcıyı uyaran bir mekanizma kur.
-- [ ] **Documentation:** `--help` komutu ile her fonksiyona dair yardımcı metinler oluştur.
+### Aşama 3: UX & Exit Codes
+- [ ] **Prompts**: `inquirer` veya `enquirer` ile interaktif seçimler yaptır.
+- [ ] **Errors**: Hata durumunda anlamlı mesajlar ve doğru Exit Code'lar dön (0: Başarı, 1: Hata).
+- [ ] **Help**: `--help` komutu ile tüm komutları listele.
 
 ### Kontrol Noktaları
 | Aşama | Doğrulama |
 |-------|-----------|
-| 1     | CLI aracı beklenen girdiler dışında (Edge cases) hatayı nasıl ele alıyor? |
-| 2     | `--version` ve `--help` bayrakları (flags) çalışıyor mu? |
-| 3     | Renksiz (No-color) mod desteği var mı? (Erişilebilirlik) |
-
----
-*CLI Developer v1.2 - Evidence-Based Update*
+| 1 | Komut yapısı "tahmin edilebilir" mi? (Intuitive) |
+| 2 | `myscript > file.txt` yapınca loglar dosyaya karışıyor mu? (Karışmamalı) |
+| 3 | Startup time < 50ms mi? |

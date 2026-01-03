@@ -1,44 +1,42 @@
 ---
 name: backend_core
 router_kit: FullStackKit
-description: Dil ve framework bağımsız backend mühendisliği prensipleri ve temel yapılar.
+description: Node.js/TypeScript temel prensipler, proje yapısı ve TypeScript strict mode kuralları.
 metadata:
   skillport:
-    category: backend
-    tags: [backend, computer-science, engineering, foundations]
+    category: development
+    tags: [accessibility, api integration, backend, backend core, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - backend-database
 ---
 
-# ⚙️ Backend Core
+# 🔧 Backend Core
 
-Backend sistemlerinin kalbindeki temel prensipler ve yapılar.
+> Node.js/TypeScript temel prensipler ve proje yapısı.
 
 ---
+
+*Backend Core v1.2 - Verified*
 
 ## 🔄 Workflow
 
-> **Kaynak:** [The Twelve-Factor App](https://12factor.net/) & [Clean Code by Robert C. Martin](https://www.oreilly.com/library/view/clean-code-a/9780136083238/)
+> **Kaynak:** [Node.js Best Practices - Project Structure](https://github.com/goldbergyoni/nodebestpractices#-1-project-structure-practices)
 
-### Aşama 1: Yapılandırma ve Bağımlılıklar (Config & Deps)
-- [ ] **Environment Variables:** Konfigürasyonu koddan ayır (.env dosyaları kullan).
-- [ ] **Dependency Management:** Bağımlılıkları açıkça tanımlayın ve versiyonları sabitleyin.
-- [ ] **Bootstrapping:** Uygulamanın başlatılma (Start-up) sürecini hatasız kurgula.
+### Aşama 1: Foundation (Structure)
+- [ ] **Components**: Klasörleri teknik role göre değil (controllers, models), bileşene göre ayır (components/user, components/order).
+- [ ] **Config**: `dotenv` ve `envalid` (veya Zod) ile ortam değişkenlerini tip güvenli hale getir.
+- [ ] **Entry**: Uygulamayı `app.ts` (setup) ve `server.ts` (listen) olarak ayır.
 
-### Aşama 2: Sistem Tasarımı (System Design)
-- [ ] **Concurrency:** Kaynakların güvenli kullanımını (Locks, Mutexes) sağla.
-- [ ] **Logging & Telemetry:** Uygulamanın durumunu (Health) dış dünyaya raporlayan araçları kur.
-- [ ] **Persistence:** Verinin nasıl saklanacağı ve erişileceği stratejisini (Repository Pattern) belirle.
+### Aşama 2: Core Utilities
+- [ ] **Logger**: `console.log` yerine `winston` veya `pino` kur.
+- [ ] **Async Wrapper**: Promise rejection'ları yakalamak için global handler veya wrapper kullan.
+- [ ] **Linter**: ESLint ve Prettier ayarlarını CI pipeline'a bağla.
 
-### Aşama 3: Sürdürülebilirlik (Maintainability)
-- [ ] **Refactoring:** Karmaşık metotları ve "Spaghetti" yapıları temizle.
-- [ ] **Observability:** Metric, Trace ve Log üçlüsünü aktif et.
-- [ ] **Scalability:** Uygulamanın yatayda (Horizontal) ölçeklenebilir olduğunu doğrula.
+### Aşama 3: Hardening
+- [ ] **Graceful Shutdown**: SIGTERM/SIGINT sinyallerini dinle ve bağlantıları nazikçe kapat.
+- [ ] **Health Check**: `/health` endpoint'i ekle.
 
 ### Kontrol Noktaları
 | Aşama | Doğrulama |
 |-------|-----------|
-| 1     | Uygulama "Stateless" (durumsuz) olarak tasarlanmış mı? |
-| 2     | Hassas veriler (Secret Keys) asla kod içinde (Hardcoded) durmuyor değil mi? |
-| 3     | Uygulama sonlandırılırken (Shutdown) yarım kalan işleri tamamlıyor mu? |
-
----
-*Backend Core v1.1 - Evidence-Based Update*
+| 1 | Yeni bir özellik eklerken 5 farklı klasöre dokunmak gerekiyor mu? (Gerekmemeli -> Component based) |
+| 2 | `.env` dosyası commit edilmiş mi? (Edilmemeli) |
+| 3 | Uygulama çökünce process otomatik restart oluyor mu? (PM2/Docker) |

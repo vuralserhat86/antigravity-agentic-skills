@@ -1,44 +1,43 @@
 ---
 name: backend_database
 router_kit: FullStackKit
-description: Veritabanı şeması tasarımı, sorgu optimizasyonu ve veri yönetimi stratejileri.
+description: SQL/NoSQL veri tasarımı, repository pattern, indexing ve caching.
 metadata:
   skillport:
-    category: backend
-    tags: [database, sql, nosql, optimization, modeling]
+    category: development
+    tags: [accessibility, api integration, backend, backend database, browser apis, client-side, components, css3, debugging, deployment, frameworks, frontend, fullstack, html5, javascript, libraries, node.js, npm, performance optimization, responsive design, seo, state management, testing, typescript, ui/ux, web development]      - backend-database
 ---
 
 # 🗄️ Backend Database
 
-Veri saklama, modelleme ve hızlı erişim teknikleri.
+> Veri tasarımı ve veritabanı erişim desenleri.
 
 ---
 
+*Backend Database v1.2 - Verified*
+
 ## 🔄 Workflow
 
-> **Kaynak:** [PostgreSQL Performance Tuning Guide](https://wiki.postgresql.org/wiki/Performance_Optimization) & [MongoDB Data Modeling Best Practices](https://www.mongodb.com/developer/products/mongodb/data-modeling-best-practices/)
+> **Kaynak:** [Database Reliability Engineering (Campbell)](https://www.oreilly.com/library/view/database-reliability-engineering/9781491925935/)
 
-### Aşama 1: Modelleme ve Şema (Modeling & Schema)
-- [ ] **Normalizasyon:** Gereksiz veri tekrarını önlemek için DB normalizasyon seviyelerini (1NF, 2NF, 3NF) uygula.
-- [ ] **Index Strategy:** Sık sorgulanan kolonlar için uygun index tiplerini (B-Tree, GIN, Hash) belirle.
-- [ ] **Constraints:** Veri bütünlüğü için `Foreign Key`, `Unique` ve `Check` kısıtlarını tanımla.
+### Aşama 1: Schema Design
+- [ ] **Data Model**: İlişkisel (Normalization) veya döküman tabanlı modellemeyi seç.
+- [ ] **Constraints**: PK, FK ve Unique constraint'leri belirle.
+- [ ] **Migration**: `prisma migrate` veya `drizzle-kit` gibi araçlarla versiyonlamayı kur.
 
-### Aşama 2: Sorgu Optimizasyonu (Query Optimization)
-- [ ] **Explain Analyze:** Yavaş sorguları `EXPLAIN` ile analiz et ve "Sequential Scan"leri engelle.
-- [ ] **Connection Pooling:** Veritabanı bağlantılarını verimli kullanmak için pooler (Örn: Prisma Accelerate, PgBouncer) kur.
-- [ ] **Denormalization:** Çok yüksek performans gerektiren durumlarda veri tekrarına (Read-optimization) kontrollü izin ver.
+### Aşama 2: Query Optimization
+- [ ] **Explain**: Yavaş sorgular için `EXPLAIN ANALYZE` kullan.
+- [ ] **Indexes**: Gerekli indexleri (B-Tree, GIN, Hash) ekle.
+- [ ] **N+1 Check**: Relation yüklerken `include` veya `join` kullanımını doğrula.
 
-### Aşama 3: Yönetim ve Güvenlik (Admin & Security)
-- [ ] **Migration Policy:** Şema değişikliklerini sürüm kontrollü araçlarla (Prisma Migrate, Liquibase) yönet.
-- [ ] **Backup & Recovery:** Düzenli yedekleme ve felaket anında geri yükleme testlerini planla.
-- [ ] **Encryption:** Hassas verileri "At-rest" ve "In-transit" olarak şifrele.
+### Aşama 3: Reliability & Caching
+- [ ] **Pooling**: `pgpool` veya native driver pooling ayarlarını yap.
+- [ ] **Cache**: Redis ile sık okunan verileri önbellekle.
+- [ ] **Backup**: Otomatik yedekleme ve PITR (Point-in-Time Recovery) yapılandırmasını kontrol et.
 
 ### Kontrol Noktaları
 | Aşama | Doğrulama |
 |-------|-----------|
-| 1     | Sorgular büyük veri setlerinde (Big Data) hala hızla çalışıyor mu? |
-| 2     | Ölçeklenme için Okuma/Yazma ayrımı (Read Replicas) düşünüldü mü? |
-| 3     | SQL Injection saldırılarına karşı hazırlıklı (Prepared Statements) mısın? |
-
----
-*Backend Database v1.4 - Evidence-Based Update*
+| 1 | Veritabanı şeması "Code-First" mi takip ediliyor? |
+| 2 | Sorgular index kullanıyor mu? (Full table scan yok) |
+| 3 | Veritabanı şifreleri `.env` içinde mi? (Asla hardcoded olmamalı) |
