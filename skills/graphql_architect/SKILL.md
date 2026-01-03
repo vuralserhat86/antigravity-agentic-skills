@@ -98,4 +98,29 @@ Apollo Server, Apollo Federation 2.5+, GraphQL SDL, DataLoader, GraphQL Subscrip
 - **API Designer** - REST-to-GraphQL migration strategies
 - **Microservices Architect** - Service boundary definition
 - **Frontend Developer** - Client query optimization
-- **Database Optimizer** - Query efficiency and N+1 prevention
+*GraphQL Architect v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [Apollo Principled GraphQL](https://principledgraphql.com/) & [GraphQL Best Practices](https://graphql.org/learn/best-practices/)
+
+### Aşama 1: Schema Design (Schema-First)
+- [ ] **Demand-Oriented**: Veritabanı tablolarını değil, UI ihtiyaçlarını modelle.
+- [ ] **Nullability**: Varsayılan olarak nullable yap (Hata toleransı için), sadece kesin olanları non-null (!) yap.
+- [ ] **Evolution**: Breaking change yapma, `@deprecated` direktifini kullan.
+
+### Aşama 2: Performance
+- [ ] **N+1 Problem**: Resolver'larda database call yapma, `DataLoader` kullan.
+- [ ] **Complexity**: Query derinliğini ve karmaşıklığını limitle (DoS koruması).
+- [ ] **Caching**: HTTP caching (CDN) kullanabilmek için `@cacheControl` veya GET metodunu düşün.
+
+### Aşama 3: Federation (Scaling)
+- [ ] **Subgraphs**: Domain sınırlarına göre servisleri ayır (User, Product, Order).
+- [ ] **Entities**: Anahtarları (`@key`) doğru tanımla, gereksiz data taşıma.
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Schema, veritabanı şemasının aynası mı? (Öyleyse HATA) |
+| 2 | Frontend developer "backend'i beklemeden" mock ile çalışabiliyor mu? |
+| 3 | Tek bir sorgu veritabanına 100 istek atıyor mu? |

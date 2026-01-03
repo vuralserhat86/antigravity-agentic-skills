@@ -1,277 +1,79 @@
 ---
 name: git_workflow
-router_kit: FullStackKit
-description: Branch stratejisi, commit conventions, merge conflict çözümü ve Git best practices rehberi.
+router_kit: ManagementKit
+description: Professional Git workflow, branching strategies ve conventional commits.
 metadata:
   skillport:
-    category: development
-    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, git workflow, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - workflow
+    category: operations
+    tags: [architecture, automation, best practices, branching, clean code, coding, collaboration, compliance, debugging, deployment, development, devops, efficiency, git, git workflow, GitHub CLI, optimization, productivity, programming, quality assurance, software engineering, standards, testing, version control, workflow]      - code-review
 ---
 
 # 🌿 Git Workflow
 
-> Branch stratejisi, commit conventions ve Git best practices rehberi.
+> Professional Git workflow ve collaboration standartları.
 
 ---
 
-## 📋 İçindekiler
+## 🏗️ Branching Strategy
 
-1. [Branching Stratejileri](#1-branching-stratejileri)
-2. [Commit Conventions](#2-commit-conventions)
-3. [Merge vs Rebase](#3-merge-vs-rebase)
-4. [Conflict Resolution](#4-conflict-resolution)
-5. [Useful Commands](#5-useful-commands)
-
----
-
-## 1. Branching Stratejileri
-
-### Git Flow
-```
-main (production)
-  └── develop
-        ├── feature/user-auth
-        ├── feature/payment
-        └── release/v1.2.0
-              └── hotfix/critical-bug
-```
-
-### GitHub Flow (Önerilen - Basit)
-```
-main (always deployable)
-  ├── feature/add-login
-  ├── fix/button-style
-  └── chore/update-deps
-```
-
-### Branch Naming
-```bash
-# Feature
-feature/user-authentication
-feature/JIRA-123-add-payment
-
-# Bug Fix
-fix/login-redirect-issue
-bugfix/memory-leak
-
-# Hotfix (production)
-hotfix/critical-security-patch
-
-# Other
-chore/update-dependencies
-refactor/auth-module
-docs/api-documentation
-```
+| Branch | Amaç |
+|--------|------|
+| `main` | Production (Her zaman stabil) |
+| `develop` | Integration (Yeni özelliklerin toplandığı yer) |
+| `feature/*` | Yeni özellik geliştirme |
+| `fix/*` | Bug fix |
+| `hotfix/*` | Acil production yamaları |
 
 ---
 
-## 2. Commit Conventions
+## 📜 Conventional Commits
 
-### Conventional Commits
-```
-<type>[optional scope]: <description>
+Format: `<type>(<scope>): <description>`
 
-[optional body]
-
-[optional footer(s)]
-```
-
-### Types
-| Type | Açıklama |
-|------|----------|
-| `feat` | Yeni özellik |
-| `fix` | Bug düzeltme |
-| `docs` | Dokümantasyon |
-| `style` | Formatting (kod değişikliği yok) |
-| `refactor` | Refactoring |
-| `perf` | Performans iyileştirme |
-| `test` | Test ekleme/düzeltme |
-| `chore` | Build, CI, dependencies |
-| `ci` | CI configuration |
-| `revert` | Revert commit |
-
-### Örnekler
-```bash
-feat(auth): add OAuth2 login support
-
-fix(api): resolve null pointer in user endpoint
-Closes #123
-
-refactor!: drop support for Node 14
-BREAKING CHANGE: Minimum Node version is now 18
-
-chore(deps): update lodash to 4.17.21
-```
-
-### Commit Message Rules
-```
-✅ DOĞRU:
-- Imperative mood: "Add feature" (not "Added" or "Adds")
-- 50 karakter başlık limiti
-- Büyük harfle başla, nokta koyma
-- Açıklayıcı body (neden, nasıl)
-
-❌ YANLIŞ:
-- "Fixed stuff"
-- "WIP"
-- "asdfasdf"
-- "Updated code"
-```
+- `feat`: Yeni bir özellik
+- `fix`: Bug düzeltmesi
+- `docs`: Dokümantasyon değişikliği
+- `style`: Kod formatı değişikliği (boşluk, virgül vb)
+- `refactor`: Ne özellik ekleyen ne de bug düzelten kod değişikliği
+- `test`: Test ekleme veya mevcut testleri düzeltme
+- `chore`: Build süreci veya yardımcı araç değişiklikleri
 
 ---
 
-## 3. Merge vs Rebase
+## 🔄 PR Workflow
 
-### Merge
-```bash
-# Feature branch'i main'e merge
-git checkout main
-git merge feature/user-auth
-
-# Merge commit oluşturur
-# History korunur
-```
-
-### Rebase
-```bash
-# Feature branch'i main üzerine rebase
-git checkout feature/user-auth
-git rebase main
-
-# Linear history
-# Commit'ler yeniden yazılır
-```
-
-### Ne Zaman Hangisi?
-| Durum | Strateji |
-|-------|----------|
-| Public/shared branch | Merge |
-| Local feature branch | Rebase |
-| Main'e feature merge | Squash merge |
-| Hotfix | Merge |
-
-### Squash Merge
-```bash
-git checkout main
-git merge --squash feature/user-auth
-git commit -m "feat(auth): add user authentication"
-```
+1. **Pull**: En güncel `develop` branch'ini çek.
+2. **Branch**: Yeni bir feature branch oluştur.
+3. **Commit**: Küçük, atomik ve conventional commit'ler yap.
+4. **Push**: Branch'i remote'a push et.
+5. **PR**: Bir Pull Request aç ve ekip arkadaşlarını review için ata.
+6. **Merge**: Onay sonrası `squash and merge` ile birleştir.
 
 ---
 
-## 4. Conflict Resolution
+*Git Workflow v1.1 - Enhanced*
 
-### Conflict Markers
-```
-<<<<<<< HEAD
-Current branch content
-=======
-Incoming branch content
->>>>>>> feature-branch
-```
+## 🔄 Workflow
 
-### Resolution Steps
-```bash
-# 1. Conflict'leri gör
-git status
+> **Kaynak:** [Conventional Commits](https://www.conventionalcommits.org/) & [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)
 
-# 2. Dosyaları düzenle (markers kaldır)
+### Aşama 1: Branching & Commits
+- [ ] **Naming**: Branch ismini `type/issue-id-short-description` (örn: `feat/12-user-login`) formatında aç.
+- [ ] **Atomic**: Her commit tek bir mantıksal değişikliği temsil etsin.
+- [ ] **Conventional**: Commit mesajlarını standartlara göre yaz.
 
-# 3. Çözümlenmiş dosyaları stage
-git add <resolved-file>
+### Aşama 2: Peer Review (PR)
+- [ ] **Description**: PR açıklamasında "ne yapıldı?", "nasıl test edilir?" ve "ilgili issue" bilgilerini ver.
+- [ ] **Self-Review**: PR'ı başkasına atmadan önce kendin kodunu diff üzerinden gözden geçir.
+- [ ] **Feedback**: Gelen yorumları hızlıca cevapla ve gerekli düzeltmeleri yap.
 
-# 4. Merge/rebase devam
-git merge --continue
-# veya
-git rebase --continue
-```
+### Aşama 3: Cleanup
+- [ ] **Merge**: Merge sonrası lokal ve remote branch'leri sil.
+- [ ] **Rebase**: `main` geride kaldıysa `git rebase main` ile çelişkileri (conflict) çöz.
 
-### VS Code ile
-```bash
-# Accept Current Change
-# Accept Incoming Change
-# Accept Both Changes
-# Compare Changes
-```
-
-### Abort
-```bash
-git merge --abort
-git rebase --abort
-```
-
----
-
-## 5. Useful Commands
-
-### History
-```bash
-# Güzel log
-git log --oneline --graph --all
-
-# Son 10 commit
-git log -10 --oneline
-
-# Dosya history
-git log --follow -p -- path/to/file
-```
-
-### Undo
-```bash
-# Son commit'i geri al (değişiklikleri koru)
-git reset --soft HEAD~1
-
-# Son commit'i tamamen geri al
-git reset --hard HEAD~1
-
-# Commit'i revert et (yeni commit oluştur)
-git revert <commit-hash>
-
-# Staged dosyayı unstage
-git restore --staged <file>
-
-# Değişiklikleri geri al
-git restore <file>
-```
-
-### Stash
-```bash
-# Değişiklikleri sakla
-git stash
-
-# Mesajla sakla
-git stash push -m "WIP: feature X"
-
-# Stash listesi
-git stash list
-
-# Son stash'i uygula
-git stash pop
-
-# Belirli stash'i uygula
-git stash apply stash@{2}
-```
-
-### Interactive Rebase
-```bash
-# Son 3 commit'i düzenle
-git rebase -i HEAD~3
-
-# Açılan editörde:
-pick abc1234 First commit
-squash def5678 Second commit  # Öncekiyle birleştir
-reword ghi9012 Third commit   # Mesajı değiştir
-```
-
-### Cherry Pick
-```bash
-# Belirli commit'i al
-git cherry-pick <commit-hash>
-
-# Birden fazla
-git cherry-pick <hash1> <hash2>
-```
-
----
-
-*Git Workflow v1.0 - 2025 Best Practices*
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Commit mesajı 50 karakterden kısa ve emir kipiyle (Imperative) başlıyor mu? |
+| 2 | PR'da "Work In Progress" (WIP) etiketi var mı? |
+| 3 | Merge edilmeden önce tüm CI/CD testleri geçti mi? |

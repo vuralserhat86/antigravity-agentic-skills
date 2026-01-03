@@ -1,117 +1,81 @@
 ---
 name: hypothesis_generation
-router_kit: FullStackKit
-description: Bilimsel hipotez oluşturma, deney tasarımı ve test metodolojisi rehberi.
+router_kit: UniversalKit
+description: Bilimsel problem çözme, kök neden analizi ve hipotez kurma teknikleri.
 metadata:
   skillport:
-    category: research
-    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, hypothesis generation, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]
+    category: management
+    tags: [analysis, analytical thinking, business, critical thinking, decision making, deduction, evidence based, hypothesis generation, induction, logic, management, methodology, observation, problem solving, reasoning, research, scientific method, strategy, systems thinking, validation]      - scientific-thinking
 ---
 
-# 🔬 Hypothesis Generation
+# 💡 Hypothesis Generation
 
-> Bilimsel hipotez oluşturma ve test metodolojisi rehberi.
-
----
-
-## 📋 Hipotez Yapısı
-
-### Format
-```
-IF [independent variable/action]
-THEN [dependent variable/outcome]
-BECAUSE [mechanism/reasoning]
-```
-
-### Örnek
-```
-IF we reduce checkout steps from 5 to 3
-THEN conversion rate will increase by 15%
-BECAUSE fewer steps reduce friction and drop-off
-```
+> Bilimsel problem çözme ve hipotez kurma teknikleri.
 
 ---
 
-## 🎯 Hipotez Kriterleri
+## 🏗️ 5-Step Process
 
-| Kriter | Açıklama |
-|--------|----------|
-| **Specific** | Net ve belirsizlik yok |
-| **Measurable** | Ölçülebilir outcome |
-| **Testable** | Test edilebilir |
-| **Falsifiable** | Yanlışlanabilir |
-| **Relevant** | İş hedefine uygun |
+1. **Gözlem**: Sorunu veya fenomeni objektif olarak tanımla.
+2. **Soru Sor**: "Neden böyle oluyor?" veya "Eğer X yaparsak ne olur?"
+3. **Hipotez Kur**: Test edilebilir, yanlışlanabilir bir önerme oluştur (Eğer... ise... çünkü...).
+4. **Tahmin**: Hipotez doğruysa gerçekleşmesi gereken sonuçları belirle.
+5. **Test**: Deney veya veri analizi ile doğrula.
 
 ---
 
-## 🔧 Hipotez Türleri
+## 📝 Hypothesis Template
 
-### A/B Test Hipotezi
-```markdown
-**Hypothesis:** Changing CTA button from blue to green 
-will increase click rate by 10%
-
-**Metric:** CTA Click Rate
-**Baseline:** 2.5%
-**Target:** 2.75%
-**Sample Size:** 10,000 users
-**Duration:** 2 weeks
+```
+EĞER [yapılan değişiklik]
+İSE [beklenen sonuç]
+ÇÜNKÜ [alt yatan neden/mantık]
 ```
 
-### Product Hipotezi
-```markdown
-**Problem:** Users abandon during onboarding
-**Hypothesis:** Adding progress indicator will reduce 
-abandonment by 20%
-**Success Metric:** Onboarding completion rate
-```
+*Örnek:*
+EĞER ana sayfadaki butonu kırmızı yaparsak
+İSE tıklanma oranı %10 artar
+ÇÜNKÜ kırmızı renk dikkat çeker ve aciliyet hissi yaratır.
 
 ---
 
-## 📊 Experiment Design
+## 🛡️ Null Hypothesis (H0)
 
-### Test Plan
-```markdown
-## Experiment: [Name]
-
-### Hypothesis
-[IF-THEN-BECAUSE statement]
-
-### Variables
-- Independent: [What we change]
-- Dependent: [What we measure]
-- Control: [What stays same]
-
-### Metrics
-- Primary: [Main KPI]
-- Secondary: [Supporting metrics]
-- Guardrail: [Safety metrics]
-
-### Design
-- Type: A/B / Multivariate
-- Split: 50/50
-- Duration: [X] weeks
-
-### Analysis Plan
-- Statistical test: [t-test, chi-square, etc.]
-- Confidence level: 95%
-- MDE: [Minimum detectable effect]
-```
+Hipotezin tam tersi olan, "hiçbir değişim veya etki olmadığını" savunan durumdur. Bilimsel testlerde H1'i kanıtlamak için H0'ı çürütmeye odaklanılır.
 
 ---
 
-## 📝 Prioritization (ICE)
+## 🎯 Best Practices
 
-| Hypothesis | Impact | Confidence | Ease | Score |
-|------------|--------|------------|------|-------|
-| H1 | 8 | 7 | 6 | 7.0 |
-| H2 | 9 | 5 | 4 | 6.0 |
-| H3 | 6 | 8 | 9 | 7.7 |
-
-```
-ICE Score = (Impact + Confidence + Ease) / 3
-```
+- **Atomic**: Tek bir değişkeni test et.
+- **Measurable**: Sonuç rakamlarla ölçülebilir olsun.
+- **Falsifiable**: Yanlış olduğu kanıtlanabilir olsun (bilim dışı iddialardan kaçın).
+- **Evidence-based**: Önceki verilere veya gözlemlere dayandır.
 
 ---
 
-*Hypothesis Generation v1.0*
+*Hypothesis Generation v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [Scientific Method - Khan Academy](https://www.khanacademy.org/science/high-school-biology/hs-biology-foundations/hs-biology-and-the-scientific-method/a/the-science-of-biology)
+
+### Aşama 1: Observation & definition
+- [ ] **Facts**: Sadece gördüğün, ölçebildiğin gerçekleri listele (Yorum katma).
+- [ ] **Problem**: "Neden satışlar düştü?" yerine "Eylül ayında dönüşüm oranı %2 azaldı" gibi spesifik ol.
+- [ ] **Context**: Hangi durumlarda sorun çıkıyor, hangilerinde çıkmıyor? (Boundary analysis).
+
+### Aşama 2: Generation
+- [ ] **MECE**: Mutually Exclusive, Collectively Exhaustive (Çakışmayan ve eksiksiz) hipotezler üret.
+- [ ] **Prioritize**: Hangi hipotez en yüksek etkiye (Impact) ve en düşük efora (Effort) sahip?
+
+### Aşama 3: Validation Plan
+- [ ] **Test Case**: Hipotezi nasıl test edeceksin? (A/B Test, Interview, Log Analysis).
+- [ ] **Metrics**: Başarı kriterin ne? (p-value, % değişim).
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Hipotez yanlışlanabilir mi? (Bir deneyle "hayır" diyebilir misin?) |
+| 2 | Cümlen "Eğer... ise..." yapısına uyuyor mu? |
+| 3 | Hipotezin arkasında mantıklı bir teori var mı? |

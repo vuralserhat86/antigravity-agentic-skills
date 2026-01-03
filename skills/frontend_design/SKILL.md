@@ -79,4 +79,29 @@ Focus: High-impact moments
 
 ---
 
-*Frontend Design v2.0 - Premium UI*
+*Frontend Design v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [Refactoring UI](https://www.refactoringui.com/) & [Awwwards Evaluation](https://www.awwwards.com/jury-member/evaluation-system)
+
+### Aşama 1: Visual Hierarchy
+- [ ] **Scale**: Önemli elementleri daha büyük değil, *çok* daha büyük yap.
+- [ ] **Contrast**: Renk kontrastını kullanarak dikkati yönlendir.
+- [ ] **WhiteSpace**: Boşluğu bir element gibi aktif kullan (Nefes aldır).
+
+### Aşama 2: Implementation Details
+- [ ] **Animation**: Micro-interaction'lar ekle (Buton hover, Page transition).
+- [ ] **Images**: Görselleri optimize et (WebP, Lazy Load) ve aspect-ratio koru.
+- [ ] **Typography**: Satır yüksekliği (`line-height`) ve harf aralığını (`letter-spacing`) ayarla.
+
+### Aşama 3: Polish
+- [ ] **Consistency**: Padding ve Margin değerleri bir sistemden (Design Tokens) mi geliyor?
+- [ ] **Responsive**: Sadece küçülmekle kalmayıp, layout değişiyor mu?
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Siteye ilk giren 3 saniye içinde "Vay be" diyor mu? |
+| 2 | Renk paleti 3-4 ana renkle sınırlı mı? |
+| 3 | Mobilde parmakla tıklanabilir alanlar yeterince büyük mü? |

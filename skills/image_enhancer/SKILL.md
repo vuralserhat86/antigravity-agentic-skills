@@ -1,104 +1,76 @@
 ---
 name: image_enhancer
-router_kit: FullStackKit
-description: Improves the quality of images, especially screenshots, by enhancing resolution, sharpness, and clarity. Perfect for preparing images for presentations, documentation, or social media posts.
+router_kit: AIKit
+description: AI-powered image upscaling, restoration ve enhancement teknikleri.
 metadata:
   skillport:
-    category: auto-healed
-    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, filters, git, image enhancer, opencv, optimization, processing, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, upscaling, utilities, version control, workflow]
+    category: creative
+    tags: [ai image enhancement, algorithmic art, artificial intelligence, automation, canvas, color grading, computer vision, deep learning, digital art, enhancement, generative ai, image processing, image restoration, machine learning, neural networks, optimization, photography, post-processing, quality improvement, resolution, restoration, sharpening, upscaling, visualization]      - algorithmic-art
 ---
 
-# Image Enhancer
+# 🖼️ Image Enhancer
 
-This skill takes your images and screenshots and makes them look better—sharper, clearer, and more professional.
+> AI tabanlı görüntü iyileştirme, çözünürlük artırma (upscaling) ve restorasyon.
 
-## When to Use This Skill
+---
 
-- Improving screenshot quality for blog posts or documentation
-- Enhancing images before sharing on social media
-- Preparing images for presentations or reports
-- Upscaling low-resolution images
-- Sharpening blurry photos
-- Cleaning up compressed images
+## 🚀 Key Techniques
 
-## What This Skill Does
+### 1. Super Resolution (SR)
+Düşük çözünürlüklü görselleri, detay ekleyerek 2x, 4x veya 8x büyütme.
+- **Modeller**: ESRGAN, Real-ESRGAN, SwinIR.
 
-1. **Analyzes Image Quality**: Checks resolution, sharpness, and compression artifacts
-2. **Enhances Resolution**: Upscales images intelligently
-3. **Improves Sharpness**: Enhances edges and details
-4. **Reduces Artifacts**: Cleans up compression artifacts and noise
-5. **Optimizes for Use Case**: Adjusts based on intended use (web, print, social media)
+### 2. Denoising & Deblurring
+Görseldeki "noise" (kumlanma) ve bulanıklığı giderme.
+- **Harc**: Grain removal, sharpening, edge enhancement.
 
-## How to Use
+### 3. Face Restoration
+Eski veya bozuk fotoğraflardaki yüz detaylarını düzeltme.
+- **Modeller**: GFPGAN, CodeFormer.
 
-### Basic Enhancement
+---
 
-```
-Improve the image quality of screenshot.png
-```
+## 🛠️ Tool Palette
 
-```
-Enhance all images in this folder
-```
+| Kategori | Araçlar |
+|----------|---------|
+| **Python Libs** | OpenCV, PyTorch, Diffusers |
+| **CLI Tools** | Upscayl, Real-ESRGAN-ncnn-vulkan |
+| **APIs** | Replicate, Hugging Face, Leonardo.ai |
 
-### Specific Improvements
+---
 
-```
-Upscale this image to 4K resolution
-```
+## 🎨 Best Practices
 
-```
-Sharpen this blurry screenshot
-```
+- **Original Backup**: Her zaman orijinal görselin yedeğini tut.
+- **Artifact Awareness**: Fazla keskinleştirme (over-sharpening) sonucu oluşan yapay detaylara dikkat et.
+- **Aspect Ratio**: Büyütme işlemi sırasında en-boy oranını koru.
+- **Format**: Çıktı için kayıpsız (PNG, TIFF) veya yüksek kaliteli (WebP) formatları tercih et.
 
-```
-Reduce compression artifacts in this image
-```
+---
 
-### Batch Processing
+*Image Enhancer v1.1 - Enhanced*
 
-```
-Improve the quality of all PNG files in this directory
-```
+## 🔄 Workflow
 
-## Example
+> **Kaynak:** [Real-ESRGAN Documentation](https://github.com/xinntao/Real-ESRGAN) & [OpenCV Image Processing](https://docs.opencv.org/4.x/d7/dbd/group__imgproc.html)
 
-**User**: "Improve the image quality of screenshot-2024.png"
+### Aşama 1: Assessment
+- [ ] **Analysis**: Görseldeki ana sorun ne? (Çözünürlük, Noise, Bulanıklık, Renk solması).
+- [ ] **Target**: Çıktı nerede kullanılacak? (Baskı: 300 DPI, Web: 72 DPI).
+- [ ] **Type**: Görsel tipi ne? (Fotoğraf, Çizim, Metin). Modeli buna göre seç.
 
-**Output**:
-```
-Analyzing screenshot-2024.png...
+### Aşama 2: Pre-Processing
+- [ ] **Clean**: Gerekliyse manuel olarak büyük lekeleri temizle.
+- [ ] **Resize**: Modelden en iyi verimi almak için bazen görseli önce 2x büyütmek gerekebilir.
 
-Current specs:
-- Resolution: 1920x1080
-- Format: PNG
-- Quality: Good, but slight blur
+### Aşama 3: Enhancement
+- [ ] **Upscale**: `Real-ESRGAN` veya `Repaint` modellerini çalıştır.
+- [ ] **Style**: Renk dengesi (White Balance) ve Kontrast ayarlarını AI sonrası manuel optimize et.
 
-Enhancements applied:
-✓ Upscaled to 2560x1440 (retina)
-✓ Sharpened edges
-✓ Enhanced text clarity
-✓ Optimized file size
-
-Saved as: screenshot-2024-enhanced.png
-Original preserved as: screenshot-2024-original.png
-```
-
-**Inspired by:** Lenny Rachitsky's workflow from his newsletter - used for screenshots in his articles
-
-## Tips
-
-- Always keeps original files as backup
-- Works best with screenshots and digital images
-- Can batch process entire folders
-- Specify output format if needed (PNG for quality, JPG for smaller size)
-- For social media, mention the platform for optimal sizing
-
-## Common Use Cases
-
-- **Blog Posts**: Enhance screenshots before publishing
-- **Documentation**: Make UI screenshots crystal clear
-- **Social Media**: Optimize images for Twitter, LinkedIn, Instagram
-- **Presentations**: Upscale images for large screens
-- **Print Materials**: Increase resolution for physical media
-
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Görselde "hallucination" (olmayan detaylar) oluştu mu? |
+| 2 | Metinler hala okunabilir mi? |
+| 3 | Dosya boyutu gereksiz yere devasa mı? |

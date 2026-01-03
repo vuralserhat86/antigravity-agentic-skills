@@ -1,59 +1,87 @@
 ---
 name: incident_response
 router_kit: DevOpsKit
-description: Coordinate security incident response efforts. Includes classification, playbook generation, evidence gathering, and remediation planning. Validates response strategies against best practices.
-allowed-tools: Read, Write, Edit, Grep, Glob, Bash
-version: 1.0.0
+description: IT incident response, on-call rotation ve post-mortem analizi.
 metadata:
   skillport:
-    category: auto-healed
-    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, incident response, optimization, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - incident_response
+    category: operations
+    tags: [alerting, automation, availability, backups, best practices, business continuity, communication, compliance, cybersecurity, disaster recovery, documentation, incident management, incident response, infrastructure, monitoring, observability, post-mortem, recovery, reliability, resilience, risk management, security, software engineering, troubleshooting, workflow]      - deploy-monitoring
 ---
 
-## Overview
+# 🚨 Incident Response
 
-This skill empowers Claude to guide you through the security incident response process, ensuring a structured and effective approach to handling security breaches and attacks. It helps you classify incidents, develop response strategies, gather crucial evidence, and implement remediation steps to minimize damage and prevent future occurrences.
+> Sistem kesintileri ve hataları yönetme süreci.
 
-## How It Works
+---
 
-1. **Incident Classification**: Analyzes the incident details to determine the type, severity, and scope of the security event.
-2. **Playbook Generation**: Creates a tailored response playbook based on the incident classification, outlining the necessary steps for containment, eradication, and recovery.
-3. **Evidence Gathering**: Provides guidance on collecting relevant logs, network data, and forensic evidence to support the investigation.
-4. **Remediation Planning**: Develops a detailed plan for remediating the vulnerabilities exploited during the incident and restoring affected systems.
+## 🏗️ 4-Phase Lifecycle
 
-## When to Use This Skill
+1. **Detection**: İzleme araçları (Prometheus, Grafana, Sentry) üzerinden hatanın fark edilmesi.
+2. **Containment**: Hatanın yayılmasını durdurma (Örn: sorunlu servisi izole etme, trafiği yönlendirme).
+3. **Recovery**: Sistemin normal çalışma durumuna döndürülmesi (Örn: rollback, restart).
+4. **Post-Mortem**: Hatanın nedeninin analizi ve tekrar etmemesi için aksiyon planı.
 
-This skill activates when you need to:
-- Respond to a suspected security breach or attack.
-- Develop an incident response plan.
-- Investigate a security incident and gather evidence.
-- Remediate vulnerabilities exploited during a security incident.
-- Generate a post-incident report and lessons learned.
+---
 
-## Examples
+## 📞 Roles & Responsibilities
 
-### Example 1: Responding to a Ransomware Attack
+| Rol | Sorumluluk |
+|-----|------------|
+| **Incident Commander** | Süreci yönetir, karar vericidir. |
+| **Technical Lead** | Teknik çözüme odaklanır. |
+| **Communication Lead** | Paydaşlara (müşteri, yönetim) bilgi verir. |
 
-User request: "We've been hit with a ransomware attack. What should we do?"
+---
 
-The skill will:
-1. Classify the incident as a ransomware attack.
-2. Generate a response playbook including steps for containment (isolating affected systems), eradication (removing the ransomware), and recovery (restoring from backups).
+## 📝 Post-Mortem Template
 
-### Example 2: Investigating a Data Breach
+```markdown
+# Incident Report: [Tarih/Başlık]
 
-User request: "Investigate a potential data breach on our customer database."
+## Summary
+- **Impact**: [Kaç kullanıcı etkilendi?]
+- **Duration**: [Ne kadar sürdü?]
+- **Root Cause**: [Neden oldu?]
 
-The skill will:
-1. Provide guidance on collecting evidence such as database logs, network traffic, and application logs.
-2. Help construct a timeline of events to identify the attack vector and scope of the breach.
+## Timeline
+- 10:00 - Hata fark edildi
+- 10:15 - Rollback yapıldı
+- 10:30 - Sistem normale döndü
 
-## Best Practices
+## Lessons Learned
+- [Ne öğrendik?]
+- [Neyi daha iyi yapabilirdik?]
 
-- **Prioritization**: Focus on containing the incident first to prevent further damage.
-- **Evidence Preservation**: Carefully preserve all evidence to support the investigation and potential legal action.
-- **Communication**: Maintain clear and consistent communication with stakeholders throughout the incident response process.
+## Action Items
+- [ ] [Aksiyon 1]
+- [ ] [Aksiyon 2]
+```
 
-## Integration
+---
 
-This skill can be integrated with other security tools and plugins to automate tasks such as vulnerability scanning, log analysis, and threat intelligence gathering. It can also be used in conjunction with project management tools to track incident response tasks and assign responsibilities.
+*Incident Response v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [Google SRE Book - Incident Response](https://sre.google/sre-book/incident-response/) & [PagerDuty Incident Response](https://response.pagerduty.com/)
+
+### Aşama 1: Triage (Assessment)
+- [ ] **Severity**: Olayın ciddiyetini belirle (P0: Down, P1: Degraded, P2: Minor).
+- [ ] **Alert**: İlgili on-call ekibini Slack/Pager veya telefon ile haberdar et.
+- [ ] **War Room**: Müdahale ekibi için geçici bir iletişim kanalı (Zoom/Meet/Slack) aç.
+
+### Aşama 2: Mitigation (Repair)
+- [ ] **Stop the Bleeding**: Kalıcı çözüm yerine önce geçici iyileştirme (Rollback, Cache Flush) uygula.
+- [ ] **Collect Evidence**: Logları, metrikleri ve state'i analiz için kaydet (Silme!).
+- [ ] **Update**: Paydaşlara düzenli aralıklarla (örn: 30dk'da bir) durum bilgisi geç.
+
+### Aşama 3: Prevention (Learning)
+- [ ] **Post-Mortem**: Olay kapandıktan sonra 48 saat içinde "Blameless" post-mortem toplantısı yap.
+- [ ] **Five Whys**: Kök nedene ulaşmak için 5 kere "Neden?" diye sor.
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Müşteri hatayı bizden önce mi fark etti? (Monitörler eksik mi?) |
+| 2 | Post-mortem'de birini suçladık mı? (Yapılmamalı!) |
+| 3 | Action item'lar için JIRA/Ticket açıldı mı? |
