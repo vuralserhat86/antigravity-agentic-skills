@@ -112,4 +112,30 @@ Best,
 
 ---
 
-*Email Composer v1.0*
+*Email Composer v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [Grammarly Business Email Guide](https://www.grammarly.com/blog/category/business-email/)
+
+### Aşama 1: Draft
+- [ ] **Objective**: Bu e-postayı neden atıyorum? (Bilgi vermek mi? Soru sormak mı?)
+- [ ] **Subject**: Konuyu 5 kelimeden kısa özetle (`Subject: Project X Status Update`).
+- [ ] **Context**: "Hi [Name]," sonrası ilk cümlede bağlamı kur (`Regarding our meeting...`).
+
+### Aşama 2: Refine
+- [ ] **BLUF**: Bottom Line Up Front - Ana mesajı en başa al, sona saklama.
+- [ ] **Tone Check**: Agresif veya fazla resmi mi? `Polite` ama `Direct` ol.
+- [ ] **Formatting**: Uzun paragrafları madde işaretlerine (bullet points) böl.
+
+### Aşama 3: Finalize
+- [ ] **CTA**: Net bir "Next Step" var mı? (`Please review by Friday`).
+- [ ] **Attachments**: "Attached" deyip eklemeyi unuttun mu? Kontrol et.
+- [ ] **Proofread**: İsmi doğru yazdın mı? Yazım hatası var mı?
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Konu satırı e-postayı açmadan içeriği anlatıyor mu? |
+| 2 | Mobilde okunduğunda scrol etmeden ana mesaj görünüyor mu? |
+| 3 | Alıcı ne yapması gerektiğini ("Reply", "Review", "Ignore") biliyor mu? |
