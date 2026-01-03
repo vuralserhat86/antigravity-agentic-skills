@@ -80,4 +80,32 @@ refactor(utils): simplify logic
 
 ---
 
-*Docs Code v1.0*
+*Docs Code v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [TSDoc Standard](https://tsdoc.org/) & [Keep a Changelog](https://keepachangelog.com/)
+
+### Aşama 1: Inline Documentation
+- [ ] **Public API**: Export edilen her fonksiyon/class için TSDoc (`/** ... */`) yaz.
+- [ ] **Context**: "Neden" (Why) sorusunu cevaplayan yorumlar ekle (`// Optimize for ...`).
+- [ ] **Examples**: Karmaşık fonksiyonlar için `@example` bloğu ekle.
+
+### Aşama 2: Changelog Management
+- [ ] **Unreleased**: Yapılan değişiklikleri anında `[Unreleased]` başlığı altına ekle.
+- [ ] **Categories**: Added, Changed, Deprecated, Removed, Fixed, Security etiketlerini kullan.
+- [ ] **Versioning**: SemVer (Maj.Min.Patch) kurallarına göre versiyonla.
+
+### Aşama 3: Commit Standards
+- [ ] **Format**: Conventional Commits (`feat:`, `fix:`, `docs:`) kullan.
+- [ ] **Scope**: Değişikliğin kapsamını belirt (`feat(auth):`).
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | IDE'de fonksiyon üzerine gelince TSDoc çıkıyor mu? |
+| 2 | Changelog'da tarih formatı ISO 8601 (YYYY-MM-DD) mi? |
+| 3 | Commit mesajı "ne" ve "neden" sorularını cevaplıyor mu? |
+
+---
+*Docs Code v1.1 - Enhanced*

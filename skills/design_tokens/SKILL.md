@@ -118,11 +118,31 @@ Success/Warning/Error/Info: 5 shades
 
 ---
 
-## 🔗 İlgili Skill'ler
-- `design-components` - Button, card, input sizing
-- `design-patterns` - Layout patterns, visual hierarchy
-- `design-responsive` - Breakpoints, fluid typography
+## 🔄 Workflow
+
+> **Kaynak:** [W3C Design Tokens Format](https://tr.designtokens.org/format/) & [Style Dictionary Best Practices](https://amzn.github.io/style-dictionary/)
+
+### Aşama 1: Audit & Token Hierarchy
+- [ ] **Color/Type Audit**: Marka renklerini ve tipografi ölçeğini (Scale) standartlaştır.
+- [ ] **Classification**: Tokenlar'ı 3 seviyeye ayır: Primitive (Global), Semantic (Purpose) ve Component-specific.
+- [ ] **Naming Convention**: `category-type-item-state` (örn: `action-primary-hover`) formatını uygula.
+
+### Aşama 2: Definition & Tooling
+- [ ] **JSON Definition**: Token'ları merkezi bir JSON dosyasında tanımla.
+- [ ] **Multi-Platform Export**: `Style Dictionary` kullanarak tokens'ları CSS, JS ve Swift/Kotlin formatlarına dönüştür.
+- [ ] **Theme Variation**: Dark/Light mode için semantik eşlemeleri yap.
+
+### Aşama 3: Consumption & Maintenance
+- [ ] **Implementation**: Kod içerisinde hardcoded değerleri token değişkenleriyle değiştir.
+- [ ] **Version Control**: Token değişikliklerini merkezi tasarım kütüphanesi üzerinden takip et.
+- [ ] **Governance**: Yeni eklenen renk veya boşluk değerlerinin sisteme uygunluğunu denetle.
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Tüm renkler WCAG erişilebilirlik (Contrast) testinden geçti mi? |
+| 2 | Token isimleri geliştirici ve tasarımcı için aynı anlamı taşıyor mu? |
+| 3 | Token değişikliği tüm platformlarda otomatik güncelleniyor mu? |
 
 ---
-
-*Design Tokens v1.0*
+*Design Tokens v1.5 - With Workflow*

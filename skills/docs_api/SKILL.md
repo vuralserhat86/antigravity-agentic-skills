@@ -1,7 +1,7 @@
 ---
 name: docs_api
-router_kit: ManagementKit
-description: OpenAPI/Swagger API documentation ve endpoint belgeleme şablonları.
+router_kit: UniversalKit
+description: API documentation ve OpenAPI best practices.
 metadata:
   skillport:
     category: operations
@@ -67,4 +67,32 @@ components:
 
 ---
 
-*Docs API v1.0*
+*Docs API v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [Redocly OpenAPI Workflow](https://redocly.com/docs/cli/) & [API Handyman](https://apihandyman.io/)
+
+### Aşama 1: Design (Spec First)
+- [ ] **Mock**: `prism` veya `stoplight` ile API'yi kodlamadan önce mockla.
+- [ ] **Lint**: OpenAPI dosyasını `spectral` ile standartlara (CamelCase, Descriptions vb.) göre denetle.
+- [ ] **Structure**: Tek devasa dosya yerine `$ref` kullanarak bileşenlere böl (`components/schemas/User.yaml`).
+
+### Aşama 2: Documentation
+- [ ] **Descriptions**: Her endpoint ve parametre için anlamlı açıklama yaz.
+- [ ] **Examples**: Başarılı ve hatalı (4xx, 5xx) response örneklerini mutlaka ekle.
+- [ ] **Auth**: Security şemalarını (Bearer, OAuth2) net şekilde tanımla.
+
+### Aşama 3: Publication
+- [ ] **Generate**: `redoc-cli bundle` veya `swagger-cli` ile statik HTML oluştur.
+- [ ] **Version**: API versiyonunu ve değişiklik günlüğünü (Changelog) güncelle.
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | `spectral lint openapi.yaml` hatasız geçiyor mu? |
+| 2 | Oluşturulan dokümantasyonda "Try it out" çalışıyor mu? |
+| 3 | Tüm zorunlu alanlar (`required`) şemada işaretli mi? |
+
+---
+*Docs API v1.1 - Enhanced*

@@ -63,4 +63,33 @@ MIT
 
 ---
 
-*Docs README v1.0*
+*Docs README v1.1 - Enhanced*
+
+## 🔄 Workflow
+
+> **Kaynak:** [Awesome README](https://github.com/matiassingers/awesome-readme)
+
+### Aşama 1: First Impression
+- [ ] **Hero**: Proje ismi, kısa açıklama ve mümkünse logo/banner ekle.
+- [ ] **Badges**: CI/CD durumu, lisans ve versiyon badge'lerini en üste koy.
+- [ ] **Demo**: Canlı demo linki veya GIF/Screenshot ekle.
+
+### Aşama 2: Content Structure
+- [ ] **Installation**: Tek satırlık kurulum komutu (`npm install ...`).
+- [ ] **Usage**: En yaygın kullanım senaryosu için kod örneği.
+- [ ] **Contributing**: Katkı sağlama rehberine link (`CONTRIBUTING.md`).
+
+### Aşama 3: Maintenance
+- [ ] **Links**: Kırık link kontrolü yap (Link Checker).
+- [ ] **License**: LICENSE dosyası ile README'deki lisans beyanı tutarlı mı?
+- [ ] **Update**: Her major release sonrası README'yi güncelle.
+
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Okuyucu projenin ne işe yaradığını 5 saniyede anlıyor mu? |
+| 2 | Kurulum komutları "copy-paste" ile hatasız çalışıyor mu? |
+| 3 | Görseller optimize edilmiş (hafif) ve yükleniyor mu? |
+
+---
+*Docs README v1.1 - Enhanced*
