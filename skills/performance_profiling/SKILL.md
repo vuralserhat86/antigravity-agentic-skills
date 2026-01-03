@@ -1,231 +1,40 @@
 ---
 name: performance_profiling
 router_kit: FullStackKit
-description: CPU/Memory profiling, bottleneck analizi, benchmark teknikleri ve performans optimizasyonu rehberi.
+description: Kod seviyesinde CPU, bellek ve I/O profilleme araçları ve teknikleri.
 metadata:
   skillport:
-    category: optimization
-    tags: [big data, cleaning, csv, data analysis, data engineering, data science, database, etl pipelines, export, import, json, machine learning basics, migration, nosql, numpy, pandas, performance profiling, python data stack, query optimization, reporting, schema design, sql, statistics, transformation, visualization]      - optimization
+    category: debugging
+    tags: [architecture, automation, best practices, clean code, coding, collaboration, compliance, debugging, design patterns, development, documentation, efficiency, git, optimization, performance profiling, productivity, programming, project management, quality assurance, refactoring, software engineering, standards, testing, utilities, version control, workflow]      - profiling
 ---
 
-# ⚡ Performance Profiling
+# 🔍 Performance Profiling
 
-> CPU, Memory profiling ve bottleneck analizi rehberi.
-
----
-
-## 📋 İçindekiler
-
-1. [JavaScript/Node.js Profiling](#1-javascriptnodejs-profiling)
-2. [React Profiling](#2-react-profiling)
-3. [Memory Leak Detection](#3-memory-leak-detection)
-4. [Benchmark Teknikleri](#4-benchmark-teknikleri)
-5. [Database Profiling](#5-database-profiling)
+> Kodun yürütme maliyetini derinlemesine analiz etme ve iyileştirme.
 
 ---
 
-## 1. JavaScript/Node.js Profiling
+*Performance Profiling v1.1 - Enhanced*
 
-### Chrome DevTools
-```javascript
-// Console timing
-console.time('operation');
-// ... code
-console.timeEnd('operation');
+## 🔄 Workflow
 
-// Performance API
-const start = performance.now();
-// ... code
-const end = performance.now();
-console.log(`Execution time: ${end - start}ms`);
-```
+> **Kaynak:** [Node.js Performance Profiling Guide](https://nodejs.org/en/docs/guides/simple-profiling/) & [Chrome DevTools Profiling](https://developer.chrome.com/docs/devtools/performance/)
 
-### Node.js Profiling
-```bash
-# CPU profiling
-node --prof app.js
-node --prof-process isolate-*.log > profile.txt
+### Aşama 1: tool Selection & Setup
+- [ ] **Backend**: `v8-profiler` (Node), `cProfile` (Python) veya `pprof` (Go) seç.
+- [ ] **Frontend**: Chrome DevTools `Performance` tab veya `Lighthouse` kullan.
 
-# Clinic.js (kapsamlı)
-npx clinic doctor -- node app.js
-npx clinic flame -- node app.js
-npx clinic bubbleprof -- node app.js
-```
+### Aşama 2: Recording (Capturing)
+- [ ] **Scenario**: Darboğazın yaşandığı aksiyonu (Örn: sayfa yükleme, rapor üretme) izole et.
+- [ ] **Profiling**: CPU profilini (Sampling) al veya Memory heap snapshot'ını kaydet.
 
-### V8 Profiler
-```javascript
-const v8Profiler = require('v8-profiler-next');
+### Aşama 3: Analysis (Interpretation)
+- [ ] **Flamegraph**: "Hot path"leri (en çok zaman alan fonksiyonlar) görselleştir.
+- [ ] **Heap Analizi**: Bellek sızıntılarını (Memory leaks) tespit etmek için `Destached DOM nodes` veya `Global variables` tara.
 
-v8Profiler.startProfiling('CPU');
-// ... code
-const profile = v8Profiler.stopProfiling('CPU');
-profile.export((error, result) => {
-  fs.writeFileSync('profile.cpuprofile', result);
-  profile.delete();
-});
-```
-
----
-
-## 2. React Profiling
-
-### React DevTools Profiler
-```jsx
-import { Profiler } from 'react';
-
-function onRenderCallback(
-  id, phase, actualDuration, baseDuration, startTime, commitTime
-) {
-  console.log({ id, phase, actualDuration, baseDuration });
-}
-
-<Profiler id="MyComponent" onRender={onRenderCallback}>
-  <MyComponent />
-</Profiler>
-```
-
-### why-did-you-render
-```javascript
-// wdyr.js
-import React from 'react';
-import whyDidYouRender from '@welldone-software/why-did-you-render';
-
-whyDidYouRender(React, {
-  trackAllPureComponents: true,
-});
-```
-
-### Render Optimization
-```jsx
-// useMemo - hesaplama cache
-const expensiveValue = useMemo(() => computeExpensive(a, b), [a, b]);
-
-// useCallback - fonksiyon referans
-const handleClick = useCallback(() => doSomething(id), [id]);
-
-// React.memo - component memoization
-const MemoizedComponent = React.memo(MyComponent);
-```
-
----
-
-## 3. Memory Leak Detection
-
-### Yaygın Leak Kaynakları
-| Kaynak | Örnek | Çözüm |
-|--------|-------|-------|
-| Event listeners | `addEventListener` | `removeEventListener` cleanup |
-| Timers | `setInterval` | `clearInterval` cleanup |
-| Closures | Büyük objeler referans | Weak references |
-| DOM references | Detached DOM | Null atama |
-| Global variables | `window.data = large` | Scope sınırlama |
-
-### Chrome DevTools Memory Tab
-```
-1. Memory tab → Heap snapshot
-2. Perform actions
-3. Take another snapshot
-4. Compare snapshots (Comparison view)
-5. Filter by "Detached" for DOM leaks
-```
-
-### Node.js Memory
-```bash
-# Memory usage monitoring
-node --expose-gc app.js
-
-# heapdump
-npm install heapdump
-```
-
-```javascript
-const heapdump = require('heapdump');
-heapdump.writeSnapshot('./heap-' + Date.now() + '.heapsnapshot');
-```
-
----
-
-## 4. Benchmark Teknikleri
-
-### JavaScript Benchmarking
-```javascript
-// Benchmark.js
-const Benchmark = require('benchmark');
-const suite = new Benchmark.Suite;
-
-suite
-  .add('Method A', () => methodA())
-  .add('Method B', () => methodB())
-  .on('cycle', (event) => console.log(String(event.target)))
-  .on('complete', function() {
-    console.log('Fastest: ' + this.filter('fastest').map('name'));
-  })
-  .run({ async: true });
-```
-
-### HTTP Benchmarking
-```bash
-# autocannon (Node.js)
-npx autocannon -c 100 -d 30 http://localhost:3000
-
-# wrk
-wrk -t12 -c400 -d30s http://localhost:3000
-
-# ab (Apache Bench)
-ab -n 10000 -c 100 http://localhost:3000/
-```
-
-### Lighthouse CI
-```bash
-npx lhci autorun --collect.url=http://localhost:3000
-```
-
----
-
-## 5. Database Profiling
-
-### PostgreSQL
-```sql
--- Slow query log
-ALTER SYSTEM SET log_min_duration_statement = 1000; -- 1s
-
--- EXPLAIN ANALYZE
-EXPLAIN (ANALYZE, BUFFERS, FORMAT TEXT)
-SELECT * FROM users WHERE email = 'test@example.com';
-
--- pg_stat_statements
-SELECT query, calls, mean_time, total_time
-FROM pg_stat_statements
-ORDER BY total_time DESC
-LIMIT 10;
-```
-
-### MongoDB
-```javascript
-// Profiling enable
-db.setProfilingLevel(1, { slowms: 100 });
-
-// Query profiler
-db.system.profile.find().sort({ ts: -1 }).limit(10);
-
-// Explain
-db.users.find({ email: "test@example.com" }).explain("executionStats");
-```
-
----
-
-## 🎯 Quick Performance Checklist
-
-```checklist
-- [ ] Bundle size analizi (webpack-bundle-analyzer)
-- [ ] Core Web Vitals (LCP, FID, CLS)
-- [ ] Network waterfall analizi
-- [ ] Memory leak kontrolü
-- [ ] Database query optimization
-- [ ] Caching stratejisi (Redis, CDN)
-- [ ] Code splitting / Lazy loading
-```
-
----
-
-*Performance Profiling v1.0 - 2025 Best Practices*
+### Kontrol Noktaları
+| Aşama | Doğrulama |
+|-------|-----------|
+| 1 | Profilleme verisi "Production build" üzerinde mi alındı (Sourcemaps)? |
+| 2 | "Anonymized data" ile mi çalışıldı (Gizlilik)? |
+| 3 | En büyük "Self Time" sahibi fonksiyon optimize edilebilir mi? |
